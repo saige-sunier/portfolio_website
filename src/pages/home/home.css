@@ -1,0 +1,235 @@
+/*HEADER STYLING**/
+.header-div {
+  width: 100%;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-div h3,
+.header-div .header-nav-menu,
+.header-div p {
+  z-index: 2;
+}
+.header-nav-menu {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.header-div .header-title {
+  font-size: 75px;
+  font-family: "Allerta Stencil" !important;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.header-div h3 {
+  font-size: 25px;
+  font-family: monospace;
+}
+.header-div:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 65vh;
+  z-index: 1;
+  opacity: 0.4;
+  background-image: url(../../images/helmetBkgrnd.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header-nav-button {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 50px;
+  background: none;
+  border: none;
+  font-family: "Allerta Stencil";
+  transition: 0.3s;
+  border: none !important;
+  outline: none !important;
+  text-align: center;
+  margin: auto;
+}
+.header-nav-button:hover {
+  cursor: pointer;
+  opacity: 0.2;
+}
+@media only screen and (max-width: 1075px) {
+  .header-nav-menu {
+    display: block;
+    text-align: center;
+  }
+}
+
+/*ABOUT DIV STYLING*/
+.about-div {
+  display: block;
+  margin: auto;
+  z-index: 2;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  width: 50%;
+}
+
+.section-header {
+  font-size: 60px;
+  font-family: "Allerta Stencil";
+}
+.about-div p {
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.paralax-image-2 {
+  min-height: 40rem;
+  background-image: url(../../images/saigeBkgrnd2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*PROJECTS DIV STYLING*/
+.projects-div {
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.projects-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.project-image {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.project-image-area {
+  position: relative;
+  text-align: center;
+  display: flex;
+}
+.project-image-title {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Allerta Stencil";
+  font-size: 45px;
+}
+.project-image-area:hover {
+  cursor: pointer;
+}
+.project-image-area:hover .project-image-title {
+  display: block;
+}
+.project-image-area:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.7;
+}
+
+.paralax-image-3 {
+  min-height: 40rem;
+  background-image: url(../../images/moutainBkgrnd2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-div {
+  padding-bottom: 2rem;
+}
+
+.contact-info,
+.contact-blurb {
+  font-size: 25px;
+  font-family: monospace;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+a {
+  color: black;
+  padding: 1rem;
+}
+.contact-info-p {
+  margin: 0.5rem;
+}
+hr {
+  width: 10%;
+  height: 3px;
+  background: black;
+  border: none;
+}
+.in-text-link {
+  padding: 0;
+  text-decoration: underline;
+}
+.in-text-link:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 479px) {
+  .header-div {
+    min-height: 45vh;
+  }
+  .header-div h3 {
+    font-size: 20px;
+  }
+  .header-div .header-title {
+    font-size: 45px;
+    margin-top: 0rem;
+  }
+  .header-div:before {
+    width: 100%;
+    height: 45vh;
+    background-image: url(../../images/mobileHeaderImg.jpg);
+    background-size: contain;
+    background-position: inherit;
+  }
+  .header-nav-button {
+    font-size: 35px;
+  }
+  .about-div {
+    padding-bottom: 1rem;
+  }
+  .paralax-image-2,
+  .paralax-image-3 {
+    display: none;
+  }
+  .contact-info,
+  .contact-blurb {
+    font-size: 20px;
+  }
+  .about-div {
+    width: 85%;
+  }
+  .section-header {
+    font-size: 50px;
+  }
+  .projects-grid {
+    flex-direction: column;
+  }
+  .project-image-area {
+    height: min-content;
+    max-height: 50vh !important;
+  }
+}
