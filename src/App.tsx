@@ -5,6 +5,7 @@ import './App.css';
 import { Home } from './pages/home/home';
 import { Projects } from './pages/projects/projects';
 import { Footer } from './partials/footer';
+import { Header } from './partials/header';
 import { Routes } from './routes';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <Route path={'/'} exact>
+          <Header/>
           <Home/>
           <Footer/>
         </Route>
@@ -19,10 +21,12 @@ function App() {
           <Redirect to={Routes.home} />
         </Route>
         <Route path={Routes.home} exact>
+          <Header/>
           <Home/>
           <Footer/>
         </Route>
         <Route path={Routes.projects}>
+          <Header/>
           <Projects/>
           <Footer/>
         </Route>
