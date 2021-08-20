@@ -6,8 +6,8 @@ import { Routes } from '../../routes';
 
 export const Home = withRouter((props) =>{
     const urlHash = props.history.location.hash;
-    const aboutMessage:string = 'As a die-hard ski junkie with a passion for art and a year long struggle to find a pair of skis with a graphic that I loved, I decided to take matters into my own hands. I painted my first pair of skis and Ski-On Ski-Art was born. One-of-a-kind, custom, hand-painted skis and boards guaranteed to turn heads on the slopes.';
-    const missionMessage:string= 'Our climate has quickly become another passion of mine. With climate change growing more and more dangerous, our ski seasons are at greater risk than ever before. To help protect our environment and our ski seasons, Ski-On Ski-Art is donating 10% of all profits made from commissioned work to the NRDC (National Resource Defense Council).';
+    // const aboutMessage:string = 'Hi - My name is Saige, welcome to my online portfolio! ';
+    // const missionMessage:string= 'More stuff';
 
     const spaceMan = './images/spaceMan.JPG';
     const deepSea = './images/deepSea.JPG';
@@ -25,8 +25,8 @@ export const Home = withRouter((props) =>{
 
     return(
         <div className="home-page-div">
-            <div className="header-div">
-                <p className="header-title">Ski-On Ski-Art</p>
+            {/*<div className="header-div">
+                <p className="header-title">Saige Sunier</p>
                 <h3 className="header-quote">
                     One-of-a-Kind, Custom, Hand-Painted Skis &amp; Snowboards
                 </h3>
@@ -35,12 +35,13 @@ export const Home = withRouter((props) =>{
                     <button className="header-nav-button"><Link to="projects" smooth={true}>projects.</Link></button>
                     <button className="header-nav-button"><Link to="contact" smooth={true}>contact.</Link></button>
                 </div>
-            </div>
+            </div>*/}
             <div className="about-div" id="about">
-                <h1 className="section-header">about.</h1>
-                <p className="section-content">{aboutMessage} <Link className="in-text-link" to="contact" smooth={true}>Reach out</Link> to customize yours today!</p>
+                <h1 className="section-header">About Me:</h1>
+                <p className="aboutSection"> Hi - My name is Saige, welcome to my online portfolio.  </p>
+                {/* <p className="section-content">{aboutMessage} <Link className="in-text-link" to="contact" smooth={true}>Reach out</Link> to customize yours today!</p> */}
                 <hr/>
-                <p className="section-content">{missionMessage} Click <a className="in-text-link" href="https://www.nrdc.org/" target="_blank">here</a> to learn more about the NRDC and it's mission!</p>
+                {/* <p className="section-content">{missionMessage} Click <a className="in-text-link" href="https://www.nrdc.org/" target="_blank">here</a> to learn more about the NRDC and it's mission!</p> */}
             </div>
             <div className="paralax-image-2"></div>
             <div className="projects-div" id="projects">

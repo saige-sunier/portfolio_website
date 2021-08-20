@@ -39,14 +39,14 @@ export const Projects = withRouter((props) =>{
 
     return(
         <div className="projects-page-div">
-            <div className="projects-header-div">
+            {/* <div className="projects-header-div">
                 <img onClick={()=> props.history.push(Routes.home)} src="../../images/logo_blk.PNG" alt="SOSA" className="home-logo"/>
                 <div className="projects-header-nav-menu">
                     <button className="projects-header-nav-button" onClick={()=>handleHeaderNav('about')}>about.</button>
                     <button className="projects-header-nav-button" onClick={()=>handleHeaderNav('projects')}>projects.</button>
                     <button className="projects-header-nav-button" onClick={()=>handleHeaderNav('contact')}>contact.</button>
                 </div>
-            </div>
+            </div> */}
             <div className="project-page-body">
                 <div className="project-page-sideNav">
                     <img onClick={() => handleSideNavClick('spaceman')} src="../../images/bw_spaceMan.PNG" alt="spaceman-nav" className="project-nav-image"/>

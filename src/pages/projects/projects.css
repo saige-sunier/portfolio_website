@@ -13,27 +13,27 @@
   opacity: 0.5;
   transition: 0.25s;
 }
-.projects-header-div {
+/* .projects-header-div {
   display: flex;
   height: 6.5rem;
   top: 0;
   position: sticky;
   box-shadow: 0px 5px 15px -5px #747474;
   background-color: white;
-  z-index: 2;
-}
+  z-index: 2; */
+/* }
 @media only screen and (max-width: 703px) {
   .projects-header-div {
     height: 10rem;
   }
-}
-.home-logo {
+} */
+/* .home-logo {
   position: absolue;
   width: 75px;
   height: 75px;
   padding: 1rem;
-}
-.projects-header-nav-menu {
+} */
+/* .projects-header-nav-menu {
   display: block;
   margin: auto;
 }
@@ -47,16 +47,16 @@
   font-family: "Allerta Stencil";
   transition: 0.3s;
   border: none !important;
-  outline: none !important;
-}
-.projects-header-nav-button:hover {
+  outline: none !important; 
+}*/
+/* .projects-header-nav-button:hover {
   cursor: pointer;
   opacity: 0.5;
-}
+} */
 
 .project-page-body {
   display: flex;
-  padding: 2rem;
+  padding: 0rem;
 }
 
 .project-page-info {

@@ -1,32 +1,34 @@
 /*HEADER STYLING**/
-.header-div {
+/*.header-div {
   width: 100%;
   min-height: 65vh;
   display: flex;
   flex-direction: column;
-}
+}**/
 
-.header-div h3,
+/* .header-div h3,
 .header-div .header-nav-menu,
 .header-div p {
   z-index: 2;
-}
-.header-nav-menu {
+} */
+/* .header-nav-menu {
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 .header-div .header-title {
-  font-size: 75px;
-  font-family: "Allerta Stencil" !important;
+  font-size: 40px;
+  font-family: "Verdana" !important;
   margin-bottom: 0;
   margin-top: 1rem;
+  margin-left: 5rem;
+  text-align: left;
 }
 .header-div h3 {
   font-size: 25px;
-  font-family: monospace;
-}
-.header-div:before {
+  font-family: "Verdana"; 
+}*/
+/*.header-div:before {
   content: " ";
   display: block;
   position: absolute;
@@ -41,14 +43,14 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-.header-nav-button {
+}**/
+/* .header-nav-button {
   margin-left: 5rem;
   margin-right: 5rem;
   font-size: 50px;
   background: none;
   border: none;
-  font-family: "Allerta Stencil";
+  font-family: "Verdana";
   transition: 0.3s;
   border: none !important;
   outline: none !important;
@@ -64,7 +66,7 @@
     display: block;
     text-align: center;
   }
-}
+} */
 
 /*ABOUT DIV STYLING*/
 .about-div {
@@ -79,7 +81,7 @@
 
 .section-header {
   font-size: 60px;
-  font-family: "Allerta Stencil";
+  font-family: "Verdana";
 }
 .about-div p {
   font-size: 25px;
@@ -124,7 +126,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "Allerta Stencil";
+  font-family: "Verdana";
   font-size: 45px;
 }
 .project-image-area:hover {
