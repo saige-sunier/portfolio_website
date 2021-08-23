@@ -68,24 +68,52 @@
   }
 } */
 
+/*HOME PAGE IMAGE STYLING*/
+.home_image {
+  min-height: 30rem;
+  background-image: url(../../images/TZ-heaterRepair.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 /*ABOUT DIV STYLING*/
 .about-div {
-  display: block;
-  margin: auto;
-  z-index: 2;
-  background-color: white;
-  padding-top: 1rem;
-  padding-bottom: 5rem;
-  width: 50%;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .section-header {
-  font-size: 60px;
+  font-size: 30px;
   font-family: "Verdana";
+  text-align: center;
 }
 .about-div p {
-  font-size: 25px;
-  font-family: monospace;
+  font-size: 20px;
+  font-family: "Verdana";
+  text-align: left;
+}
+
+.section-subheader {
+  font-size: 20px;
+  font-family: "Verdana";
+  text-align: left;
+}
+
+/* .about-div ul {
+  font-size: 15px;
+  font-family: "Verdana";
+  text-align: left;
+} */
+
+.about-div li {
+  font-size: 15px;
+  font-family: "Verdana";
+  color:rgb(58, 54, 54);
+  text-align: left;
+  margin: 10px 0;
 }
 
 .paralax-image-2 {
@@ -99,26 +127,31 @@
 
 /*PROJECTS DIV STYLING*/
 .projects-div {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 .projects-grid {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;  
   justify-content: space-around;
 }
 .project-image {
   display: block;
+  flex: 1 1 21%;
   width: 100%;
   margin: auto;
 }
 .project-image-area {
+  flex: 1 1 21%;
   position: relative;
   text-align: center;
   display: flex;
+  padding-bottom: 1rem;
 }
 .project-image-title {
+  flex: 1 1 21%;
   display: none;
   position: absolute;
   z-index: 2;
@@ -146,48 +179,113 @@
   opacity: 0.7;
 }
 
+/* RESEARCH DIV STYLING*/
+.research-div {
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.research-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: space-around;
+}
+.research-image {
+  display: block;
+  flex: 1 1 50%;
+  width: 100%;
+  margin: auto;
+}
+.research-image-area {
+  flex: 1 1 50%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  padding-bottom: 1rem;
+}
+.research-image-title {
+  flex: 1 1 50%;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Verdana";
+  font-size: 45px;
+}
+.research-image-area:hover {
+  cursor: pointer;
+}
+.research-image-area:hover .research-image-title {
+  display: block;
+}
+.research-image-area:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.7;
+}
+
 .paralax-image-3 {
-  min-height: 40rem;
-  background-image: url(../../images/moutainBkgrnd2.jpg);
+  min-height: 35rem;
+  background-image: url(../../images/TZ-kili_sunrise.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-
+/* CONTACT DIV STYLING*/
 .contact-div {
   padding-bottom: 2rem;
-}
-
-.contact-info,
-.contact-blurb {
-  font-size: 25px;
-  font-family: monospace;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .contact-info {
+  text-align: left;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
-a {
+.contact-buttons{
+  margin-left: 1rem;
+  margin-right: 0rem;
+  background: none;
+  border: none;
+  font-family: "Verdana";
+  transition: 0.3s;
+  border: none !important;
+  outline: none !important;
+  text-align:justify;
+}
+a{
+  font-size: 15px;
+  line-height: 35px;
   color: black;
   padding: 1rem;
 }
-.contact-info-p {
-  margin: 0.5rem;
+.contact-logo {
+  float: left;
+  display: block;
+  max-width: 40px;
+  height: auto;
 }
+a:hover {
+  cursor: pointer;
+  opacity: 0.2;
+}
+
 hr {
   width: 10%;
   height: 3px;
   background: black;
   border: none;
-}
-.in-text-link {
-  padding: 0;
-  text-decoration: underline;
-}
-.in-text-link:hover {
-  cursor: pointer;
 }
 @media only screen and (max-width: 479px) {
   .header-div {
@@ -205,6 +303,7 @@ hr {
     height: 45vh;
     background-image: url(../../images/mobileHeaderImg.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: inherit;
   }
   .header-nav-button {

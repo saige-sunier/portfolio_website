@@ -37,12 +37,16 @@
   }
 
 .header-nav-menu {
-    margin-left: 40rem;
+    margin-left: 30rem;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; */
 }
 
 .header-nav-button {
     margin-left: 1rem;
     margin-right: 0rem;
+    margin-top: 2rem;
     font-size: 20px;
     background: none;
     border: none;

@@ -7,12 +7,12 @@ import { Routes } from '../../routes';
 export const Home = withRouter((props) =>{
     const urlHash = props.history.location.hash;
     // const aboutMessage:string = 'Hi - My name is Saige, welcome to my online portfolio! ';
-    // const missionMessage:string= 'More stuff';
 
     const spaceMan = './images/spaceMan.JPG';
     const deepSea = './images/deepSea.JPG';
     const elephant='./images/elephant.JPG';
     const kicksinorbit='./images/kicksInOrbit.JPG';
+    const goyalmaranewborn='./images/goyalmara.png';
 
     const handleProjectSelect = (projectId:string) =>{
         props.history.push(`${Routes.projects}?projectid=${projectId}`);
@@ -36,20 +36,21 @@ export const Home = withRouter((props) =>{
                     <button className="header-nav-button"><Link to="contact" smooth={true}>contact.</Link></button>
                 </div>
             </div>*/}
+            <div className="home_image"></div>
             <div className="about-div" id="about">
                 <h1 className="section-header">About Me:</h1>
                 <p className="aboutSection"> Hi - My name is Saige, welcome to my online portfolio.  </p>
                 {/* <p className="section-content">{aboutMessage} <Link className="in-text-link" to="contact" smooth={true}>Reach out</Link> to customize yours today!</p> */}
                 <hr/>
-                {/* <p className="section-content">{missionMessage} Click <a className="in-text-link" href="https://www.nrdc.org/" target="_blank">here</a> to learn more about the NRDC and it's mission!</p> */}
             </div>
-            <div className="paralax-image-2"></div>
+            <hr/>
+            {/* <div className="paralax-image-2"></div> */}
             <div className="projects-div" id="projects">
-                <h1 className="section-header">projects.</h1>
+                <h1 className="section-header">Projects:</h1>
                 <div className="projects-grid">
-                    <div className="project-image-area" onClick={() => handleProjectSelect('spaceman')}>
-                        <p className="project-image-title">Space Man</p>
-                        <img className="project-image" id="space-man" src={spaceMan} alt="spaceman"/>
+                    <div className="project-image-area" onClick={() => handleProjectSelect('newborn_warmer')}>
+                        <p className="project-image-title">Newborn Warmer</p>
+                        <img className="project-image" id="newborn_warmer" src={spaceMan} alt="newborn warmer"/>
                     </div>
                     <div className="project-image-area" onClick={() => handleProjectSelect('deepsea')}>
                         <p className="project-image-title">Deep Sea</p>
@@ -63,18 +64,69 @@ export const Home = withRouter((props) =>{
                         <p className="project-image-title">Kicks in Orbit</p>
                         <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
                     </div>
+                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                        <p className="project-image-title">Kicks in Orbit</p>
+                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
+                    </div>
+                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                        <p className="project-image-title">Kicks in Orbit</p>
+                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
+                    </div>
+                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                        <p className="project-image-title">Kicks in Orbit</p>
+                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
+                    </div>
+                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                        <p className="project-image-title">Kicks in Orbit</p>
+                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
+                    </div>
                 </div>
             </div>
+            <hr/>
+            <div className="research-div" id="research">
+                <h1 className="section-header">Research:</h1>
+                <div className="research-grid">
+                    <div className="research-image-area" onClick={() => handleProjectSelect('Neonatal Hypothermia in LRS')}>
+                        <p className="research-image-title">Neonatal Hypothermia in LRS</p>
+                        <img className="research-image" id="goyalmara-newborn" src={goyalmaranewborn} alt="goyalmara-newborn"/>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div className="about-div">
+                <h1 className="section-header">Skills and Education:</h1>
+                    <h2 className="section-subheader">Duke University || Class of 2020</h2>
+                    <ul className="aboutSection">
+                        <li>BSE - Biomedical Engineering</li>
+                        <li>Certificate - Global Development Engineering</li>
+                    </ul>    
+                    <h2 className="section-subheader">Skills</h2>
+                    <ul className="aboutSection">
+                        <li>Software Languages: Python, React, HTML, CSS, MATLAB, Arduino (Java/C)</li>
+                        <li>Design Software: Fusion360 CAD, Altium PCB Designer, Mural, Meshmixer, Luban</li>
+                        <li>Operating Systems: Mac OS X, Windows, Adobe Creative Suite </li>
+                        <li>Languages: French (proficient), Swahili (basic)</li>
+                    </ul>
+                </div>
             <div className="paralax-image-3"></div>
             <div className="contact-div" id="contact">
-                <h1 className="section-header">contact.</h1>
-                <h2 className="contact-blurb">Reach out via email or instagram to customize your skis/board today!</h2>
+                <h1 className="section-header">Contact:</h1>
                 <div className="contact-info">
-                    <p className="contact-info-p">Email:<a className="email-link" href={`mailto: skionskiart@gmail.com`}>skionskiart@gmail.com</a></p>
-                    <p className="contact-info-p">Instagram:<a className="instagram-link" href="https://www.instagram.com/skionskiart" target="_blank">@skionskiart</a></p>
-                    <p className="contact-info-p"><a className="stickers-order-form" href="https://forms.gle/Uhvib7Ct3ZYXPZTE9" target="_blank">Click here to get your Ski-On Ski-Art stickers!</a></p>
+                    <button className="contact-buttons">
+                        <img src="../../images/email-logo.png" className="contact-logo"></img>
+                        <a href={`mailto: saige.sunier@gmail.com`}>saige.sunier@gmail.com</a>
+                    </button>
+                    <button className="contact-buttons">
+                        <img src="../../images/linkedin-logo.png" className="contact-logo"></img>
+                        <a href="https://www.linkedin.com/in/saige-sunier-8a7ba4151/">linkedin/saigesunier</a>
+                    </button>
+                    <button className="contact-buttons">
+                        <img src="../../images/resume-logo.png" className="contact-logo"></img>
+                        <a href="../../images/logo-blk.PNG" download>download resume</a>
+                    </button>
                 </div>
             </div>
+            
         </div>
     )
 });
