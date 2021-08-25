@@ -18,7 +18,8 @@ export const Home = withRouter((props) =>{
     const goyalmaranewborn='./images/goyalmara.png';
 
     const handleProjectSelect = (projectId:string) =>{
-        props.history.push(`${Routes.projects}?projectid=${projectId}`);
+        // props.history.push(`${Routes.projects}?projectid=${projectId}`);
+        props.history.push(`${Routes.cystoscope}`);
     }
     useEffect(()=>{
         if(urlHash.length > 0){

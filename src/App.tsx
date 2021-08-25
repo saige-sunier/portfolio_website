@@ -5,6 +5,7 @@ import './App.css';
 import { Home } from './pages/home/home';
 import { Projects } from './pages/projects/projects';
 import { Header } from './partials/header';
+import { Cystoscope } from './pages/projects/cystoscope';
 import { Routes } from './routes';
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
         <Route path={Routes.projects}>
           <Header/>
           <Projects/>
+         </Route> 
+        <Route path={Routes.cystoscope}>
+          <Header/>
+          <Cystoscope/>
         </Route>
       </div>
     </Router>
