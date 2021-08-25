@@ -4,7 +4,6 @@ import {Route} from 'react-router-dom';
 import './App.css';
 import { Home } from './pages/home/home';
 import { Projects } from './pages/projects/projects';
-import { Footer } from './partials/footer';
 import { Header } from './partials/header';
 import { Routes } from './routes';
 
@@ -15,7 +14,6 @@ function App() {
         <Route path={'/'} exact>
           <Header/>
           <Home/>
-          <Footer/>
         </Route>
         <Route path={Routes.homepage}>
           <Redirect to={Routes.home} />
@@ -23,12 +21,10 @@ function App() {
         <Route path={Routes.home} exact>
           <Header/>
           <Home/>
-          <Footer/>
         </Route>
         <Route path={Routes.projects}>
           <Header/>
           <Projects/>
-          <Footer/>
         </Route>
       </div>
     </Router>

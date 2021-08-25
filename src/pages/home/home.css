@@ -68,14 +68,18 @@
   }
 } */
 
-/*HOME PAGE IMAGE STYLING*/
-.home_image {
-  min-height: 30rem;
-  background-image: url(../../images/TZ-heaterRepair.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+
+/*GENERAL STYLINE */
+.section-header {
+  font-size: 30px;
+  font-family: "Verdana";
+  text-align: center;
+}
+hr {
+  width: 10%;
+  height: 3px;
+  background: black;
+  border: none;
 }
 
 /*ABOUT DIV STYLING*/
@@ -83,46 +87,59 @@
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  height: 500px;
+  background-image: url(../../images/TZ-workshop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
 }
-
-.section-header {
-  font-size: 30px;
-  font-family: "Verdana";
-  text-align: center;
+.about-box-area {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 1rem; 
+  height: 820px;
 }
-.about-div p {
-  font-size: 20px;
+.about-box {
+  position: sticky;
+  top: 8rem;
+  bottom: 2rem;
   font-family: "Verdana";
   text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px #000000;
 }
-
+.about-box h3 {
+  font-size: 25px;
+}
+.about-box p {
+  font-size: 18px;
+}
+.about-div2{
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 38rem;
+}
 .section-subheader {
   font-size: 20px;
   font-family: "Verdana";
+  text-align: center;
+}
+.about-div2 ul{
   text-align: left;
 }
-
-/* .about-div ul {
-  font-size: 15px;
-  font-family: "Verdana";
-  text-align: left;
-} */
-
-.about-div li {
+.about-div2 li {
   font-size: 15px;
   font-family: "Verdana";
   color:rgb(58, 54, 54);
   text-align: left;
   margin: 10px 0;
-}
-
-.paralax-image-2 {
-  min-height: 40rem;
-  background-image: url(../../images/saigeBkgrnd2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 /*PROJECTS DIV STYLING*/
@@ -148,7 +165,6 @@
   position: relative;
   text-align: center;
   display: flex;
-  padding-bottom: 1rem;
 }
 .project-image-title {
   flex: 1 1 21%;
@@ -281,12 +297,7 @@ a:hover {
   opacity: 0.2;
 }
 
-hr {
-  width: 10%;
-  height: 3px;
-  background: black;
-  border: none;
-}
+
 @media only screen and (max-width: 479px) {
   .header-div {
     min-height: 45vh;
