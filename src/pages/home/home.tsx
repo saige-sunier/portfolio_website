@@ -6,7 +6,7 @@ import { Routes } from '../../routes';
 
 export const Home = withRouter((props) =>{
     const urlHash = props.history.location.hash;
-    const aboutMessage:string = 'My passion is social impact design. I love the challenge of designing solutions for low-resource settings. I have a background in biomedical engineering and global health and I combine these skills to improve healthcare in the places that need it most. Explore below to read more about my work!';
+    const aboutMessage:string = 'My passion is social impact design. I love the challenge of designing solutions for low-resource settings. I have a background in biomedical engineering and global health and I combine these skills to improve healthcare in the places that need it most. Explore below to read more about me and my work!';
 
     const spaceMan = './images/spaceMan.JPG';
     const deepSea = './images/deepSea.JPG';
