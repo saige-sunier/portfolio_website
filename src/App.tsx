@@ -6,6 +6,8 @@ import { Home } from './pages/home/home';
 import { Projects } from './pages/projects/projects';
 import { Header } from './partials/header';
 import { Cystoscope } from './pages/projects/cystoscope';
+import { Ventilator } from './pages/projects/ventilator'
+import { Tengeru } from './pages/projects/tengeru';
 import { Routes } from './routes';
 
 function App() {
@@ -31,6 +33,14 @@ function App() {
           <Header/>
           <Cystoscope/>
         </Route>
+        <Route path={Routes.ventilator}>
+          <Header/>
+          <Ventilator/>
+          </Route>
+        <Route path={Routes.tengeru}>
+          <Header/>
+          <Tengeru/>
+          </Route>
       </div>
     </Router>
   );

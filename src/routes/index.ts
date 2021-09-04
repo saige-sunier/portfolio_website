@@ -2,5 +2,7 @@ export enum Routes {
     home = '/home',
     projects='/projects',
     cystoscope='/cystocope',
-    homepage='/skionskiart'
+    ventilator='/ventilator',
+    tengeru="/tengeru",
+    homepage='/saigesunier'
 }

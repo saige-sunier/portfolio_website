@@ -7,11 +7,17 @@ import { useEffect } from 'react';
 export const Cystoscope = withRouter((props) =>{
 
     const cystoscope='./images/cystoscope-cover.png'
+    const ventilator='./images/ventilator-cover.png';
     const lightbulb='./images/lightbulb.png'
     const sketching='./images/cysto-drawing.png'
     const scales='./images/scales.png'
     const fusionLogo='./images/fusion-logo.png'
     const cystoVideo="./videos/cystoscope-components.mp4"
+
+    const handleSideNavClick = (projectRoute:Routes) =>{
+        props.history.push(projectRoute);
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
 
     return (
         <div className="cystoscope-div" id="cystoscope">
@@ -20,9 +26,9 @@ export const Cystoscope = withRouter((props) =>{
             </div>
             <div className="project-page-sideNav">
                     <p className="project-nav-title">More Projects:</p>
-                    <img className="project-nav-image" src={cystoscope}></img>
-                    <img className="project-nav-image" src={cystoscope}></img>
-                    <img className="project-nav-image" src={cystoscope}></img>
+                    <img onClick={() => handleSideNavClick(Routes.cystoscope)} src={cystoscope} className="project-nav-image"></img>
+                    <img onClick={() => handleSideNavClick(Routes.ventilator)} src={ventilator} className="project-nav-image"></img>
+                    <img onClick={() => handleSideNavClick(Routes.cystoscope)} src={cystoscope} className="project-nav-image"></img>
                     <img className="project-nav-image" src={cystoscope}></img>
                     <img className="project-nav-image" src={cystoscope}></img>
                     <img className="project-nav-image" src={cystoscope}></img> 

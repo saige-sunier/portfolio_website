@@ -6,7 +6,7 @@ import { Routes } from '../../routes';
 
 export const Home = withRouter((props) =>{
     const urlHash = props.history.location.hash;
-    const aboutMessage:string = 'My passion is social impact design. I love the challenge of designing solutions for low-resource settings. I have a background in biomedical engineering and global health and I combine these skills to improve healthcare in the places that need it most. Explore below to read more about me and my work!';
+    const aboutMessage:string = 'My passion is social impact design. I love the challenge of designing solutions for low-resource settings. I have a background in biomedical engineering and global health. I combine these skills to improve healthcare in the places that need it most. Explore below to read more about me and my work!';
 
     const spaceMan = './images/spaceMan.JPG';
     const deepSea = './images/deepSea.JPG';
@@ -17,9 +17,9 @@ export const Home = withRouter((props) =>{
     const TZbiomed='./images/TZ-biomedShed.png'
     const goyalmaranewborn='./images/goyalmara.png';
 
-    const handleProjectSelect = (projectId:string) =>{
-        // props.history.push(`${Routes.projects}?projectid=${projectId}`);
-        props.history.push(`${Routes.cystoscope}`);
+    const handleProjectSelect = (projectRoute:Routes) =>{
+        props.history.push(projectRoute);
+        window.scrollTo({top: 0, behavior: 'smooth'});
     }
     useEffect(()=>{
         if(urlHash.length > 0){
@@ -55,35 +55,35 @@ export const Home = withRouter((props) =>{
             <div className="projects-div" id="projects">
                 <h1 className="section-header">Projects:</h1>
                 <div className="projects-grid">
-                    <div className="project-image-area" onClick={() => handleProjectSelect('EmergencyVentilator')}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.ventilator)}>
                         <p className="project-image-title">Emergency Ventilator</p>
                         <img className="project-image" id="ventilator" src={ventilator} alt="ventilator"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect('cystoscope')}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Cystoscope</p>
                         <img className="project-image" id="cystoscope" src={cystoscope} alt="cystoscope"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect('TZ-biomed')}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.tengeru)}>
                         <p className="project-image-title">Biomed at Tengeru Hospital</p>
-                        <img className="project-image" id="TZ-biomed" src={kicksinorbit} alt="TZ-biomed"/>
+                        <img className="project-image" id="TZbiomed" src={TZbiomed} alt="TZbiomed"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Kicks in Orbit</p>
                         <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Kicks in Orbit</p>
                         <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Kicks in Orbit</p>
                         <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Kicks in Orbit</p>
                         <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Kicks in Orbit</p>
                         <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
                     </div>
@@ -93,7 +93,7 @@ export const Home = withRouter((props) =>{
             <div className="research-div" id="research">
                 <h1 className="section-header">Research:</h1>
                 <div className="research-grid">
-                    <div className="research-image-area" onClick={() => handleProjectSelect('Neonatal Hypothermia in LRS')}>
+                    <div className="research-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="research-image-title">Neonatal Hypothermia in LRS</p>
                         <img className="research-image" id="goyalmara-newborn" src={goyalmaranewborn} alt="goyalmara-newborn"/>
                     </div>

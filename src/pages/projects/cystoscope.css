@@ -1,8 +1,9 @@
 /* GENERAL */
 .cystoscope-div{
     position: relative;
-    top: -3rem;
+    top: -2.5rem;
     font-family: 'Courier New', monospace;
+    z-index: 5;
 }
 .subheader{
     font-size: 30px;
@@ -42,7 +43,7 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .project-title{
     position: relative;
@@ -75,11 +76,11 @@
     font-weight: bold;
     
 }
-
 /* STORY SECTION */
 .intro-div p{
     font-size: 18px;
     text-align: left;
+    padding-bottom: 1rem;
 }
 /* DESIGN PROCESS SECTION */
 .process-grid{
@@ -88,6 +89,7 @@
     grid-auto-flow: column; 
     margin: 0 0 1rem 0;
     height: 16rem;
+    padding-bottom: 1rem;
 }
 .process-block-area {
     position: relative;
@@ -130,7 +132,6 @@
 }
 .process-title {
     color: black;
-    font-family: "Verdana";
     font-size: 25px;
   }
 .process-description-sm {

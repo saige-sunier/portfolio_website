@@ -70,9 +70,13 @@
 
 
 /*GENERAL STYLINE */
+.home-page-div {
+  z-index: 5;
+  font-family: 'Courier New', monospace;
+}
+
 .section-header {
   font-size: 30px;
-  font-family: "Verdana";
   text-align: center;
 }
 hr {
@@ -105,7 +109,6 @@ hr {
   position: sticky;
   top: 8.5rem;
   bottom: 1.5rem;
-  font-family: "Verdana";
   text-align: left;
   margin-top: 20px;
   margin-left: 30px;
@@ -128,7 +131,6 @@ hr {
 }
 .section-subheader {
   font-size: 20px;
-  font-family: "Verdana";
   text-align: center;
 }
 .about-div2 ul{
@@ -136,7 +138,6 @@ hr {
 }
 .about-div2 li {
   font-size: 15px;
-  font-family: "Verdana";
   color:rgb(58, 54, 54);
   text-align: left;
   margin: 10px 0;
@@ -175,8 +176,7 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "Verdana";
-  font-size: 45px;
+  font-size: 3vw;
 }
 .project-image-area:hover {
   cursor: pointer;
@@ -229,7 +229,6 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "Verdana";
   font-size: 45px;
 }
 .research-image-area:hover {
@@ -274,7 +273,6 @@ hr {
   margin-right: 0rem;
   background: none;
   border: none;
-  font-family: "Verdana";
   transition: 0.3s;
   border: none !important;
   outline: none !important;
