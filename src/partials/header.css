@@ -4,23 +4,31 @@
     top: 0;
     position: sticky;
     background-color:rgb(182, 202, 223);
-    z-index: 2;
+    z-index: 10;
     overflow: visible;
   }
 
-.header-div h4,
+/* .header-div h4,
 .header-div .header-nav-menu,
 .header-div p {
     z-index: 2;
-  }
+  } */
 
 .header-title {
-    font-size: 2.5vw;
+    font-size: 2.3vw !important;
     font-family: "Verdana" !important;
     margin-bottom: 0;
     margin-top: 1.5rem;
     margin-left: 6.5rem;
+    margin-right: 40vw;
     text-align: left;
+    z-index: 10;
+}
+
+.header-title:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.25;
 }
 
 .home-logo {
@@ -38,26 +46,24 @@
   }
 
 .header-nav-menu {
-    margin-left: 30rem;
-    z-index: 999;
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end; */
+    position: sticky;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
 }
 
 .header-nav-button {
-    margin-left: 1rem;
-    margin-right: 0rem;
+    /* margin-left: 1vw; */
     margin-top: 2rem;
-    font-size: 20px;
+    font-size: 1.4vw !important;
     background: none;
     border: none;
-    font-family: "Verdana";
+    font-family: "Verdana" !important;
     transition: 0.3s;
     border: none !important;
     outline: none !important;
     text-align:justify;
-    z-index: 999;
 }
 .header-nav-button:hover {
     cursor: pointer;
@@ -68,18 +74,26 @@
     display: none;
 }
 
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1200px) {
+.header-title{
+    margin-right: 35vw;
+}
+}
+
+@media screen and (max-width: 1090px) {
 .header-nav-menu {
     float: left;
     overflow: hidden;
+}
+.header-title{
+    margin-right: 60vw;
 }
 .dropbtn {
     display: block;
     background: transparent;
     position: relative;
     margin-top: 1rem;
-   /* margin-left: 6rem;
-    padding: 10px;  */
+    padding: 10px; 
     border: none;
     cursor: pointer;
 }
@@ -90,15 +104,17 @@
 }
 .dropdown {
     position: relative;
-    display: block;
+    display: inline-block;
 }
 .dropdown-content {
     display: none;
+    position: absolute;
     background-color: #f9f9f9;
     min-width: 135px;
+    z-index: 1;
 }
-.header-nav-button {
-    background-color:white;
+.header-nav-button-H {
+    background-color:rgb(139, 169, 180);
     padding: 5px 5px;
     margin: 10px 10px;
     position: relative;
@@ -108,6 +124,7 @@
  .dropbtn:hover{
     background: rgba(0, 0, 0, 0.6);
     opacity: 0.7;
+    display: block;
 } 
 .dropdown-content button:hover{
     display: block;
@@ -119,8 +136,6 @@
     position: relative;
     display: block;
 } */
-
-
 
 .dropdown:hover .dropdown-content {
     display: block;
