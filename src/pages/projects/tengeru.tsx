@@ -1,140 +1,223 @@
 import './tengeru.css'
-import {useLocation, withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { Routes } from '../../routes';
+import { isConstructorDeclaration } from 'typescript';
+
+
+// import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+// import 'react-slidedown/lib/slidedown.css';
+
+import React, { useState } from 'react';
+
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { rgbToHex, withStyles } from '@material-ui/core/styles';
+import MuiAccordion from '@material-ui/core/Accordion';
+import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
+import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
+import Typography from '@material-ui/core/Typography';
+
 
 export const Tengeru = withRouter((props) =>{
 
-    const cystoscope='./images/cystoscope-cover.png';
-    const ventilator='./images/ventilator-cover.png';
-    const TZBiomed='./images/TZ-biomedShed.png';
-    const TZcollage='./images/TZ-collage.png';
-    const TZpartition1='./images/TZ-OT_dividers.png';
-    const TZpartition2='./images/TZ-partitions2.png';
-    const TZpartition3='./images/TZ-partitions3.png';
-    const TZtengeruMap='./images/TZ-tengeruMap.png';
-
-    const spaceHeater='./images/TZ-spaceHeaters.png';
-    const fusionLogo='./images/fusion-logo.png';
-    const ventFullVideo="./videos/ventilator-full_animation.mp4";
-
-
+    const TZO2repair='./images/TZ-O2repair.jpg';
+    const TZworkCollage='./images/TZ-workCollage.png';
+    const TZMTbefore='./images/TZ-beforePartitions.png';
+    const TZdrillingWall='./images/TZ-drillingWall.png';
+    const TZworkshop2='./images/TZ-workshop2.png';
+    const TZpartitions='./images/TZ-partitionsGroup.png';
+    const TZmeruSummit='./images/TZ-meruSummit.JPG';
+ 
     const handleSideNavClick = (projectRoute:Routes) =>{
         props.history.push(projectRoute);
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
+    const [isActive, setIsActive] = useState(false);
+
+const Accordion = withStyles({
+    root: {
+      border: '1px solid rgba(0, 0, 0, .125)',
+      borderTop: 'none',
+      boxShadow: 'none',
+      '&:not(:last-child)': {
+        borderBottom: 0,
+      },
+      '&:before': {
+        display: 'none',
+      },
+      '&$expanded': {
+        margin: 'auto',
+      },
+    },
+    expanded: {},
+  })(MuiAccordion);
+  
+  const AccordionSummary = withStyles({
+    root: {
+      backgroundColor: 'rgb(182, 202, 223, 0.5)',
+      borderTop: '3px solid rgba(7, 53, 102)',
+      marginBottom: -1,
+      minHeight: 56,
+      '&$expanded': {
+        minHeight: 56,
+      },
+    },
+    content: {
+      '&$expanded': {
+        margin: '12px 0px',
+      },
+    },
+    expanded: {},
+  })(MuiAccordionSummary);
+
+  const AccordionDetails = withStyles((theme) => ({
+    root: {
+      padding: theme.spacing(1),
+    },
+  }))(MuiAccordionDetails);
+  
     return (
         <div className="tengeru-div" id="tengeru">
             <div className="header-block-div">
                 <h2 className="project-title">Biomedical Technician at Tengeru Hospital, Tanzania</h2> 
             </div>
-            <div className="project-page-sideNav">
-                    <p className="project-nav-title">More Projects:</p>
-                    <img onClick={() => handleSideNavClick(Routes.cystoscope)} src={cystoscope} className="project-nav-image"></img>
-                    <img onClick={() => handleSideNavClick(Routes.ventilator)} src={ventilator} className="project-nav-image"></img>
-                    <img onClick={() => handleSideNavClick(Routes.tengeru)} src={TZBiomed} className="project-nav-image"></img>
-                    <img className="project-nav-image" src={cystoscope}></img>
-                    <img className="project-nav-image" src={cystoscope}></img>
-                    <img className="project-nav-image" src={cystoscope}></img> 
-                    <img className="project-nav-image" src={cystoscope}></img>
-                    <img className="project-nav-image" src={cystoscope}></img>
-            </div>
             <div className="general-format">
-                <div className="TZ-intro-div">
-                    <h3 className="subheader">Story:</h3>
-                    <p>I spent the summer of 2019 in Tanzania repairing medical equipment in public hospitals as a biomedical technician for Engineering World Health. </p>
-                    <p>I trained with a group of 14 fellow engineers from around the world. We lived with local families and studied in a small town outside of Arusha. We learned how to repair medical devices and equipment that is commonly seen in hospitals across the country. After the first month of technical training and Swahili lessons, I moved to a small home in Machumba and began work at Tengeru Hospital where I spent the next month and a half working with a fellow student as the hospital's technicians.</p>
-                    <p>By the end of our time at Tengeru, we had repaired over 40 pieces of equipment. We tackled a variety of devices and improvement projects around the hospital. Repairs ranged from bloodpressure cuff patches and troubleshooting electrical issues to installing partitions in the emergency room and expanding the electrical capacity of the neonatal ward. Our goal was not only to repair equipment, but to establish long term improvements. I led several meetings with the entire hospital staff, teaching them how to maintain and prolong the lifespan of autoclaves, oxygen concentrators, and scales. </p>
-                    <p>This experience was incredibly formative for me. I have always been interested in global health but spending the summer living in Tanzania, immersing myself in the culture, and improving Tengeru Hospital's capabilities solidified my passion to pursue social impact as a career. I fell in love with the people and the work, but more importantly I fell in love with the challenge. I had to be creative, flexible, and develop solutions for the hospital by listening and learning from the staff.</p>
-                    <img className="TZcollage" src={TZcollage}></img>
+                <div className="TZbackground-div">
+                    <div className="TZbackground-content">
+                        <h3 className="TZsubheader">Background</h3>
+                        <p className="TZbackground-text">I spent the summer of 2019 in Tanzania repairing medical equipment in public hospitals as a biomedical technician for Engineering World Health. I spent the first month training with a group of 14 fellow engineers from around the world. We lived with local families and studied in a small town outside of Arusha, TZ. I learned how to repair medical devices and equipment that is commonly seen in hospitals across the country. After the first month of technical training and Swahili lessons, I moved to a small home in Machumba and began work at Tengeru Hospital where I spent the next month and a half working with a fellow student as the hospital's biomedical technicians.</p>
+                    </div>
+                    <img className="TZbackground-img" src={TZO2repair}></img>
                 </div>
-                <hr/>
-                <div className="TZprojects-div">
-                    <h3 className="subheader">Project Highlights:</h3>
-                    <div className="partitions-div">
-                        <h4 className="TZsubheader2">Partitions for the Minor Theatre</h4>
-                        <h4 className="TZsubheader3">Design Process</h4>
-                        <div className="TZprocess-grid">
-                            <div className="TZprocess-block-area">
-                                <div className="flip-block-inner">
-                                    <div className="flip-block-front">
-                                        <p className="TZprocess-title">Needs Finding</p>
-                                        <img className="TZprocess-image" id="tengeruMap" src={TZtengeruMap} alt="tengeruMap"/>
-                                    </div>
-                                    <div className="flip-block-back">
-                                        <p className="TZprocess-description-sm">We observered and conducted interviews with staff from each hospital ward. Our goal was to identify areas of need and work towards a long term solution.</p>
-                                        <p className="TZprocess-description-sm">The staff expressed various needs but with limited time and resources we had choose one project that we could successfully accomplish. We chose to work in the minor theatre where patients go for wound care and sutures.</p>
-                                        <p className="TZprocess-description-sm">Patients, with open wounds, are cared for without any separation between beds. Aside from patient comfort, the head of the ward expressed concerns about the spread of HIV from blood splatter.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="TZprocess-block-area">
-                                <div className="flip-block-inner">
-                                    <div className="flip-block-front">
-                                        <p className="TZprocess-title">Design Considerations</p>
-                                        <img className="TZprocess-image" id="lightbulb" src={TZBiomed} alt="lightbulb"/>
-                                    </div>
-                                    <div className="flip-block-back">
-                                        <p className="TZprocess-description-sm">Need: Partitions that create separation between patients. They must increase patient comfort and reduce HIV transmission through blood splatters.</p>
-                                        <p className="TZprocess-description-sm">Design Qualities:</p>
-                                        <ul className="TZprocess-description-list">
-                                            <li className="TZ-process-description-list">
-                                                Creates separation between 3 patient beds
-                                            </li>
-                                            <li className="TZ-process-description-list">
-                                                Can move curtains to the side when needed  
-                                            </li>
-                                            <li className="TZ-process-description-list">
-                                                Blood can easily be cleaned from the separators with bleach and a cloth
-                                            </li>
-                                            <li className="TZ-process-description-list">
-                                                Staff can easily move from patient to patient
-                                            </li>
-                                            <li className="TZ-process-description-list">
-                                                Can be constructed using local materials
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="TZprocess-block-area">
-                                <div className="flip-block-inner">
-                                    <div className="flip-block-front">
-                                        <p className="TZprocess-title">Materials & Capabilities</p>
-                                        <img className="TZprocess-image" id="lightbulb" src={TZBiomed} alt="lightbulb"/>
-                                    </div>
-                                    <div className="flip-block-back">
-                                        <p className="TZprocess-description-sm">For my design, I wanted to break free from the convensional cystoscope shape and play with some new ideas.</p>
-                                        <p className="TZprocess-description-sm">I looked to everyday objects for inspiration and considered objects that are comfortable to hold for long periods of time and easy-to-use.</p>
-                                        <p className="TZprocess-description-sm">X-Box Controllers.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="TZprocess-block-area">
-                                <div className="flip-block-inner">
-                                    <div className="flip-block-front">
-                                        <p className="TZprocess-title">Construction & Installation</p>
-                                        <img className="TZprocess-image" id="lightbulb" src={TZBiomed} alt="lightbulb"/>
-                                    </div>
-                                    <div className="flip-block-back">
-                                        <p className="TZprocess-description-sm">For my design, I wanted to break free from the convensional cystoscope shape and play with some new ideas.</p>
-                                        <p className="TZprocess-description-sm">I looked to everyday objects for inspiration and considered objects that are comfortable to hold for long periods of time and easy-to-use.</p>
-                                        <p className="TZprocess-description-sm">X-Box Controllers.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                        <div className="TZpartitions-results">
-                             <h4 className="TZsubheader3">Results</h4>
-                             <div className="TZpartitions-grid">
-                                 <img className="TZpartitions-img" id="partitions" src={TZpartition1} alt="partitions"/>
-                                 <img className="TZpartitions-imgT" id="partitions" src={TZpartition3} alt="partitions"/>
-                                 <img className="TZpartitions-img" id="partitions" src={TZpartition2} alt="partitions"/>
-                             </div>
-                            
-                        </div>
-                    </div>   
+                <div className="TZwork-div">
+                    <div className="TZwork-content">
+                        <h3 className="TZsubheader">Work</h3>
+                        <p className="TZwork-text">Tengeru Hospital  is a public, primary hospital located between Arusha and Moshi, the two cities in the area. During our time there we:</p>
+                        <ul className="TZwork-text-ul">
+                            <li><b>Repaired over 40 pieces of equipment</b> ranging from blood pressure cuffs and space heaters to oxygen concentrators, autoclaves, and centrifuges</li>
+                            <li><b>Expanded the electrical capacity of the neonatal ward.</b> The ward had been out of service for the past six months because the equipment was drawing too much power. We installed a second circuit to increase the power capacity and got the ward up and running again. </li>
+                            <li><b>Developed over 10 maintenance manuals</b> for various pieces of equipment around the hospital in Swahili and English </li>
+                            <li><b>Led multiple training sessions</b> to teach the hospital staff how to maintain equipment to increase device lifespan. </li>
+                            <li><b>Installed and implemented a digital library</b> that hosted hundreds of product manuals and engineering and medical textbooks. We hosted a training session with the entire hospital staff as well as individually trained staff appointed by the Head Matron. </li>
+                        </ul>
+                    </div>
+                    <img className="TZwork-img" src={TZworkCollage}></img>
                 </div> 
+                
+                <div className="TZpartitions-div">
+                    <div className="TZpartitions-intro">
+                        <h3 className="TZsubheader">Project Highlight - Partitions for the Minor Theatre</h3>
+                        <h3 className="TZsubheader3">Background</h3>
+                        <p className="TZpartitions-text">My partner and I wanted to make a lasting impact on the hospital. We wanted to work with the staff to develop a long-term solution to an ongoing problem. We observed  and interviewed staff from all hospital wards. Various needs were expressed but we had to consider our limited time and resources to ensure our project was feasible. We chose to improve the Minor Theatre.</p>
+                        <h3 className="TZsubheader3">Design Process</h3>
+                    </div>
+
+                    <div className="TZpartitions-grid">
+                        <div className="TZprocess-area">
+                            <div>
+                            <img className="TZprocess-img" src={TZMTbefore}></img>
+                            <Accordion className="accordion-div">
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header">
+                                    <Typography className="TZprocess-title">The Need</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                <Typography className="TZprocess-text">
+                                    <p>The Minor Theatre accepts patients with severe open wounds that can be treated without major surgery.</p>
+                                    <p>The ward had no dividers between the patient beds. Freddie, the head of the ward, discussed patient discomfort from watching others undergo painful suturing minutes before their own treatment would begin. He was also concerned about the spread of HIV. Blood splatter was common in this ward and they had no method of stopping blood from reaching other patient beds.</p>
+                                </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                             </div>
+                        </div>
+                       
+                        <div className="TZprocess-area">
+                            <img className="TZprocess-img" src={TZdrillingWall}></img>
+                            <div>
+                            
+                            <Accordion className="accordion-div">
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header">
+                                    <Typography className="TZprocess-title">Design Qualities</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                <Typography className="TZprocess-text">
+                                    <ul className="TZprocess-description-list">
+                                        <li className="TZ-process-description-list">
+                                            Creates separation between 3 patient beds
+                                        </li>
+                                        <li className="TZ-process-description-list">
+                                            Can move curtains to the side when needed  
+                                        </li>
+                                        <li className="TZ-process-description-list">
+                                            Blood can easily be cleaned from the separators with bleach and a cloth
+                                        </li>
+                                        <li className="TZ-process-description-list">
+                                            Staff can easily move from patient to patient
+                                        </li>
+                                        <li className="TZ-process-description-list">
+                                            Can be constructed using local materials
+                                        </li>
+                                    </ul>
+                                </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                            </div>
+                        </div>
+                        <div className="TZprocess-area">
+                            <img className="TZprocess-img" src={TZworkshop2}></img> 
+                            <div>
+                            <Accordion className="accordion-div">
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header">
+                                    <Typography className="TZprocess-title">Materials & Resources</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                <Typography className="TZprocess-text">
+                                    <p>Curtains:</p>
+                                    <p>The material needed to be waterproof. We asked the Head Matron for advice on where we could source the fabric needed. After hunting through the fabric markets in Arusha, we decided to order the material from Nairobi.</p>
+                                    <p>Metal Frame:</p>
+                                    <p>Lucky for us, there were several welders at the market near the hospital. With design sketches and our basic Swahili we successfully communicated what we needed and the pieces were ready a few days later.</p>
+                                    <p>Construction:</p>
+                                    <p>A few friends working at the hospital down the road had a drill that we were able to borrow for installing the rails and curtains.</p> 
+                                </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div className="TZresults-div">
+                        <h3 className="TZsubheader3">Results</h3>
+                        <img className="TZpartitions-img" src={TZpartitions}></img>
+
+                    </div>
+
+                    <div className="TZlessons-div">
+                        <div>
+                            <h3 className="TZsubheader">Lessons Learned</h3>
+                            <p className="TZlessons-text">
+                            Tanzania was an incredibly formative experience for me. I have always been interested in global health,  but during this summer <b>I fell in love with the challenge of solving problems for low-resource settings.</b> I had the rare opportunity to fully immerse myself in the culture, learn a new language, and work along side locals everyday to improve their hospital.</p>
+                            <p className="TZlessons-text">
+                                When we first got to Tengeru Hospital, very little staff admitted to having broken equipment, they did not trust us. <b>I embraced the importance of developing relationships and connections.</b> We had to work for the trust of the staff through small repairs and friendly visits. By our final weeks people would come find us and ask for help. The same relationships had to be developed in the market. We frequently had to purchase replacement parts and work with local welders. Our success in the market was a direct result of the time we spent getting to know the vendors and hearing their stories. </p>
+                            <p className="TZlessons-text">
+                                On the weekends I explored Tanzanian cities and towns and even summited Mt. Meru, the second tallest mountain in Tanzania. I gained a new sense of independence and confidence. I learned that <b>I thrive outside of my comfort zone, it is where I feel the most inspired and invigorated. </b> </p>
+                            <p className="TZlessons-text">
+                                I left Tanzania wanting to return and do more. There is an incredible space for design within low-resource settings. The environment poses its own set of challenges and needs that designers and manufacturers in high-resource settings overlook. <b>I see the intersection of design and global health as an incredibly exciting and innovative space full of opportunity to improve the world we live in. </b></p>
+                        </div>
+                        <img className="TZlessons-img" src={TZmeruSummit}></img>
+                    </div>
+
+
+                </div>
+                
             </div>
         </div>
     )
