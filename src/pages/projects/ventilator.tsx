@@ -2,10 +2,20 @@ import './ventilator.css'
 import {useLocation, withRouter} from 'react-router-dom';
 import { Routes } from '../../routes';
 
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { rgbToHex, withStyles } from '@material-ui/core/styles';
+import MuiAccordion from '@material-ui/core/Accordion';
+import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
+import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
+import Typography from '@material-ui/core/Typography';
+
 export const Ventilator = withRouter((props) =>{
 
     const cystoscope='./images/cystoscope-cover.png';
     const ventilator='./images/ventilator-cover.png';
+    const ventilatorRef='./images/ventilators-ref.jpeg';
+    const ventilation='./images/ventilation.png';
+    const printing='./images/3dprinting.png';
     const lightbulb='./images/lightbulb.png';
     const sketching='./images/cysto-drawing.png';
     const scales='./images/scales.png';
@@ -17,29 +27,148 @@ export const Ventilator = withRouter((props) =>{
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
+
+    const Accordion = withStyles({
+        root: {
+          border: '1px solid rgba(0, 0, 0, .125)',
+          borderTop: 'none',
+          boxShadow: 'none',
+          '&:not(:last-child)': {
+            borderBottom: 0,
+          },
+          '&:before': {
+            display: 'none',
+          },
+          '&$expanded': {
+            margin: 'auto',
+          },
+        },
+        expanded: {},
+      })(MuiAccordion);
+      
+      const AccordionSummary = withStyles({
+        root: {
+          backgroundColor: 'rgb(182, 202, 223, 0.5)',
+          borderTop: '3px solid rgba(7, 53, 102)',
+          marginBottom: -1,
+          minHeight: 56,
+          '&$expanded': {
+            minHeight: 56,
+          },
+        },
+        content: {
+          '&$expanded': {
+            margin: '12px 0px',
+          },
+        },
+        expanded: {},
+      })(MuiAccordionSummary);
+    
+      const AccordionDetails = withStyles((theme) => ({
+        root: {
+          padding: theme.spacing(1),
+        },
+      }))(MuiAccordionDetails);
+      
+
     return (
         <div className="ventilator-div" id="ventilator">
             <div className="header-block-div">
-                <h2 className="project-title">Emergency Ventilator</h2>
-            </div>
-            <div className="project-page-sideNav">
-                    <p className="project-nav-title">More Projects:</p>
-                    <img onClick={() => handleSideNavClick(Routes.cystoscope)} src={cystoscope} className="project-nav-image"></img>
-                    <img onClick={() => handleSideNavClick(Routes.ventilator)} src={ventilator} className="project-nav-image"></img>
-                    <img onClick={() => handleSideNavClick(Routes.cystoscope)} src={cystoscope} className="project-nav-image"></img>
-                    <img className="project-nav-image" src={cystoscope}></img>
-                    <img className="project-nav-image" src={cystoscope}></img>
-                    <img className="project-nav-image" src={cystoscope}></img> 
+                <h2 className="CADproject-title">Advanced Design and Manufacturing: Emergency Ventilator</h2>
             </div>
             <div className="general-format">
-                <div className="Vent-intro-div">
-                    <h3 className="subheader">Story:</h3>
-                    <p>When Covid-19 closed down universities in the spring of 2020, my design and manufacturing professor decided to change our final project. We were asked to design a product that would address one of the many healthcare related shortages. I chose to design a low-cost, easy to construct ventilator. I chose to combine 3D printed parts with components that can be found in common stores and hospitals.</p>
-                    <p>Although I was unable to create physical prototypes because campus was closed, I was able to generate a design concept. </p>
+                <div className="CADintro-div">
+                    <div className="CADintro-content">
+                        <h3 className="CADsubheader">Background</h3>
+                            <p className="CADintro-text">When Covid-19 hit, it was my senior year. Instead of following the original syllabus, my professors asked us to consider the current equipment shortages that hospitals were experiencing and to design a product that could be used in place of common equipment.</p>
+                            <p className="CADintro-text">Hospitals were experiencing an extreme shortage in ventilators. A typical hospital-grade ventilator cost between $25,000 and $50,000 and can take up to XX months to  manufacture and deliver. A cost effective, easy to assemble ventilator could function in place of the typical ventilator. </p>
+                            <p className="CADintro-text">My goal was to design a product that cost only the fraction of the price of a hospital-grade ventilator, and could be used as a substitute when a ventilator was not available.</p>
+                        </div>
+                    <div className="CADintro-img-div">
+                        <img className="CADintro-img" src={ventilatorRef}></img>
+                        <p className="CADimg_description">Rigid cystoscope used to perform endoscopies.</p>
+                    </div>
                 </div>
-                <hr/>
                 <div className="process-div">
-                    <h3 className="subheader">Design Process:</h3>
+                    <h3 className="CADsubheader">Design Process</h3>
+                    
+                    <div className="TZpartitions-grid">
+                        <div className="TZprocess-area">
+                            <div>
+                            <img className="TZprocess-img" src={ventilation}></img>
+                            <Accordion className="accordion-div">
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header">
+                                    <Typography className="TZprocess-title">The Need</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                <Typography className="TZprocess-text">
+                                    <p>Hospitals that are experiencing ventilator shortages need a way to supply oxygen to patients who need assistance breathing.</p>
+                                    <p>The product does not need to provide all of the support that a hospital-grade ventilator can. It needs to be a fast solution that can fill the need gap while manufacturers and supply chains catch up with demand.</p>
+                                </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                             </div>
+                        </div>
+                       
+                        <div className="TZprocess-area">
+                            <img className="TZprocess-img" src={ventilatorRef}></img>
+                            <div>
+                            
+                            <Accordion className="accordion-div">
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header">
+                                    <Typography className="TZprocess-title">Design Qualities</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                <Typography className="TZprocess-text">
+                                    <ul className="TZprocess-description-list">
+                                        <li className="TZ-process-description-list">
+                                            Can be constructed with materials that are easy to access
+                                        </li>
+                                        <li className="TZ-process-description-list">
+                                            Provides regulated breathing support  
+                                        </li>
+                                        <li className="TZ-process-description-list">
+                                            Compatible with equipment already in hospitals 
+                                        </li>
+                                        <li className="TZ-process-description-list">
+                                            Easy to use after minimal training 
+                                        </li>
+                                    </ul>
+                                </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                            </div>
+                        </div>
+                        <div className="TZprocess-area">
+                            <img className="TZprocess-img" src={printing}></img> 
+                            <div>
+                            <Accordion className="accordion-div">
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header">
+                                    <Typography className="TZprocess-title">Materials & Resources</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                <Typography className="TZprocess-text">
+                                    <p>3D printers were rapidly recognized as a resource to be tapped into for rapidly producing equipment. I decided to use 3D printing as the main method for producing specialized parts.</p>
+                                    <p>Bag-valve masks are used for manual ventilation. Manual ventilation can assist patients in breathing when ventilators are not available.</p>
+                                </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                     <div className="process-grid">
                         <div className="process-block-area">
                             <div className="flip-block-inner">

@@ -1,16 +1,18 @@
 /* GENERAL */
 .ventilator-div{
     position: relative;
-    top: -3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* top: -3rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
-.subheader{
-    font-size: 30px;
+.CADsubheader{
+    font-size: 2vw;
     text-align: left;
+    margin-left: 4vw;
 }
-.subheader2{
-    font-size: 20px;
-    text-align: left;
+.CADimg_description{
+    font-size: 12px;
+    text-align: center;
+    color:slategrey;
 }
 .general-format{
     padding-left: 2rem;
@@ -25,7 +27,7 @@
 /* HEADER IMAGE SECTION */
 .header-block-div{
     position: relative;
-    height: 55vh;
+    height: 55vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -33,66 +35,67 @@
 }
 .ventilator-div .header-block-div:before{
     content: "";
-    background-image: url(../../images/ventilator-cover.png);
+    background-image: url(../../images/VentilatorV2-cover.jpg);
     background-size: cover;
     position: absolute;
-    background-repeat: repeat;
-    background-position: 50% 15%;
-    background-size: 35%;
+    background-repeat: none;
+    background-position: -20% 15%;
+    background-size: 100%;
     background-attachment: fixed;
     opacity: 0.7;
     background-color:darkgrey;
-    top: 0px;
+    top: -10px;
     bottom: 0px;
     left: 0px;
     right: 0px;
     opacity: 0.5;
 }
-.project-title{
+.CADproject-title{
     position: relative;
     color: black;
-    font-size: 10vh;
-    text-align: center;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 30vw;
+}
+
+/* BACKGROUND SECTION */
+.CADintro-div{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
     padding-top: 1rem;
 }
-/* SIDE NAVBAR */
-.project-nav-image {
-    width: 20vh;
-    box-shadow: 0px 0px 10px 1px #535353;
-    margin: 1rem;
-    transition: 0.25s;
-  }
-.project-nav-image:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-.project-page-sideNav {
-    display: flex;
-    float: left;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
-.project-nav-title{
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-/* STORY SECTION */
-.Vent-intro-div p{
-    font-size: 18px;
+.CADintro-text{
+    font-size: 15px !important;
     text-align: left;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 2vw;
 }
+.CADintro-img-div{
+    display: grid;
+    width: 100rem;
+    grid-auto-flow: row;
+    padding-right: 4vw;
+}
+.CADintro-img{
+    max-width: 100%;
+    height: auto;
+    padding-top: 4vw;
+}
+
 /* DESIGN PROCESS SECTION */
 .process-grid{
     display: grid;
     gap: 1rem;
     grid-auto-flow: column; 
     margin: 0 0 1rem 0;
-    height: 16rem;
+    height: 14rem;
     padding-bottom: 1rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 .process-block-area {
     position: relative;
@@ -148,6 +151,51 @@
     color: white;
     text-align: center;
     padding: 0px 20px;
+}
+
+.TZpartitions-grid{
+    display: grid;
+    gap: 4rem;
+    grid-auto-flow: column; 
+    margin: 0 0 0.2rem 0;
+    /* height: 20rem; */
+    padding-bottom: 1rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.accordion-div{
+    position: absolute;
+    top: -16%;
+    background-color: rgb(182, 202, 223, 0.5) !important;
+}
+.TZprocess-area{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.TZprocess-title{
+    position: relative;
+    left: 50%;
+    /* top: 10%; */
+    padding-top: 0px;
+    transform: translate(-45%, -15%);
+    color: black;
+    font-size: 18px !important;
+    width: 100%;
+}
+.TZprocess-img{
+    display: block;
+    max-width: 23vw;
+    margin: auto;
+    padding-top: 10px;
+}
+.TZprocess-text{
+    position: relative !important;
+    text-align: left;
+    color: black;
+    font-size: 14px !important;
+    /* background-color:rgb(192, 188, 188); */
 }
 
 /* DESIGN DESCRIPTION SECTION */
