@@ -91,6 +91,7 @@ export const Cystoscope = withRouter((props) =>{
                         </div>
                     </div>
                     <div className="sketches-div">
+                        <h4 className="CADsubheader2">Design Sketches</h4>
                         <div className="process-sketches">
                             <img className="process-sketches-img" src={cystoSketches}></img>
                         </div>

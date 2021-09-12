@@ -32,7 +32,7 @@
 /* HEADER IMAGE SECTION */
 .header-block-div{
     position: relative;
-    height: 55vh;
+    height: 40vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -79,7 +79,9 @@
 .TZbackground-img{
     width: 40%;
     height: 40%;
-    padding-top: 3vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 2vw;
     padding-left: 2vw;
     padding-right: 4vw;
 }
@@ -107,6 +109,8 @@
 .TZwork-img{
     width: 50%;
     height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
     padding-top: 6.5vw;
     padding-left: 2vw;
     padding-right: 4vw;
@@ -191,9 +195,11 @@
     padding-right: 2vw;
 }
 .TZlessons-img{
-    width: 40%;
-    height: 40%;
-    padding-top: 8vw;
+    width: 42%;
+    height: 42%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 4vw;
     padding-left: 2vw;
     padding-right: 4vw;
 }

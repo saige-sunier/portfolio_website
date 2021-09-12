@@ -8,6 +8,13 @@
     font-size: 2vw;
     text-align: left;
     margin-left: 4vw;
+    margin-right: 4vw;
+}
+.CADsubheader2{
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 .CADimg_description{
     font-size: 12px;
@@ -27,7 +34,7 @@
 /* HEADER IMAGE SECTION */
 .header-block-div{
     position: relative;
-    height: 55vw;
+    height: 40vw !important;
     width: 100%;
     display: flex;
     align-items: center;
@@ -38,8 +45,9 @@
     background-image: url(../../images/VentilatorV2-cover.jpg);
     background-size: cover;
     position: absolute;
+    transform: scaleX(-1);
     background-repeat: none;
-    background-position: -20% 15%;
+    background-position: -60% 15%;
     background-size: 100%;
     background-attachment: fixed;
     opacity: 0.7;
@@ -83,6 +91,8 @@
 .CADintro-img{
     max-width: 100%;
     height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     padding-top: 4vw;
 }
 
@@ -153,7 +163,7 @@
     padding: 0px 20px;
 }
 
-.TZpartitions-grid{
+.partitions-grid{
     display: grid;
     gap: 4rem;
     grid-auto-flow: column; 
@@ -169,12 +179,12 @@
     top: -16%;
     background-color: rgb(182, 202, 223, 0.5) !important;
 }
-.TZprocess-area{
+.process-area{
     position: relative;
     width: 100%;
     height: 100%;
 }
-.TZprocess-title{
+.process-title{
     position: relative;
     left: 50%;
     /* top: 10%; */
@@ -184,13 +194,13 @@
     font-size: 18px !important;
     width: 100%;
 }
-.TZprocess-img{
+.process-img{
     display: block;
     max-width: 23vw;
     margin: auto;
     padding-top: 10px;
 }
-.TZprocess-text{
+.process-text{
     position: relative !important;
     text-align: left;
     color: black;
@@ -198,16 +208,36 @@
     /* background-color:rgb(192, 188, 188); */
 }
 
-/* DESIGN DESCRIPTION SECTION */
+/* FINAL DESIGN SECTION */
 .final-design{
     display: flex;
     flex-direction: row;
+}
+.final-design-description{
+    font-size: 15px;
+    text-align: left;
+    padding-left: 4vw;
+}
+.key-features-li a{
+    font-size: 14px;
+    color: blue;
+    padding: 0;
+    margin: 0;
 }
 .video-div{
     padding-left: 4rem;
 }
 .add-videos-div{
-    display: flex;
-    flex-direction: row;
-    margin: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column; 
+    margin: 0 0 1rem 0;
+    height: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.add-videos-div:hover{
+    cursor: pointer;
 }
