@@ -2,19 +2,22 @@
 .tengeru-div{
     position: relative;
     top: -3rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif !important;
 }
-.subheader{
-    font-size: 30px;
+.TZsubheader{
+    font-size: 2vw;
     text-align: left;
+    margin-left: 4vw;
 }
 .TZsubheader2{
     font-size: 22px;
-    text-align: center;
+    text-align: left;
+    margin-left: 4vw;
 }
 .TZsubheader3{
     font-size: 20px;
     text-align: left;
+    margin-left: 4vw;
 }
 .general-format{
     padding-left: 2rem;
@@ -29,7 +32,7 @@
 /* HEADER IMAGE SECTION */
 .header-block-div{
     position: relative;
-    height: 55vh;
+    height: 40vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -44,7 +47,6 @@
     background-position: 50% 60%;
     background-attachment: fixed;
     opacity: 0.9;
-    background-color:darkgrey;
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -56,120 +58,152 @@
     color: black;
     font-size: 3.5vw;
     text-align: left;
-    margin-left: 3vw;
+    margin-left: 4vw;
     margin-right: 40vw;
 }
-/* SIDE NAVBAR */
-.project-nav-image {
-    width: 20vh;
-    box-shadow: 0px 0px 10px 1px #535353;
-    margin: 1rem;
-    transition: 0.25s;
-  }
-.project-nav-image:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-.project-page-sideNav {
+/* BACKGROUND SECTION */
+.TZbackground-div{
     display: flex;
-    float: left;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 1rem;
 }
-.project-nav-title{
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-/* STORY SECTION */
-.TZ-intro-div p{
+.TZbackground-text {
     font-size: 15px !important;
     text-align: left;
-    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 2vw;
+}
+.TZbackground-img{
+    width: 40%;
+    height: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+/* WORK SECTION */
+.TZwork-div{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+.TZwork-text{
+    font-size: 15px !important;
+    text-align: left;
+    padding-bottom: 2px;
+    padding-left: 4vw;
+    padding-right: 2vw;
+}
+.TZwork-text-ul{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 6vw;
+}
+.TZwork-text-ul li{
+    padding-bottom: 2px;
+}
+.TZwork-img{
+    width: 50%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 6.5vw;
+    padding-left: 2vw;
+    padding-right: 4vw;
 }
 
-.TZcollage{
-    width: 80%;
-    padding-bottom: 1rem;
+/* PARTITIONS SECTION */
+.TZpartitions-div{
+    padding-top: 2vw;
 }
-
-/* PROJECT HIGHLIGHTS SECTION */
-.TZprojects-div{
-    padding-left: 2rem;
-    padding-right: 2rem;
+.TZpartitions-text{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
-/* Design Process Grid */
-.TZprocess-grid{
+.TZpartitions-grid{
     display: grid;
-    gap: 1rem;
+    gap: 4rem;
     grid-auto-flow: column; 
-    margin: 0 0 1rem 0;
-    height: 25rem;
+    margin: 0 0 0.2rem 0;
+    /* height: 20rem; */
+    padding-bottom: 1rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
-.TZprocess-block-area {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.flip-block-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-.TZprocess-block-area:hover .flip-block-inner{
-    transform: rotateX(180deg);
-}
-.flip-block-front, .flip-block-back{
+
+.accordion-div{
     position: absolute;
+    top: -16%;
+    background-color: rgb(182, 202, 223, 0.5) !important;
+}
+.TZprocess-area{
+    position: relative;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
-.flip-block-front{
-    background-color:none;
-    align-items: center;
-}
-.TZprocess-image{
-    display: block;
-    max-height: 70%;
-    width: auto;
-    margin: auto;
-}
-.flip-block-back{
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    opacity: 0.7;
-    transform: rotateX(180deg);
-}
-.TZprocess-title {
+.TZprocess-title{
+    position: relative;
+    left: 50%;
+    /* top: 10%; */
+    padding-top: 0px;
+    transform: translate(-45%, -15%);
     color: black;
-    font-size: 18px;
-  }
-.TZprocess-description-sm {
-    font-size: 0.95vw;
-    color: white;
+    font-size: 18px !important;
+    width: 100%;
+}
+.TZprocess-img{
+    display: block;
+    max-width: 23vw;
+    margin: auto;
+    padding-top: 10px;
+}
+.TZprocess-text{
+    position: relative !important;
     text-align: left;
-    padding: 0px 20px;
+    color: black;
+    font-size: 14px !important;
+    /* background-color:rgb(192, 188, 188); */
 }
-.process-description-m {
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    padding: 0px 20px;
+
+/* RESULTS DIV */
+
+.TZpartitions-img{
+    width: 90%;
+    height: 90%;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
-.TZprocess-description-list{
-    font-size: 0.95vw;
+/* LESSONS SECTION */
+.TZlessons-div{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+.TZlessons-text{
+    font-size: 15px !important;
     text-align: left;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-bottom: 2px;
+    padding-left: 4vw;
+    padding-right: 2vw;
 }
-/* Final Design */
+.TZlessons-img{
+    width: 42%;
+    height: 42%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 4vw;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+/* 
 .TZpartitions-results {
     padding-left: 20vh;
     margin-left: 2rem;
@@ -189,4 +223,4 @@
 .TZpartitions-imgT{
     width: 70%;
     padding-left: 2.5vw;
-}
+} */

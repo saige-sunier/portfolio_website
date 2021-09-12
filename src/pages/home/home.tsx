@@ -14,7 +14,7 @@ export const Home = withRouter((props) =>{
     const kicksinorbit='./images/kicksInOrbit.JPG';
     const ventilator='./images/ventilator-cover.png';
     const cystoscope='./images/cystoscope-cover.png'
-    const TZbiomed='./images/TZ-biomedShed.png'
+    const TZbiomed='./images/TZ-pulseOX_repair.png'
     const goyalmaranewborn='./images/goyalmara.png';
 
     const handleProjectSelect = (projectRoute:Routes) =>{
