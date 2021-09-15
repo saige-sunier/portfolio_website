@@ -22,8 +22,8 @@
     color:slategrey;
 }
 .general-format{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;
 }
 .ventilator-div hr {
     width: 20%;
@@ -61,10 +61,20 @@
 .CADproject-title{
     position: relative;
     color: black;
-    font-size: 3vw;
+    font-size: 3vw !important;
     text-align: left;
-    margin-left: 4vw;
-    margin-right: 30vw;
+    margin-left: 10vw !important;
+    margin-right: 50vw;
+    margin-top: 0px !important;
+}
+.CADproject-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw !important;
+    text-align: left;
+    margin-left: 10vw !important;
+    margin-right: 50vw;
+    margin-bottom: 10px !important;
 }
 
 /* BACKGROUND SECTION */
@@ -97,21 +107,65 @@
 }
 
 /* DESIGN PROCESS SECTION */
-.process-grid{
+
+.partitions-grid{
     display: grid;
-    gap: 1rem;
+    gap: 3rem;
     grid-auto-flow: column; 
-    margin: 0 0 1rem 0;
-    height: 14rem;
+    margin: 0 0 0.2rem 0;
     padding-bottom: 1rem;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
-.process-block-area {
+.process-area{
     position: relative;
+    max-width: 20vw !important;
     width: 100%;
     height: 100%;
 }
+.process-img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+}
+.accordion-div{
+    position: absolute;
+    bottom:0;
+    /* top: -16%; */
+    background-color: rgb(182, 202, 223, 0.5) !important;
+}
+.process-title{
+    position: relative;
+    left: 50%;
+    /* top: 10%; */
+    padding-top: 0px;
+    transform: translate(-45%, -15%);
+    color: black;
+    font-size: 16px !important;
+    width: 100%;
+}
+.process-text{
+    position: relative !important;
+    text-align: left;
+    color: black;
+    font-size: 14px !important;
+    /* background-color:rgb(192, 188, 188); */
+}
+.process-description-sm {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+}
+.process-description-m {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+}
+
 .flip-block-inner{
     position: relative;
     width: 100%;
@@ -134,79 +188,13 @@
     background-color:none;
     align-items: center;
 }
-.process-image{
-    display: block;
-    max-height: 60%;
-    width: auto;
-    margin: auto;
-}
 .flip-block-back{
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     opacity: 0.7;
     transform: rotateX(180deg);
 }
-.process-title {
-    color: black;
-    font-size: 25px;
-  }
-.process-description-sm {
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    padding: 0px 20px;
-}
-.process-description-m {
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    padding: 0px 20px;
-}
 
-.partitions-grid{
-    display: grid;
-    gap: 4rem;
-    grid-auto-flow: column; 
-    margin: 0 0 0.2rem 0;
-    /* height: 20rem; */
-    padding-bottom: 1rem;
-    padding-left: 8vw;
-    padding-right: 8vw;
-}
-
-.accordion-div{
-    position: absolute;
-    top: -16%;
-    background-color: rgb(182, 202, 223, 0.5) !important;
-}
-.process-area{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.process-title{
-    position: relative;
-    left: 50%;
-    /* top: 10%; */
-    padding-top: 0px;
-    transform: translate(-45%, -15%);
-    color: black;
-    font-size: 18px !important;
-    width: 100%;
-}
-.process-img{
-    display: block;
-    max-width: 23vw;
-    margin: auto;
-    padding-top: 10px;
-}
-.process-text{
-    position: relative !important;
-    text-align: left;
-    color: black;
-    font-size: 14px !important;
-    /* background-color:rgb(192, 188, 188); */
-}
 
 /* FINAL DESIGN SECTION */
 .final-design{

@@ -67,9 +67,9 @@ export const Home = withRouter((props) =>{
                         <p className="project-image-title">Biomed at Tengeru Hospital</p>
                         <img className="project-image" id="TZbiomed" src={TZbiomed} alt="TZbiomed"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.warmer_DP)}>
                         <p className="project-image-title">Kicks in Orbit</p>
-                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
+                        <img className="project-image" id="kicks-in-orbit" src={goyalmaranewborn} alt="kicksinorbit"/>
                     </div>
                     <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Kicks in Orbit</p>

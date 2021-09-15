@@ -8,6 +8,7 @@ import { Header } from './partials/header';
 import { Cystoscope } from './pages/projects/cystoscope';
 import { Ventilator } from './pages/projects/ventilator'
 import { Tengeru } from './pages/projects/tengeru';
+import { Warmer_DP } from './pages/projects/warmer_DP'; 
 import { Routes } from './routes';
 
 function App() {
@@ -36,11 +37,15 @@ function App() {
         <Route path={Routes.ventilator}>
           <Header/>
           <Ventilator/>
-          </Route>
+        </Route>
         <Route path={Routes.tengeru}>
           <Header/>
           <Tengeru/>
-          </Route>
+        </Route>
+        <Route path={Routes.warmer_DP}>
+            <Header/>
+            <Warmer_DP/>
+        </Route>
       </div>
     </Router>
   );

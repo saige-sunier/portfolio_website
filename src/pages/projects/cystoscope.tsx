@@ -24,7 +24,10 @@ export const Cystoscope = withRouter((props) =>{
     return (
         <div className="cystoscope-div" id="cystoscope">
             <div className="header-block-div">
-                <h2 className="CADproject-title">Advanced Design and Manufacturing: Cystoscope Re-Design</h2>
+                <div>
+                    <h2 className="CADproject-title-sm">Adv. Design & Manufacturing:</h2> 
+                    <h2 className="CADproject-title"> Cystoscope Re-Design</h2>
+                </div>
             </div>
             <div className="general-format">
                 <div className="CADintro-div">
@@ -106,7 +109,7 @@ export const Cystoscope = withRouter((props) =>{
                     <p className="final-design-description">Click play to watch a full dissasembly animation of the design.</p>
                     <div className="final-design">
                         <div className="video-div">
-                            <video id="design-video" width="750" controls>
+                            <video id="design-video" width="680" controls>
                                 <source src={cystoVideo} type="video/mp4"></source>
                             </video>
                         </div>

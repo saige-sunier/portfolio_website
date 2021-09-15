@@ -1,0 +1,99 @@
+/* GENERAL */
+.warmer_DP-div{
+    position: relative;
+    /* top: -3rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.subheader{
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.subheader2{
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.img_description{
+    font-size: 12px;
+    text-align: center;
+    color:slategrey;
+}
+.general-format{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4vw;
+    padding-left: 8vw !important;
+    padding-right: 8vw !important;
+}
+.ventilator-div hr {
+    width: 20%;
+    height: 3px;
+    background: black;
+    border: none;
+  }
+
+/* HEADER DIV */
+.header-block-div{
+    position: relative;
+    height: 40vw !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.warmer_DP-div .header-block-div:before{
+    content: "";
+    background-image: url(../../images/goyalmara.png);
+    background-size: cover;
+    position: absolute;
+    background-repeat: none;
+    background-size: 100%;
+    background-attachment: fixed;
+    opacity: 0.7;
+    background-color:darkgrey;
+    top: -600px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
+.project-title{
+    position: relative;
+    color: black;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 30vw;
+}
+
+/* BACKGROUND SECTION */
+.intro-div{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+.intro-text{
+    font-size: 15px !important;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 2vw;
+}
+.intro-img-div{
+    display: grid;
+    width: 50rem;
+    grid-auto-flow: row;
+    padding-right: 4vw;
+}
+.intro-img{
+    max-width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 4vw;
+}
