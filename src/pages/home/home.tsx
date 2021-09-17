@@ -52,7 +52,7 @@ export const Home = withRouter((props) =>{
                 </ul>
             </div>
             <hr/>
-            <div className="projects-div" id="projects">
+            <div className="home-projects-div" id="projects">
                 <h1 className="section-header">Projects:</h1>
                 <div className="projects-grid">
                     <div className="project-image-area" onClick={() => handleProjectSelect(Routes.ventilator)}>

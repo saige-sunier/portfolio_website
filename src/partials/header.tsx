@@ -1,6 +1,7 @@
 import './header.css'
 import {useLocation, withRouter} from 'react-router-dom';
 import {Link, animateScroll as scroll} from 'react-scroll';
+import styled from "styled-components";
 import { Routes } from '../routes';
 import { homedir } from 'node:os';
 
@@ -25,20 +26,39 @@ export const Header = withRouter((props) => {
     //     dropVisible = !dropVisible
     // }
 
+    const StyledLink = styled(Link)`
+        padding-right: 0rem;
+        padding-left: 0rem;
+        padding-bottom: 5rem;
+        background: none;
+        border: none;
+        font-family: "Bradley Hand" !important;
+        color: black;
+        font-size: 18px !important;
+        transition: 0.3s;
+        border: none !important;
+        outline: none !important;
+        text-align:justify;
+        `;
+
+
     return(
         <div className="header-div" id="header">
-            <h1 onClick={()=> returnHome()} className="header-title">Saige Sunier</h1>
-            <img onClick={()=> returnHome()} src="../../images/saige-headshot.png" alt="SOSA" className="home-logo"/>
+            <div className="header-topLeft">
+                <img onClick={()=> returnHome()} src="../../images/saige-headshot.png" alt="SOSA" className="home-logo"/>
+                <h1 onClick={()=> returnHome()} className="header-title">Saige Sunier</h1>
+            </div>
+           
             <div className="header-nav-menu">
                 {currentPath == Routes.home ?
                 <>
                     <div className="dropdown">
                         <button className="dropbtn"><img src="../../images/menu-icon.png" className="menu-icon"></img></button>
                         <div className="dropdown-content">
-                            <button className="header-nav-button"><Link to="about" offset={-100} smooth={true}>about</Link></button>
-                            <button className="header-nav-button"> <Link to="projects" offset={-100} smooth={true}>projects</Link></button>
-                            <button className="header-nav-button"><Link to="research" offset={-100} smooth={true}>research</Link></button>
-                            <button className="header-nav-button"> <Link to="contact" offset={-100} smooth={true}>contact</Link></button>
+                            <button className="header-nav-button-home"><StyledLink to="about" offset={-100} smooth={true}>about</StyledLink></button>
+                            <button className="header-nav-button-home"> <StyledLink to="projects" offset={-100} smooth={true}>projects</StyledLink></button>
+                            <button className="header-nav-button-home"><StyledLink to="research" offset={-100} smooth={true}>research</StyledLink></button>
+                            <button className="header-nav-button-home"> <StyledLink to="contact" offset={-100} smooth={true}>contact</StyledLink></button>
                         </div>
                     </div>
                 </>

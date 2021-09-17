@@ -60,23 +60,33 @@
     right: 0px;
     opacity: 0.5;
 }
-.project-title{
+.DTMproject-title{
     position: relative;
     color: black;
-    font-size: 3vw;
+    font-size: 3vw !important;
     text-align: left;
-    margin-left: 4vw;
-    margin-right: 30vw;
+    margin-left: 11vw !important;
+    margin-right: 40vw;
+    margin-top: 0px !important;
+}
+.DTMproject-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw !important;
+    text-align: left;
+    margin-left: 11vw !important;
+    margin-right: 50vw;
+    margin-bottom: 10px !important;
 }
 
 /* BACKGROUND SECTION */
-.intro-div{
+.DTM-intro-div{
     display: flex;
     justify-content: left;
     flex-direction: row;
     padding-top: 1rem;
 }
-.intro-text{
+.DTM-intro-text{
     font-size: 15px !important;
     text-align: left;
     padding-top: 0.5rem;
@@ -84,16 +94,92 @@
     padding-left: 4vw;
     padding-right: 2vw;
 }
-.intro-img-div{
+.DTM-intro-img-div{
     display: grid;
     width: 50rem;
     grid-auto-flow: row;
-    padding-right: 4vw;
+    padding-right: 18vw;
 }
-.intro-img{
-    max-width: 100%;
+.DTM-intro-img{
+    max-width: 200%;
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 4vw;
+    padding-right: 12vw;
+}
+
+/* Need Div */
+.need-div-intro{
+    /* display: flex;
+    justify-content: left;
+    flex-direction: row; */
+}
+.DTM-need-text{
+    font-size: 15px !important;
+    text-align: left;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.DTM-need-img-div{
+    display: grid;
+    gap: 4rem;
+    grid-auto-flow: column; 
+    margin: 0 0 0.2rem 0;
+    padding-top: 1rem;
+    /* padding-bottom: 1rem; */
+    /* padding-left: 2vw; */
+    /* padding-right: 2vw; */
+}
+.DTM-need-area{
+    display: grid;
+    grid-auto-flow: column;
+}
+.DTM-need-left{
+    transform: translateX(80px);
+}
+.DTM-need-left .need-img-text{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+.DTM-need-img{
+    max-height: 12vw;
+    margin-bottom: 2rem;
+    padding: 0px;
+}
+.DTM-need-right{
+    transform: translateY(105px);
+    padding-left: 5rem;
+}
+.DTM-need-right .need-img-text{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-right: 6vw;
+}
+.DTM-need-statement{
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 2rem;
+    border: 5px solid rgba(255, 202, 28, 0.726);
+}
+.DTM-need-text2{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.DTM-need-text3{
+    background-color: rgba(255, 202, 28, 0.726);
+    font-size: 20px !important;
+    padding: 10px;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
 }
