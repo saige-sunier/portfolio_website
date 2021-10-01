@@ -160,17 +160,18 @@
 .CADprocess-title {
     color: black;
     font-size: 1.5vw;
+    text-align: center !important;
   }
 .process-description-sm {
     font-size: 12.5px !important;
     color: white;
-    text-align: center;
+    text-align: center !important;
     padding: 0px 20px;
 }
 .process-description-m {
     font-size: 16px;
     color: white;
-    text-align: center;
+    text-align: center !important;
     padding: 0px 20px;
 }
 .process-sketches-img{

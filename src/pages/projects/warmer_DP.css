@@ -25,8 +25,16 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 4vw;
-    padding-left: 8vw !important;
-    padding-right: 8vw !important;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.general-format p{
+    text-align: left;
+}
+.general-format h3{
+    text-align: left;
 }
 .ventilator-div hr {
     width: 20%;
@@ -38,7 +46,7 @@
 /* HEADER DIV */
 .header-block-div{
     position: relative;
-    height: 40vw !important;
+    height: 40vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -63,20 +71,20 @@
 .DTMproject-title{
     position: relative;
     color: black;
-    font-size: 3vw !important;
+    font-size: 3vw;
     text-align: left;
-    margin-left: 11vw !important;
+    margin-left: 11vw ;
     margin-right: 40vw;
-    margin-top: 0px !important;
+    margin-top: 0px;
 }
 .DTMproject-title-sm{
     position: relative;
     color: black;
-    font-size: 1.8vw !important;
+    font-size: 1.8vw;
     text-align: left;
-    margin-left: 11vw !important;
+    margin-left: 11vw;
     margin-right: 50vw;
-    margin-bottom: 10px !important;
+    margin-bottom: 10px;
 }
 
 /* BACKGROUND SECTION */
@@ -87,7 +95,7 @@
     padding-top: 1rem;
 }
 .DTM-intro-text{
-    font-size: 15px !important;
+    font-size: 15px;
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
@@ -109,28 +117,90 @@
     padding-right: 12vw;
 }
 
-/* Need Div */
-.need-div-intro{
-    /* display: flex;
-    justify-content: left;
-    flex-direction: row; */
-}
+/* THE NEED */
 .DTM-need-text{
-    font-size: 15px !important;
+    font-size: 15px ;
     text-align: left;
     padding-bottom: 0rem;
     padding-left: 4vw;
     padding-right: 4vw;
 }
+.DTM-need-statement{
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 2rem;
+    border: 3px solid rgba(255, 202, 28, 0.726);
+}
+.DTM-need-text2{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center !important;
+    font-size: 16px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.DTM-need-text3{
+    background-color: rgba(255, 202, 28, 0.726);
+    text-align: center !important;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-bottom: 1rem;
+}
+
+/* DEVELOPING DESIGN PRINCIPLES */
+.process-circle-div{
+    display: grid;
+    grid-auto-flow: row;
+}
+.process-circle{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0rem;
+}
+.number-circle{
+    position: relative;
+    width: 60px;
+    height: 70px;
+    margin-left: 10rem;
+    margin-right: 2rem;
+}
+.number-text{
+    position: relative;
+    text-align: left;
+    transform: translateX(-100px);
+    margin-top: 1.15rem;
+    padding-left: 6vw;
+    width: 70vw;
+}
+.DTM-need-text a{
+    color: blue;
+    padding: 0px;
+    padding-top: 0rem;
+    margin-top: 0px;
+}
+
+/* PATIENT JOURNEY */
+.patient-journey{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 70vw;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+.DP-img{
+    /* padding-top: 1rem; */
+    max-width: 70vw;
+}
+
+/* WARMING SOLUTIONS  */
 .DTM-need-img-div{
     display: grid;
     gap: 4rem;
     grid-auto-flow: column; 
     margin: 0 0 0.2rem 0;
     padding-top: 1rem;
-    /* padding-bottom: 1rem; */
-    /* padding-left: 2vw; */
-    /* padding-right: 2vw; */
+    padding-right: 4vw;
 }
 .DTM-need-area{
     display: grid;
@@ -141,45 +211,41 @@
 }
 .DTM-need-left .need-img-text{
     text-align: left;
-    font-size: 15px;
-    padding-left: 3rem;
-    padding-top: 2rem;
+    font-size: 12px;
+    /* padding-left: 4vw; */
+    padding-right: 1rem;
+    margin-left: 2rem;
+    /* color: white; */
+    z-index: 20;
 }
 .DTM-need-img{
-    max-height: 12vw;
+    position: relative;
+    max-height: 150px;
+    width: auto;
     margin-bottom: 2rem;
     padding: 0px;
+    z-index: 10;
 }
 .DTM-need-right{
     transform: translateY(105px);
     padding-left: 5rem;
 }
 .DTM-need-right .need-img-text{
+    position: absolute;
     text-align: left;
-    font-size: 15px;
-    padding-left: 3rem;
-    padding-top: 2rem;
-    padding-right: 6vw;
+    font-size: 12px;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    /* color: white; */
 }
-.DTM-need-statement{
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-bottom: 2rem;
-    border: 5px solid rgba(255, 202, 28, 0.726);
+.need-img-text-area{
+    position: relative;
+    /* background: rgb(128, 128, 128, 0.8); */
+    height: 125px;
+    width: 320px;
+    margin-top: 0.75rem;
+    /* margin-left: -6rem;
+    margin-bottom: 4rem;
+    margin-top: 0.75rem; */
 }
-.DTM-need-text2{
-    padding-left: 4vw;
-    padding-right: 4vw;
-    text-align: center;
-    font-size: 18px;
-    margin-left: 4rem;
-    margin-right: 4rem;
-}
-.DTM-need-text3{
-    background-color: rgba(255, 202, 28, 0.726);
-    font-size: 20px !important;
-    padding: 10px;
-    margin-left: 25rem;
-    margin-right: 25rem;
-    margin-bottom: 1rem;
-}
+

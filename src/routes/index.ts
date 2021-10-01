@@ -5,5 +5,6 @@ export enum Routes {
     ventilator='/ventilator',
     tengeru="/tengeru",
     homepage='/saigesunier',
-    warmer_DP='/warmer_DP'
+    warmer_DP='/warmer_DP',
+    faceshields='/faceshields'
 }

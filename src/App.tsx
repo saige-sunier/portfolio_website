@@ -9,6 +9,7 @@ import { Cystoscope } from './pages/projects/cystoscope';
 import { Ventilator } from './pages/projects/ventilator'
 import { Tengeru } from './pages/projects/tengeru';
 import { Warmer_DP } from './pages/projects/warmer_DP'; 
+import { Faceshields } from './pages/projects/faceshields';
 import { Routes } from './routes';
 
 function App() {
@@ -45,6 +46,10 @@ function App() {
         <Route path={Routes.warmer_DP}>
             <Header/>
             <Warmer_DP/>
+        </Route>
+        <Route path={Routes.faceshields}>
+            <Header/>
+            <Faceshields/>
         </Route>
       </div>
     </Router>

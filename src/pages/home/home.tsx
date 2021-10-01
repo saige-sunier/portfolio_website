@@ -8,14 +8,12 @@ export const Home = withRouter((props) =>{
     const urlHash = props.history.location.hash;
     const aboutMessage:string = 'My passion is social impact design. I love the challenge of designing solutions for low-resource settings. I have a background in biomedical engineering and global health. I combine these skills to improve healthcare in the places that need it most. Explore below to read more about me and my work!';
 
-    const spaceMan = './images/spaceMan.JPG';
-    const deepSea = './images/deepSea.JPG';
-    const elephant='./images/elephant.JPG';
     const kicksinorbit='./images/kicksInOrbit.JPG';
     const ventilator='./images/ventilator-cover.png';
     const cystoscope='./images/cystoscope-cover.png'
     const TZbiomed='./images/TZ-pulseOX_repair.png'
-    const goyalmaranewborn='./images/goyalmara.png';
+    const goyalmaranewborn='./images/newborn-bubbleWrap.png';
+    const faceshield='./images/faceshield-cover.png';
 
     const handleProjectSelect = (projectRoute:Routes) =>{
         props.history.push(projectRoute);
@@ -39,17 +37,17 @@ export const Home = withRouter((props) =>{
             </div>
             <div className="about-div2" id="about">
                 <h2 className="section-subheader">Duke University || Class of 2020</h2>
-                <ul className="aboutSection">
-                    <li>BSE - Biomedical Engineering</li>
-                    <li>Certificate - Global Development Engineering</li>
-                </ul>    
-                <h2 className="section-subheader">Skills</h2>
-                <ul className="aboutSection">
+                <div className="aboutSection">
+                    <p>BSE - Biomedical Engineering</p>
+                    <p>Certificate - Global Development Engineering</p>
+                </div>    
+                <h2 className="section-subheader">Experience</h2>
+                <div className="aboutSection">
                     <li>Software Languages: Python, React, HTML, CSS, MATLAB, Arduino (Java/C)</li>
                     <li>Design Software: Fusion360 CAD, Altium PCB Designer, Mural, Meshmixer, Luban</li>
                     <li>Operating Systems: Mac OS X, Windows, Adobe Creative Suite </li>
                     <li>Languages: French (proficient), Swahili (basic)</li>
-                </ul>
+                </div>
             </div>
             <hr/>
             <div className="home-projects-div" id="projects">
@@ -68,12 +66,12 @@ export const Home = withRouter((props) =>{
                         <img className="project-image" id="TZbiomed" src={TZbiomed} alt="TZbiomed"/>
                     </div>
                     <div className="project-image-area" onClick={() => handleProjectSelect(Routes.warmer_DP)}>
-                        <p className="project-image-title">Kicks in Orbit</p>
+                        <p className="project-image-title">Reducing Incidinces of Neonatal Hypothermia</p>
                         <img className="project-image" id="kicks-in-orbit" src={goyalmaranewborn} alt="kicksinorbit"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
-                        <p className="project-image-title">Kicks in Orbit</p>
-                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.faceshields)}>
+                        <p className="project-image-title">Covid-19 Faceshields</p>
+                        <img className="project-image" id="kicks-in-orbit" src={faceshield} alt="kicksinorbit"/>
                     </div>
                     <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Kicks in Orbit</p>

@@ -1,7 +1,7 @@
 /* GENERAL */
 .tengeru-div{
     position: relative;
-    top: -3rem;
+    /* top: -3rem; */
     font-family:Verdana, Geneva, Tahoma, sans-serif !important;
 }
 .TZsubheader{
@@ -56,10 +56,20 @@
 .project-title{
     position: relative;
     color: black;
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-align: left;
-    margin-left: 4vw;
+    margin-left: 11vw ;
     margin-right: 40vw;
+    margin-top: 0px;
+}
+.project-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw;
+    text-align: left;
+    margin-left: 11vw;
+    margin-right: 50vw;
+    margin-bottom: 10px;
 }
 /* BACKGROUND SECTION */
 .TZbackground-div{
@@ -107,8 +117,8 @@
     padding-bottom: 2px;
 }
 .TZwork-img{
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 6.5vw;
@@ -158,6 +168,7 @@
     color: black;
     font-size: 18px !important;
     width: 100%;
+    text-align: center !important;
 }
 .TZprocess-img{
     display: block;
@@ -196,12 +207,22 @@
     padding-left: 4vw;
     padding-right: 2vw;
 }
+.TZlessons-img-div{
+    display: grid;
+    grid-auto-flow: row;
+}
 .TZlessons-img{
-    width: 42%;
-    height: 42%;
+    width: 80%;
+    height: 80%;
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 4vw;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+.TZlessons-img2{
+    width: 80%;
+    height: 80;
     padding-left: 2vw;
     padding-right: 4vw;
 }
