@@ -23,6 +23,46 @@ export const Warmer_DP = withRouter((props) =>{
     const circle3='./images/circle3.png';
     const patientJourney='./images/patient-journey-marked.png';
     const designPrinciples='./images/design-principles.png';
+    const testCartoon='./images/lightbulb.png';
+    const DP1='./images/DesignPrinciples/Newborn-thermo-stable.png';
+    const DP2='./images/DesignPrinciples/Newborn-hypothermic.png';
+    const DP3='./images/DesignPrinciples/Transport-hand-carry.png';
+    const DP4='./images/DesignPrinciples/whole-product-iec.png';
+    const DP5='./images/DesignPrinciples/CE-mark.png';
+    const DP6='./images/DesignPrinciples/Switch-On.png';
+    const DP7='./images/DesignPrinciples/Lightbulb-DtM.png';
+    const DP8='./images/DesignPrinciples/fmea-detection-positive.png';
+    const DP9='./images/DesignPrinciples/Box-fancy.png';
+    const DP10='./images/DesignPrinciples/Feels-warm.png';
+    const DP11='./images/DesignPrinciples/iGadget.png';
+    const DP12='./images/DesignPrinciples/Conductive-warmer-confidence.png';
+    const DP13='./images/DesignPrinciples/Clinician-happy.png';
+    const DP14='./images/DesignPrinciples/Guideline.png';
+    const DP15='./images/DesignPrinciples/Hyperthermia.png';
+    const DP16='./images/DesignPrinciples/KMC.png';
+    const DP17='./images/DesignPrinciples/Patient-access.png';
+    const DP18='./images/DesignPrinciples/Patient-visibility.png';
+    const DP19='./images/DesignPrinciples/Newborn-isolation.png';
+    const DP20='./images/DesignPrinciples/Portable.png';
+    const DP21='./images/DesignPrinciples/Device-supervision.png';
+    const DP22='./images/DesignPrinciples/Cleaning.png';
+    const DP23='./images/DesignPrinciples/Jeep-simple.png';
+    const DP24='./images/DesignPrinciples/';
+    const DP25='./images/DesignPrinciples/';
+    const DP26='./images/DesignPrinciples/';
+    const DP27='./images/DesignPrinciples/';
+    const DP28='./images/DesignPrinciples/Power-insecurity.png';
+    const DP29='./images/DesignPrinciples/';
+    const DP30='./images/DesignPrinciples/battery.png';
+    const DP31='./images/DesignPrinciples/Relocate-device.png';
+    const DP32='./images/DesignPrinciples/Limited-space.png';
+    const DP33='./images/DesignPrinciples/Installation.png';
+    const DP34='./images/DesignPrinciples/tco-hospital-infrastructure.png';
+    const DP35='./images/DesignPrinciples/Ammeter.png';
+    const DP36='./images/DesignPrinciples/Doc-Support.png';
+
+
+
 
 return (
     <div className="warmer_DP-div" id="warmer_dp">
@@ -125,7 +165,505 @@ return (
                 </div>
                 <div className="design-principles-div">
                     <h4 className="subheader2">Design Principles</h4>
-                    <img className="DP-img" src={designPrinciples}></img>
+                    <p className="DTM-need-text">Product requirements for medical devices made in high resource settings overlook many of the complexities that arise in the context of developing countries. The medical device industry strives to meet IEC standards and technical specifications. While all of this is important, qualitative requirements are vital for a product to be successful in a LRS. Our stakeholders helped us to identify what characteristics are necessary for a conductive warmer to be impactful in MSF project sites. </p>
+                    <p className="DTM-need-text">Hover over any of the design principles to read more about the inputs that resulted in the requirement.  </p>
+                    <div className="DP-div">
+                        <div className="DP-containterA-div">
+                            
+
+                            {/* IS EFFECTIVE  */}
+                            <div className="DP-category-div">
+                                <h5 className="DP-title">Is Effective</h5>
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" id="DP1" src={DP1} alt="DP1"/>
+                                                <p className="DP-front-text">Prevents Hypothermia</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <ul className="DP-back-text">
+                                                    <li>Newborns can become hypothermic with even a 30 minute break in warming.</li>
+                                                </ul>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP2}/>
+                                                <p className="DP-front-text">Treats Mild Hypothermia</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <ul className="DP-back-text">
+                                                    <li>The majority of outborn patients are hypothermic when admitted</li>
+                                                </ul>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP3}/>
+                                                <p className="DP-front-text">Provides Warming During In-Hospital Transport</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <ul className="DP-back-text">
+                                                    <li>Outdoor hallways between wards create risk for hypothermia</li>
+                                                </ul>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP4}/>
+                                                <p className="DP-front-text">Meets IEC Specifications</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">IEC Standards document rigorous testing requirements to ensure product safety and quality.</p> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP5} />
+                                                <p className="DP-front-text">Has CE Mark Certification</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">Products are required to have CE certification to be added to MSF's product catalog.</p> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP6}/>
+                                                <p className="DP-front-text">Fast Warm-Up from Cold/Off State</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">Project sites experience unexpected births and newborn admissions requiring immediate warming.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        {/* APPEARS EFFECTIVE */}
+                            <div className="DP-category-div">
+                                <h5 className="DP-title">Appears Effective</h5>
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP7}/>
+                                                <p className="DP-front-text">Device State is Obvious</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">Increase usability </p> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image"  src={DP8}/>
+                                                <p className="DP-front-text">Appears Intuitive</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP9}/>
+                                                <p className="DP-front-text">Appears Clean (resists stains)</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP10}/>
+                                                <p className="DP-front-text">Feels Warm</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP11}/>
+                                                <p className="DP-front-text">Looks modern and high tech</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP12}/>
+                                                <p className="DP-front-text">Looks familiar (matches medical device expectation)</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                            
+                    <div className="DP-containterA-div">
+
+                            {/* USER FRIENDLY */}
+                            <div className="DP-category-div">
+                                <h5 className="DP-title">User Friendly</h5>
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" id="DP1" src={DP13} alt="DP1"/>
+                                                <p className="DP-front-text">Hard to Use Wrong</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <ul className="DP-back-text">
+                                                    <li>Newborns can become hypothermic with even a 30 minute break in warming.</li>
+                                                    <li>Preventing hypothermia reduces risk of mortality.</li>
+                                                </ul>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP14}/>
+                                                <p className="DP-front-text">Requires minimal user training</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP15}/>
+                                                <p className="DP-front-text">Limited risk of hyperthermia (over-heating)</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP16}/>
+                                                <p className="DP-front-text">Does not inhibit or discourage KMC</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP17} />
+                                                <p className="DP-front-text">Provides warming during common patient diagnostics</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP18}/>
+                                                <p className="DP-front-text">Fast warm-Up from cold/off state</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP19}/>
+                                                <p className="DP-front-text">Discourages bed-sharing (infection control)</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP20} />
+                                                <p className="DP-front-text">Is portable (by small adult)</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP21}/>
+                                                <p className="DP-front-text">Requires minimal supervision</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        {/* CONTEXT APPROPRIATE */}
+
+                            <div className="DP-category-div">
+                                <h5 className="DP-title">Context Appropriate</h5>
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP22}/>
+                                                <p className="DP-front-text">Easy to clean between patients with bleach</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image"  src={DP23}/>
+                                                <p className="DP-front-text">Durable and rugged</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP24}/>
+                                                <p className="DP-front-text">Low purchase price</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP25}/>
+                                                <p className="DP-front-text">Stable in long term storage and shipping</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP26}/>
+                                                <p className="DP-front-text">Does not require sterile, temp controlled environment for operation</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP27}/>
+                                                <p className="DP-front-text">Limited consumables, maintenance</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP28}/>
+                                                <p className="DP-front-text">Compatible with unstable electricity (power surges, brownouts, blackouts)</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP29}/>
+                                                <p className="DP-front-text">Compatible of wide range of ambient temperatures</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP30}/>
+                                                <p className="DP-front-text">Internal battery backup</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP31}/>
+                                                <p className="DP-front-text">Easy to relocate and reinstall device</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP32}/>
+                                                <p className="DP-front-text">Limited space requirements (small/crowded wards)</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP33}/>
+                                                <p className="DP-front-text">Easy to deliver and reinstall</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="DP-row">
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP34}/>
+                                                <p className="DP-front-text">Limited infrastructure requirements</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP35}/>
+                                                <p className="DP-front-text">Low wattage device (under 40W)</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div className="DP-block-area">
+                                        <div className="flip-block-inner">
+                                            <div className="flip-block-front">
+                                                <img className="DP-image" src={DP36}/>
+                                                <p className="DP-front-text">Easy to maintain by HCN biomed with limited tools, training</p>
+                                            </div>
+                                            <div className="flip-block-back">
+                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
+                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                    </div>
+
+                    </div>
                 </div>
             </div>
         </div>

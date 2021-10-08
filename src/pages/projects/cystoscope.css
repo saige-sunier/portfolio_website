@@ -123,7 +123,7 @@
     width: 100%;
     height: 100%;
 }
-.flip-block-inner{
+.flip-block-inner-CAD{
     position: relative;
     width: 100%;
     height: 100%;
@@ -131,17 +131,17 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-.process-block-area:hover .flip-block-inner{
+.process-block-area:hover .flip-block-inner-CAD{
     transform: rotateX(180deg);
 }
-.flip-block-front, .flip-block-back{
+.flip-block-front-CAD, .flip-block-back-CAD{
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.flip-block-front{
+.flip-block-front-CAD{
     background-color:none;
     align-items: center;
 }
@@ -151,7 +151,7 @@
     width: auto;
     margin: auto;
 }
-.flip-block-back{
+.flip-block-back-CAD{
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     opacity: 0.7;

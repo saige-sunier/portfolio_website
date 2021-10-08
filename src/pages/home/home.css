@@ -6,8 +6,10 @@
 }
 
 .section-header {
-  font-size: 30px;
+  font-size: 2vw;
   text-align: center;
+  margin-bottom: 2rem;
+
 }
 hr {
   width: 10%;
@@ -57,49 +59,54 @@ hr {
 .about-div2{
   padding-bottom: 2rem;
   padding-left: 4rem;
-  padding-right: 2rem;
+  padding-right: 4rem;
+  margin-right: 4vw;
   margin-left: 38rem;
 }
 .section-subheader {
   font-size: 20px;
   text-align: center;
 }
-.about-div2 ul{
-  text-align: left;
+.about-div2 p{
+  text-align: center;
+  font-size: 15px;
 }
-.about-div2 li {
+/* .about-div2 li {
   font-size: 15px;
   color:rgb(58, 54, 54);
   text-align: left;
   margin: 10px 0;
-}
+} */
 
 /*PROJECTS DIV STYLING*/
 .home-projects-div {
   padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 .projects-grid {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;  
   justify-content: space-around;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 .project-image {
-  display: block;
+  display: flex;
   flex: 1 1 21%;
+  object-fit: cover;
   width: 100%;
   margin: auto;
 }
 .project-image-area {
-  flex: 1 1 21%;
+  flex: 1 1 33%;
   position: relative;
   text-align: center;
   display: flex;
 }
 .project-image-title {
-  flex: 1 1 21%;
+  flex: 1 1 33%;
   display: none;
   position: absolute;
   z-index: 2;
@@ -107,7 +114,19 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 3vw;
+  font-size: 2vw;
+  /* margin-left: 2vw;
+  margin-right: 2vw; */
+}
+.project-subtitle{
+  flex: 1 1 33%;
+  position: absolute;
+  font-size: 1vw;
+  z-index: 2;
+  color: white;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  top: 75%
 }
 .project-image-area:hover {
   cursor: pointer;
@@ -160,8 +179,9 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 45px;
+  font-size: 40px;
 }
+
 .research-image-area:hover {
   cursor: pointer;
 }
@@ -178,17 +198,39 @@ hr {
   background: rgba(0, 0, 0, 0.6);
   opacity: 0.7;
 }
-
-.paralax-image-3 {
-  min-height: 35rem;
-  background-image: url(../../images/TZ-kili_sunrise.JPG);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+.research-text{
+  text-align: left;
+  size: 16px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin-top: 0rem;
 }
+
+
+/* ABOUT ME DIV */
+.aboutMe-div{
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.aboutMe-content{
+  display: flex;
+  flex-direction: row;
+}
+.aboutMe-img{
+  padding-left: 4vw;
+  width: 58%;
+  height: 58%;
+}
+.aboutMe-text-div{
+  margin-left: 1.5rem;
+  margin-right: 4vw;
+  padding: 0.5rem;
+  font-size: 14px;
+  border: solid 4px lightgray;
+}
+
 /* CONTACT DIV STYLING*/
-.contact-div {
+/* .contact-div {
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -224,7 +266,10 @@ a{
 a:hover {
   cursor: pointer;
   opacity: 0.2;
-}
+} */
+
+
+
 
 
 @media only screen and (max-width: 479px) {

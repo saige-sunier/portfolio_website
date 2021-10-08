@@ -2,8 +2,45 @@
   width: 100%;
   min-height: 2.25rem;
   bottom: 0;
-  background-color: gray;
+  background-color:white;
   color: white;
   padding-top: 1rem;
-  box-shadow: 0px 0px 15px 1px #000000;
+  box-shadow: 0px 0px 8px 0px #000000;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.contact-info {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.contact-buttons{
+  margin-left: 1rem;
+  margin-right: 0rem;
+  background: none;
+  border: none;
+  transition: 0.3s;
+  border: none !important;
+  outline: none !important;
+  text-align:justify;
+}
+a{
+  font-size: 15px;
+  line-height: 35px;
+  color: black;
+  padding: 1rem;
+}
+.contact-logo {
+  float: left;
+  display: block;
+  max-width: 40px;
+  height: auto;
+}
+a:hover {
+  cursor: pointer;
+  opacity: 0.2;
 }

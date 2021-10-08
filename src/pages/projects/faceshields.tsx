@@ -15,7 +15,7 @@ export const Faceshields = withRouter((props) =>{
 
     const faceshieldShipping='./images/faceshieldShipping.jpeg';
     const faceshieldPackaging='./images/faceshield-packaging.jpeg';
-    const nioshLogo='./images/niosh-logo-OLD.png';
+    const nioshLogo='./images/niosh-logo.png';
     const nioshBase='./images/niosh-base-design.png';
     const nioshPrototype='./images/niosh-prototype.png';
     const nioshProcess='./images/niosh-ProcessIMG.png';
