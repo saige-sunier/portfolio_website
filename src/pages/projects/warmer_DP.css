@@ -211,7 +211,7 @@
 }
 .DTM-need-left .need-img-text{
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
     /* padding-left: 4vw; */
     padding-right: 1rem;
     margin-left: 2rem;
@@ -233,7 +233,7 @@
 .DTM-need-right .need-img-text{
     position: absolute;
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
     padding-left: 2rem;
     padding-right: 1rem;
     /* color: white; */
@@ -337,6 +337,15 @@
 .DP-back-text{
     color: black;
     font-size: 10px;
+    text-align: left;
+    margin: 0;
+    padding: 15px;
+    list-style-position: inside;
+    text-align: center !important;
+}
+.DP-back-text-sm{
+    color: black;
+    font-size: 8.5px;
     text-align: left;
     margin: 0;
     padding: 15px;

@@ -10,10 +10,11 @@ export const Home = withRouter((props) =>{
 
     const kicksinorbit='./images/kicksInOrbit.JPG';
     const ventilator='./images/vent-home-img.png';
-    const cystoscope='./images/cystoscope-cover.png'
+    const cystoscope='./images/cystoscope-home.png'
     const TZbiomed='./images/TZ-pulseOX_repair.png'
     const goyalmaranewborn='./images/newborn-bubbleWrap.png';
     const faceshield='./images/faceshield-solo.png';
+    const EEGcircuit='./images/EEG-circuitBoard.png';
     const aboutMe='./images/aboutMe-img-temporary.png';
 
     const handleProjectSelect = (projectRoute:Routes) =>{
@@ -78,8 +79,14 @@ export const Home = withRouter((props) =>{
                         <p className="project-image-title">Cystoscope Redesign</p>
                         <img className="project-image" id="cystoscope" src={cystoscope} alt="cystoscope"/>
                     </div>
-                    
-
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.EEGcircuit)}>
+                        <p className="project-image-title">EEG Signal Processor</p>
+                        <img className="project-image" id="EEG-circuit" src={EEGcircuit} alt="EEG-circuit"/>
+                    </div>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
+                        <p className="project-image-title">Kicks in Orbit</p>
+                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
+                    </div>
                     <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
                         <p className="project-image-title">Kicks in Orbit</p>
                         <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>

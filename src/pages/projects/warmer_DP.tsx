@@ -63,7 +63,6 @@ export const Warmer_DP = withRouter((props) =>{
 
 
 
-
 return (
     <div className="warmer_DP-div" id="warmer_dp">
         <div className="header-block-div">
@@ -103,15 +102,15 @@ return (
                 <div className="process-circle-div">
                     <div className="process-circle">
                         <img className="number-circle" src={circle1}></img>
-                        <p className="number-text">Identify warming gaps in the patient’s journey from admittance to discharge </p>
+                        <p className="number-text"><b>Identify warming gaps in the patient’s journey from admittance to discharge </b></p>
                     </div>
                     <div className="process-circle">
                         <img className="number-circle" src={circle2}></img>
-                        <p className="number-text">Identify current warming solutions and the barriers to their implementation</p>
+                        <p className="number-text"><b>Identify current warming solutions and the barriers to their implementation</b></p>
                     </div>
                     <div className="process-circle">
                         <img className="number-circle" src={circle3}></img>
-                        <p className="number-text"> Define qualitative design principles for a newborn warmer </p>
+                        <p className="number-text"> <b>Define qualitative design principles for a newborn warmer</b> </p>
                     </div>
                 </div>
                 <div className="patient-journey-map-div">
@@ -182,9 +181,7 @@ return (
                                                 <p className="DP-front-text">Prevents Hypothermia</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <ul className="DP-back-text">
-                                                    <li>Newborns can become hypothermic with even a 30 minute break in warming.</li>
-                                                </ul>
+                                                <p className="DP-back-text">Newborns can become hypothermic with even a 30 minute break in warming.</p>
                                             </div> 
                                         </div>
                                     </div>
@@ -195,9 +192,7 @@ return (
                                                 <p className="DP-front-text">Treats Mild Hypothermia</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <ul className="DP-back-text">
-                                                    <li>The majority of outborn patients are hypothermic when admitted</li>
-                                                </ul>
+                                                    <p className="DP-back-text">The majority of outborn patients are hypothermic when admitted.</p>
                                             </div> 
                                         </div>
                                     </div>
@@ -208,9 +203,7 @@ return (
                                                 <p className="DP-front-text">Provides Warming During In-Hospital Transport</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <ul className="DP-back-text">
-                                                    <li>Outdoor hallways between wards create risk for hypothermia</li>
-                                                </ul>
+                                                <p className="DP-back-text">Outdoor hallways between wards create risk for hypothermia.</p>
                                             </div> 
                                         </div>
                                     </div>
@@ -264,7 +257,7 @@ return (
                                                 <p className="DP-front-text">Device State is Obvious</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">Increase usability </p> 
+                                                <p className="DP-back-text">In hospitals with high patient to staff ratios it is important clinicians can easily determine if a device is on, off, or broken.</p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -275,8 +268,7 @@ return (
                                                 <p className="DP-front-text">Appears Intuitive</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text-sm">MSF field staff report gaps in training. Not all national staff are extensively trained and can benefit from devices that are intuitive.</p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -287,8 +279,7 @@ return (
                                                 <p className="DP-front-text">Appears Clean (resists stains)</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text">To discourage mistrust of the device, the warmer should resist stains from bodily fluids.</p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -302,8 +293,7 @@ return (
                                                 <p className="DP-front-text">Feels Warm</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text">MSF Goyamlara staff did not trust their current warming mattress to treat newborns because it did not feel warm.</p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -314,8 +304,7 @@ return (
                                                 <p className="DP-front-text">Looks modern and high tech</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text">Products that look low quality and old are less trusted by staff.</p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -326,8 +315,7 @@ return (
                                                 <p className="DP-front-text">Looks familiar (matches medical device expectation)</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text">MSF stakeholders expressed national staff mistrusting products that did not meet medical device expectations.</p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -349,10 +337,7 @@ return (
                                                 <p className="DP-front-text">Hard to Use Wrong</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <ul className="DP-back-text">
-                                                    <li>Newborns can become hypothermic with even a 30 minute break in warming.</li>
-                                                    <li>Preventing hypothermia reduces risk of mortality.</li>
-                                                </ul>
+                                                <p className="DP-back-text">Reducing the complexity of a device decreases training time and risk of error.</p>
                                             </div> 
                                         </div>
                                     </div>
@@ -363,8 +348,7 @@ return (
                                                 <p className="DP-front-text">Requires minimal user training</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text-sm">MSF field staff report gaps in training due to high patient to staff ratios and frequent task shifting. Reducing complexity and training time can increase device uptake.</p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -375,8 +359,7 @@ return (
                                                 <p className="DP-front-text">Limited risk of hyperthermia (over-heating)</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text">High patient to staff ratio </p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -390,8 +373,7 @@ return (
                                                 <p className="DP-front-text">Does not inhibit or discourage KMC</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text-sm">KMC is proven to be incredibly successful at preventing/treating hypothermia, building maternal bonds, and increasing breastfeeding uptake.</p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -402,8 +384,7 @@ return (
                                                 <p className="DP-front-text">Provides warming during common patient diagnostics</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -414,8 +395,7 @@ return (
                                                 <p className="DP-front-text">Fast warm-Up from cold/off state</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p> 
                                             </div> 
                                         </div>
                                     </div>
@@ -429,8 +409,7 @@ return (
                                                 <p className="DP-front-text">Discourages bed-sharing (infection control)</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
@@ -441,8 +420,7 @@ return (
                                                 <p className="DP-front-text">Is portable (by small adult)</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
@@ -453,8 +431,7 @@ return (
                                                 <p className="DP-front-text">Requires minimal supervision</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
@@ -473,8 +450,7 @@ return (
                                                 <p className="DP-front-text">Easy to clean between patients with bleach</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
@@ -485,8 +461,7 @@ return (
                                                 <p className="DP-front-text">Durable and rugged</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
@@ -497,8 +472,7 @@ return (
                                                 <p className="DP-front-text">Low purchase price</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
@@ -512,8 +486,7 @@ return (
                                                 <p className="DP-front-text">Stable in long term storage and shipping</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
@@ -524,8 +497,7 @@ return (
                                                 <p className="DP-front-text">Does not require sterile, temp controlled environment for operation</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
@@ -536,8 +508,7 @@ return (
                                                 <p className="DP-front-text">Limited consumables, maintenance</p>
                                             </div>
                                             <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
+                                                <p className="DP-back-text"></p>
                                             </div> 
                                         </div>
                                     </div>
