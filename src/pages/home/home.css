@@ -215,17 +215,18 @@ hr {
 .aboutMe-content{
   display: flex;
   flex-direction: row;
+  max-height: 35vw;
 }
 .aboutMe-img{
   padding-left: 4vw;
-  width: 58%;
-  height: 58%;
+  max-height: 35vw;
+  width: auto;
 }
 .aboutMe-text-div{
   margin-left: 1.5rem;
   margin-right: 4vw;
-  padding: 0.5rem;
-  font-size: 14px;
+  padding: 0.45rem;
+  font-size: 1.025vw;
   border: solid 4px lightgray;
 }
 

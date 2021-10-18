@@ -75,14 +75,19 @@ export const Faceshields = withRouter((props) =>{
                 <div className="intro-div">
                     <div>
                         <h3 className="subheader">Background</h3>
-                        <p className="intro-text">When Covid-19 hit the United States in March 2020, the country faced extreme personal protective equipment (PPE) shortages. Design that Matters responded by rapidly designing and fabricating face shields for local hospitals. <b>By partnering with local Seattle-based volunteers, Harborview Medical, and Global Tech Plastics we were able to produce and distribute over 300,000 face shields. </b>These face shields were designed to have as universal a fit as possible. NASA biometrics for head circumferences were used in the design process to achieve this design specification. The biometrics range from a 5% female head to a 95% male head. <b> We considered expanding to international markets and in order to demonstrate universal fit, I designed and rapidly prototyped life-sized heads.</b> These heads are currently used to create a visual for the universal fit capability of the Covid-19 face shield. </p>
-                        <p className="intro-text">In addition to designing the heads, I helped frontline healthcare workers get the PPE that they needed. In the Fall of 2020 we started hearing of additional PPE shortages due to the fall surge. This led to a reboot of packaging and we sent a few hundred more face shields to Harborview Medical and Gallup Indian Health Service (IHS) hospital (NM). We started to wonder if other IHS hospitals were experiencing the same PPE shortages and, if so, if the demand was high enough to coordinate another production run of GTP face shields.</p>
-                        <p className="intro-text"><b>I successfully identified 15 hospitals experiencing PPE shortages,</b> the majority were IHS hospitals in rural areas who often operate outside of standard supply chains. <b>We packaged and delivered over 1,000 faceshields to these small rural hospitals.</b> </p>
+                        <p className="intro-text">When Covid-19 hit the United States in March 2020, the country faced extreme personal protective equipment (PPE) shortages. Design that Matters responded by rapidly designing and fabricating face shields for local hospitals. <b>By partnering with local Seattle-based volunteers, Harborview Medical, and Global Tech Plastics we were able to produce over 300,000 injection molded face shields</b> to be delivered to WA hospitals.</p>
+                        <p className="intro-text">In the Fall of 2020 we started hearing of additional PPE shortages due to the fall surge. This led to a reboot of packaging and we sent a few hundred more face shields to Harborview Medical and Gallup Indian Health Service (IHS) hospital (NM). We started to wonder if other IHS hospitals were experiencing the same PPE shortages and, if so, if the demand was high enough to coordinate another production run of GTP face shields.</p>
+                        <p className="intro-text"><b>I successfully identified 15 hospitals experiencing PPE shortages,</b> the majority were IHS hospitals in rural areas who often operate outside of standard supply chains. I established distribution connections to deliver the face shields directly to each hospital's supply center. <b>In total, we packaged and delivered over 1,000 faceshields to these small rural hospitals.</b> </p>
                     </div> 
                     <div className="intro-img-div">
-                            <img className="intro-img1" src={faceshieldShipping}></img>
-                            <img className="intro-img2" src={faceshieldPackaging}></img>
-                            <p className="img_description">Packaging face sheilds to ship to Indian Health Service Hospitals.</p>        
+                        <img className="intro-img" src={faceshieldShipping}></img>
+                        <img className="intro-img" src={faceshieldPackaging}></img>
+                    </div>
+                    <div>
+                        <p className="FSimg_description">Packaging face sheilds to ship to Indian Health Service Hospitals.</p>        
+                    </div>
+                    <div>
+                        <p className="intro-text">These face shields were designed to have as universal a fit as possible. NASA biometrics for head circumferences were used in the design process to achieve this design specification. The biometrics range from a 5% female head to a 95% male head. <b> We considered expanding to international markets and in order to demonstrate universal fit, I designed and rapidly prototyped life-sized heads.</b> These heads are currently used to create a visual for the universal fit capability of the Covid-19 face shield. </p>
                     </div>
                 </div>
                 

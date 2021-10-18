@@ -24,14 +24,14 @@
     padding-left: 4vw;
     padding-right: 4vw;
 }
-.cystoscope-div hr {
+.EEG-div hr {
     width: 20%;
     height: 3px;
     background: black;
     border: none;
   }
 /* HEADER IMAGE SECTION */
-.header-block-div{
+.EEGheader-block-div{
     position: relative;
     height: 40vw !important;
     width: 100%;
@@ -40,14 +40,14 @@
     align-items: center;
     justify-content: center;
 }
-.header-block-div:before{
+.EEGheader-block-div:before{
     content: "";
-    background-image: url(../../images/cystoscope-cover2.png);
+    background-image: url(../../images/EEG-headerImg.png);
     background-size: cover;
     position: absolute;
     background-repeat: repeat;
     background-position: 160% -90%;
-    background-size: 120%;
+    background-size: 100%;
     background-attachment: fixed;
     opacity: 0.7;
     /* background-color:darkgrey; */
@@ -74,4 +74,17 @@
     margin-left: 10vw !important;
     margin-right: 50vw;
     margin-bottom: 10px !important;
+}
+
+/* BACKGROUND SECTION */
+.EEGintro-img{
+    max-width: 31vw;
+    margin-top: 6vw;
+}
+
+/* DESIGN REQS */
+.EEG-designReqs-list{
+    text-align: left !important;
+    font-size: 15px;
+    margin-left: 2vw;
 }

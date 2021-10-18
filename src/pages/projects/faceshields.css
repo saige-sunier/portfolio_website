@@ -16,23 +16,18 @@
     margin-left: 4vw;
     margin-right: 4vw;
 }
-.img_description{
+.FSimg_description{
     font-size: 12px;
     text-align: center;
     color:slategrey;
-    margin-top: 0px;
+    margin-top: 10px;
     text-align: center !important;
 }
 .general-format{
     padding-left: 4vw !important;
     padding-right: 4vw !important;
 }
-.ventilator-div hr {
-    width: 20%;
-    height: 3px;
-    background: black;
-    border: none;
-  }
+
 /* HEADER IMAGE SECTION */
 .header-block-div{
     position: relative;
@@ -81,9 +76,9 @@
 
 /* BACKGROUND SECTION */
 .intro-div{
-    display: flex;
+    /* display: flex;
     justify-content: left;
-    flex-direction: row;
+    flex-direction: row; */
     padding-top: 1rem;
 }
 .intro-text{
@@ -92,29 +87,21 @@
     padding-top: 0.5rem;
     padding-bottom: 0rem;
     padding-left: 4vw;
-    padding-right: 2vw;
-}
-.intro-img-div{
-    display: grid;
-    width: 100rem;
-    grid-auto-flow: row;
     padding-right: 4vw;
 }
-.intro-img1{
-    max-width: 380px;
-    height: auto;
-    margin-top: auto;
-    padding-top: 4vw;
-    margin-bottom: 2px;
+.intro-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
 }
-.intro-img2{
-    max-width: 380px;
+.intro-img{
+    display: flex;
+    max-width: 40%;
     height: auto;
-    margin-top: -30px;
-    padding-top: 4vw;
-    margin-bottom: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-
 
 /* DESIGN PROCESS SECTION */
 
@@ -189,6 +176,7 @@
 
 }
 .links-div{
+    margin-left: 4vw;
     text-align: left;
     margin-top: 4rem;
 }
