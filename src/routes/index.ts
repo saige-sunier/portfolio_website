@@ -4,5 +4,8 @@ export enum Routes {
     cystoscope='/cystocope',
     ventilator='/ventilator',
     tengeru="/tengeru",
-    homepage='/saigesunier'
+    homepage='/saigesunier',
+    warmer_DP='/warmer_DP',
+    faceshields='/faceshields',
+    EEGcircuit='/EEGcircuit'
 }

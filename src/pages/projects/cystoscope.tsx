@@ -24,7 +24,10 @@ export const Cystoscope = withRouter((props) =>{
     return (
         <div className="cystoscope-div" id="cystoscope">
             <div className="header-block-div">
-                <h2 className="CADproject-title">Advanced Design and Manufacturing: Cystoscope Re-Design</h2>
+                <div>
+                    <h2 className="CADproject-title-sm">Adv. Design & Manufacturing:</h2> 
+                    <h2 className="CADproject-title"> Cystoscope Re-Design</h2>
+                </div>
             </div>
             <div className="general-format">
                 <div className="CADintro-div">
@@ -41,12 +44,12 @@ export const Cystoscope = withRouter((props) =>{
                     <h3 className="CADsubheader">Design Process</h3>
                     <div className="process-grid">
                         <div className="process-block-area">
-                            <div className="flip-block-inner">
-                                <div className="flip-block-front">
+                            <div className="flip-block-inner-CAD">
+                                <div className="flip-block-front-CAD">
                                     <p className="CADprocess-title">Inspiration</p>
                                     <img className="process-image" id="lightbulb" src={lightbulb} alt="lightbulb"/>
                                 </div>
-                                <div className="flip-block-back">
+                                <div className="flip-block-back-CAD">
                                     <p className="process-description-sm">For my design, I wanted to break free from the conventional cystoscope shape and play with some new ideas.</p>
                                     <p className="process-description-sm">I looked to everyday objects for inspiration and considered objects that are comfortable to hold for long periods of time and easy-to-use.</p>
                                     <p className="process-description-sm">X-Box Controllers.</p>
@@ -54,36 +57,36 @@ export const Cystoscope = withRouter((props) =>{
                             </div>
                         </div>
                         <div className="process-block-area">
-                            <div className="flip-block-inner">
-                                <div className="flip-block-front">
+                            <div className="flip-block-inner-CAD">
+                                <div className="flip-block-front-CAD">
                                     <p className="CADprocess-title">Design Concepts</p>
                                     <img className="process-image" id="sketching" src={sketching} alt="sketching"/>
                                 </div>
-                                <div className="flip-block-back">
+                                <div className="flip-block-back-CAD">
                                     <p className="process-description-sm">Sketch. Sketch. Sketch.</p>
                                     <p className="process-description-sm">I am a very visual learner. The best way for me to evaluate my ideas is to sketch it out. I also played around with clay to rapidly prototype some of my ideas.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="process-block-area">
-                            <div className="flip-block-inner">
-                                <div className="flip-block-front">
+                            <div className="flip-block-inner-CAD">
+                                <div className="flip-block-front-CAD">
                                     <p className="CADprocess-title">Trade Offs</p>
                                     <img className="process-image" id="scales" src={scales} alt="scales"/>
                                 </div>
-                                <div className="flip-block-back">
+                                <div className="flip-block-back-CAD">
                                     <p className="process-description-sm">I decided to prioritize creativity and patient comfort and chose my "X-box controller" design over my other ideas. </p>
                                     <p className="process-description-sm">The device is visually familiar to appease patient anxiety and prioritizes ergonomic comfort for the physician.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="process-block-area">
-                            <div className="flip-block-inner">
-                                <div className="flip-block-front">
+                            <div className="flip-block-inner-CAD">
+                                <div className="flip-block-front-CAD">
                                     <p className="CADprocess-title">CAD Design</p>
                                     <img className="process-image" id="fusion-logo" src={fusionLogo} alt="fusion-logo"/>
                                 </div>
-                                <div className="flip-block-back">
+                                <div className="flip-block-back-CAD">
                                     <p className="process-description-sm">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
                                     <p className="process-description-sm">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
                                 </div> 
@@ -106,7 +109,7 @@ export const Cystoscope = withRouter((props) =>{
                     <p className="final-design-description">Click play to watch a full dissasembly animation of the design.</p>
                     <div className="final-design">
                         <div className="video-div">
-                            <video id="design-video" width="750" controls>
+                            <video id="design-video" width="680" controls>
                                 <source src={cystoVideo} type="video/mp4"></source>
                             </video>
                         </div>

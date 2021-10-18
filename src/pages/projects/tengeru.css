@@ -1,7 +1,7 @@
 /* GENERAL */
 .tengeru-div{
     position: relative;
-    top: -3rem;
+    /* top: -3rem; */
     font-family:Verdana, Geneva, Tahoma, sans-serif !important;
 }
 .TZsubheader{
@@ -56,10 +56,20 @@
 .project-title{
     position: relative;
     color: black;
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-align: left;
-    margin-left: 4vw;
+    margin-left: 11vw ;
     margin-right: 40vw;
+    margin-top: 0px;
+}
+.project-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw;
+    text-align: left;
+    margin-left: 11vw;
+    margin-right: 50vw;
+    margin-bottom: 10px;
 }
 /* BACKGROUND SECTION */
 .TZbackground-div{
@@ -107,8 +117,8 @@
     padding-bottom: 2px;
 }
 .TZwork-img{
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 6.5vw;
@@ -128,7 +138,7 @@
 }
 .TZpartitions-grid{
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
     grid-auto-flow: column; 
     margin: 0 0 0.2rem 0;
     /* height: 20rem; */
@@ -139,11 +149,13 @@
 
 .accordion-div{
     position: absolute;
+    max-width: 20vw;
     top: -16%;
     background-color: rgb(182, 202, 223, 0.5) !important;
 }
 .TZprocess-area{
     position: relative;
+    max-width: 20vw;
     width: 100%;
     height: 100%;
 }
@@ -156,10 +168,11 @@
     color: black;
     font-size: 18px !important;
     width: 100%;
+    text-align: center !important;
 }
 .TZprocess-img{
     display: block;
-    max-width: 23vw;
+    width: 100%;
     margin: auto;
     padding-top: 10px;
 }
@@ -194,12 +207,22 @@
     padding-left: 4vw;
     padding-right: 2vw;
 }
+.TZlessons-img-div{
+    display: grid;
+    grid-auto-flow: row;
+}
 .TZlessons-img{
-    width: 42%;
-    height: 42%;
+    width: 80%;
+    height: 80%;
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 4vw;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+.TZlessons-img2{
+    width: 80%;
+    height: 80;
     padding-left: 2vw;
     padding-right: 4vw;
 }

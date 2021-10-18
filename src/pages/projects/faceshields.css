@@ -1,0 +1,190 @@
+/* GENERAL */
+.faceshield-div{
+    position: relative;
+    /* top: -3rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.subheader{
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.subheader2{
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.FSimg_description{
+    font-size: 12px;
+    text-align: center;
+    color:slategrey;
+    margin-top: 10px;
+    text-align: center !important;
+}
+.general-format{
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;
+}
+
+/* HEADER IMAGE SECTION */
+.header-block-div{
+    position: relative;
+    height: 40vw !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faceshield-div .header-block-div:before{
+    content: "";
+    background-image: url(../../images/faceshield-cover.png);
+    background-size: cover;
+    position: absolute;
+    transform: scaleX(-1);
+    background-repeat: none;
+    background-position: 90% 40%;
+    background-size: 120%;
+    background-attachment: fixed;
+    opacity: 0.7;
+    background-color:darkgrey;
+    top: -10px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
+.project-title{
+    position: relative;
+    color: black;
+    font-size: 3vw !important;
+    text-align: left;
+    margin-left: 10vw !important;
+    margin-right: 50vw;
+    margin-top: 0px !important;
+}
+.project-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw !important;
+    text-align: left;
+    margin-left: 10vw !important;
+    margin-right: 50vw;
+    margin-bottom: 10px !important;
+}
+
+/* BACKGROUND SECTION */
+.intro-div{
+    /* display: flex;
+    justify-content: left;
+    flex-direction: row; */
+    padding-top: 1rem;
+}
+.intro-text{
+    font-size: 15px !important;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.intro-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+.intro-img{
+    display: flex;
+    max-width: 40%;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* DESIGN PROCESS SECTION */
+
+.FSprocess-grid{
+    display: grid;
+    gap: 3rem;
+    grid-auto-flow: column; 
+    margin: 0 0 0.2rem 0;
+    padding-bottom: 1rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.FSprocess-area{
+    position: relative;
+    max-width: 20vw !important;
+    width: 100%;
+    height: 100%;
+}
+.FSprocess-img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.accordion-div{
+    position: absolute;
+    bottom:0;
+    /* top: -16%; */
+    background-color: rgb(182, 202, 223, 0.5) !important;
+}
+.process-title{
+    position: relative;
+    left: 50%;
+    /* top: 10%; */
+    padding-top: 0px;
+    transform: translate(-45%, -15%);
+    color: black;
+    font-size: 16px !important;
+    width: 100%;
+    text-align: center !important;
+}
+.process-text{
+    position: relative !important;
+    text-align: left;
+    color: black;
+    font-size: 14px !important;
+    /* background-color:rgb(192, 188, 188); */
+}
+.process-description-sm {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+}
+.process-description-m {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.process-sketches-img{
+    width: 85%;
+    height: auto;
+    padding-left: 4vw;
+
+}
+.FS-final-design-img{
+    width: 75%;
+
+}
+.links-div{
+    margin-left: 4vw;
+    text-align: left;
+    margin-top: 4rem;
+}
+.links-div p{
+    font-size: 16px;
+    margin-bottom: -10px;
+}
+.links-div a{
+    font-size: 14px;
+    color: blue;
+}

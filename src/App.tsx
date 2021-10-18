@@ -5,9 +5,13 @@ import './App.css';
 import { Home } from './pages/home/home';
 import { Projects } from './pages/projects/projects';
 import { Header } from './partials/header';
+import { Footer } from './partials/footer';
 import { Cystoscope } from './pages/projects/cystoscope';
 import { Ventilator } from './pages/projects/ventilator'
 import { Tengeru } from './pages/projects/tengeru';
+import { Warmer_DP } from './pages/projects/warmer_DP'; 
+import { Faceshields } from './pages/projects/faceshields';
+import { EEGcircuitPage} from './pages/projects/EEGcircuit';
 import { Routes } from './routes';
 
 function App() {
@@ -17,6 +21,7 @@ function App() {
         <Route path={'/'} exact>
           <Header/>
           <Home/>
+          <Footer/>
         </Route>
         <Route path={Routes.homepage}>
           <Redirect to={Routes.home} />
@@ -24,23 +29,43 @@ function App() {
         <Route path={Routes.home} exact>
           <Header/>
           <Home/>
+          <Footer/>
         </Route>
         <Route path={Routes.projects}>
           <Header/>
           <Projects/>
+          <Footer/>
          </Route> 
         <Route path={Routes.cystoscope}>
           <Header/>
           <Cystoscope/>
+          <Footer/>
         </Route>
         <Route path={Routes.ventilator}>
           <Header/>
           <Ventilator/>
-          </Route>
+          <Footer/>
+        </Route>
         <Route path={Routes.tengeru}>
           <Header/>
           <Tengeru/>
-          </Route>
+          <Footer/>
+        </Route>
+        <Route path={Routes.warmer_DP}>
+            <Header/>
+            <Warmer_DP/>
+            <Footer/>
+        </Route>
+        <Route path={Routes.faceshields}>
+            <Header/>
+            <Faceshields/>
+            <Footer/>
+        </Route>
+        <Route path={Routes.EEGcircuit}>
+            <Header/>
+            <EEGcircuitPage/>
+            <Footer/>
+        </Route>
       </div>
     </Router>
   );
