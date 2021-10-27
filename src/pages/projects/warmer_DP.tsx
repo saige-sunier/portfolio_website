@@ -65,7 +65,7 @@ export const Warmer_DP = withRouter((props) =>{
 
 return (
     <div className="warmer_DP-div" id="warmer_dp">
-        <div className="header-block-div">
+        <div className="warmer-header-block-div">
             <div>
                 <h2 className="DTMproject-title-sm">Design that Matters</h2> 
                 <h2 className="DTMproject-title">Designing Solutions for Neonatal Hypothemia</h2>
@@ -96,8 +96,8 @@ return (
             </div>
             <div className="DTM-process-div">
                 <h3 className="subheader">Developing Design Principles</h3>
-                <p className="DTM-need-text"> Over the past year and a half I have collaborated with MSF personnel located in Japan, Barcelona, Democratic Republic of Congo, Kenya, Yemen,  India, and Senegal. We have brought together a wide range of stakeholders to develop product requirements and specifications for a newborn warmer. </p>
-                <p className="DTM-need-text">We have hosted four Workshops with our stakeholders, performed several exit interviews with MSF staff, and conducted one-on-one and small group interviews with various stakeholders. </p>
+                <p className="DTM-need-text"> Over the past year and a half I have collaborated with <b>MSF personnel located in Japan, Barcelona, Democratic Republic of Congo, Kenya, Yemen,  India, and Senegal.</b> DtM brought together a wide range of stakeholders to develop product requirements and specifications for a newborn warmer. </p>
+                <p className="DTM-need-text">I co-facilitated four Workshops with our stakeholders, performed several exit interviews with MSF staff, and conducted one-on-one and small group interviews with various stakeholders. I developed frameworks and presentations to facilitate lively conversations that led to substantial progress towards recognizing the severity of neonatal hypothermia in LRS and the need to develop solutions specifically for these settings.</p>
                 <p className="DTM-need-text">Our goals throughout this process were:</p>
                 <div className="process-circle-div">
                     <div className="process-circle">

@@ -182,7 +182,7 @@ export const Ventilator = withRouter((props) =>{
                     <h3 className="CADsubheader">Final Design</h3>
                     <div className="final-design">
                         <div className="video-div">
-                            <video id="design-video" width="680" controls>
+                            <video id="design-video" width="750vw" controls>
                                 <source src={ventFullVideo} type="video/mp4"></source>
                             </video>
                         </div>
@@ -202,13 +202,13 @@ export const Ventilator = withRouter((props) =>{
                 <div className="bonus-div">
                     <h4 className="CADsubheader2">Additional Animations</h4>
                     <div className="add-videos-div">
-                        <video id="add-videos" width="300" controls>
+                        <video id="add-videos" width="380vw" controls>
                             <source src={ventVid1} type="video/mp4"></source>
                         </video>
-                        <video id="add-videos" width="300" controls>
+                        <video id="add-videos" width="380vw" controls>
                             <source src={ventVid2} type="video/mp4"></source>
                         </video>
-                        <video id="add-videos" width="300" controls>
+                        <video id="add-videos" width="380vw" controls>
                             <source src={ventVid3} type="video/mp4"></source>
                         </video>
                     </div>

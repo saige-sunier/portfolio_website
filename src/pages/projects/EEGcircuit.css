@@ -4,19 +4,18 @@
     /* top: -2.5rem; */
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
-.CADsubheader{
+.EEGsubheader{
     font-size: 2vw;
-    text-align: left;
+    text-align: left !important;
     margin-left: 4vw;
 }
-.CADsubheader2{
+.EEGsubheader2{
     font-size: 1.5vw;
-    text-align: left;
+    text-align: left !important;
     margin-left: 4vw;
-    margin-right: 4vw;
 }
 .CADimg_description{
-    font-size: 12px;
+    font-size: calc(10px + 0.2vw);
     text-align: center;
     color:slategrey;
 }
@@ -24,12 +23,7 @@
     padding-left: 4vw;
     padding-right: 4vw;
 }
-.EEG-div hr {
-    width: 20%;
-    height: 3px;
-    background: black;
-    border: none;
-  }
+
 /* HEADER IMAGE SECTION */
 .EEGheader-block-div{
     position: relative;
@@ -46,11 +40,11 @@
     background-size: cover;
     position: absolute;
     background-repeat: repeat;
-    background-position: 160% -90%;
+    background-position: 160% 30%;
     background-size: 100%;
     background-attachment: fixed;
     opacity: 0.7;
-    /* background-color:darkgrey; */
+    /* background-color: rgb(211, 211, 211); */
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -79,12 +73,39 @@
 /* BACKGROUND SECTION */
 .EEGintro-img{
     max-width: 31vw;
-    margin-top: 6vw;
+    transform: translate(0%, -10%);
 }
 
 /* DESIGN REQS */
 .EEG-designReqs-list{
     text-align: left !important;
-    font-size: 15px;
-    margin-left: 2vw;
+    font-size: calc(12px + 0.25vw);
+    margin-left: 4vw;
+}
+.EEGschematic-img{
+    position: relative;
+    max-width: 60vw; 
+}
+.CBheader-img{
+    position: relative;
+    transform: translate(5%, 0%);
+    max-width: 60vw;
+}
+
+/* FINAL DESIGN DIV */
+.EEGtestImg-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.EEGtestImg{
+    display: flex;
+    max-width: 30vw;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.table-div{
+    transform: translate(20%, 0%);
 }

@@ -81,8 +81,8 @@ const Accordion = withStyles({
         <div className="tengeru-div" id="tengeru">
             <div className="header-block-div">
                 <div>
-                    <h2 className="project-title-sm">Engineering World Health</h2> 
-                    <h2 className="project-title">Biomedical Technician at Tengeru Hospital, Tanzania</h2> 
+                    <h2 className="TZ-project-title-sm">Engineering World Health</h2> 
+                    <h2 className="TZ-project-title">Biomedical Technician at Tengeru Hospital, Tanzania</h2> 
                 </div>
             </div>
             <div className="general-format">
@@ -218,7 +218,7 @@ const Accordion = withStyles({
                         </div>
                         <div className="TZlessons-img-div">
                              <img className="TZlessons-img" src={TZmeruSummit}></img>
-                             <img className="TZlessons-img2" src={TZSG}></img>
+                             {/* <img className="TZlessons-img2" src={TZSG}></img> */}
                         </div>
                        
                     </div>

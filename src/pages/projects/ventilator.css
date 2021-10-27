@@ -17,20 +17,15 @@
     margin-right: 4vw;
 }
 .CADimg_description{
-    font-size: 12px;
+    font-size: calc(10px + 0.2vw);
     text-align: center !important;
     color:slategrey;
 }
 .general-format{
-    padding-left: 4vw !important;
-    padding-right: 4vw !important;
+    margin-left: 4vw !important;
+    margin-right: 4vw !important;
 }
-.ventilator-div hr {
-    width: 20%;
-    height: 3px;
-    background: black;
-    border: none;
-  }
+
 /* HEADER IMAGE SECTION */
 .header-block-div{
     position: relative;
@@ -85,12 +80,12 @@
     padding-top: 1rem;
 }
 .CADintro-text{
-    font-size: 15px !important;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
     padding-left: 4vw;
-    padding-right: 2vw;
+    padding-right: 4vw;
 }
 .CADintro-img-div{
     display: grid;
@@ -101,9 +96,9 @@
 .CADintro-img{
     max-width: 100%;
     height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-top: 4vw;
+    transform: translate(0%, 5%);
+    padding-bottom: 1vw;
+    
 }
 
 /* DESIGN PROCESS SECTION */
@@ -141,58 +136,17 @@
     left: 50%;
     /* top: 10%; */
     padding-top: 0px;
-    transform: translate(-45%, -15%);
+    transform: translate(-45%, -10%);
     color: black;
-    font-size: 16px !important;
+    font-size: calc(14px + 0.3vw);
     width: 100%;
 }
 .process-text{
     position: relative !important;
     text-align: left;
     color: black;
-    font-size: 14px !important;
+    font-size: calc(12px + 0.2vw);
     /* background-color:rgb(192, 188, 188); */
-}
-.process-description-sm {
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    padding: 0px 20px;
-}
-.process-description-m {
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    padding: 0px 20px;
-}
-
-.flip-block-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-.process-block-area:hover .flip-block-inner{
-    transform: rotateX(180deg);
-}
-.flip-block-front, .flip-block-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.flip-block-front{
-    background-color:none;
-    align-items: center;
-}
-.flip-block-back{
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    opacity: 0.7;
-    transform: rotateX(180deg);
 }
 
 
@@ -201,30 +155,23 @@
     display: flex;
     flex-direction: row;
 }
-.final-design-description{
-    font-size: 15px;
-    text-align: left;
-    padding-left: 4vw;
+.key-features{
+    font-size: calc(14px + 0.25vw);
 }
-.key-features-li a{
-    font-size: 14px;
-    color: blue;
-    padding: 0;
-    margin: 0;
+.key-features-li{
+    font-size: calc(12px + 0.25vw);
+    margin-left: 1vw;
 }
 .video-div{
     padding-left: 4rem;
 }
 .add-videos-div{
     display: grid;
-    gap: 1rem;
+    gap: 1vw;
     grid-auto-flow: column; 
-    margin: 0 0 1rem 0;
-    height: 20rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+
 }
 .add-videos-div:hover{
     cursor: pointer;

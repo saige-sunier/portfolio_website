@@ -12,6 +12,7 @@ import { Tengeru } from './pages/projects/tengeru';
 import { Warmer_DP } from './pages/projects/warmer_DP'; 
 import { Faceshields } from './pages/projects/faceshields';
 import { EEGcircuitPage} from './pages/projects/EEGcircuit';
+import { JustForFun } from './pages/projects/justforfun';
 import { Routes } from './routes';
 
 function App() {
@@ -64,6 +65,11 @@ function App() {
         <Route path={Routes.EEGcircuit}>
             <Header/>
             <EEGcircuitPage/>
+            <Footer/>
+        </Route>
+        <Route path={Routes.justforfun}>
+            <Header/>
+            <JustForFun/>
             <Footer/>
         </Route>
       </div>

@@ -13,7 +13,7 @@ import Typography from '@material-ui/core/Typography';
 
 export const Faceshields = withRouter((props) =>{
 
-    const faceshieldShipping='./images/faceshieldShipping.jpeg';
+    const faceshieldShipping='./images/faceshieldShipping.png';
     const faceshieldPackaging='./images/faceshield-packaging.jpeg';
     const nioshLogo='./images/niosh-logo.png';
     const nioshBase='./images/niosh-base-design.png';

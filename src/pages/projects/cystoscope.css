@@ -16,7 +16,7 @@
     margin-right: 4vw;
 }
 .CADimg_description{
-    font-size: 12px;
+    font-size: calc(10px + 0.2vw);
     text-align: center;
     color:slategrey;
 }
@@ -84,7 +84,7 @@
     padding-top: 1rem;
 }
 .CADintro-text{
-    font-size: 15px !important;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
@@ -163,13 +163,13 @@
     text-align: center !important;
   }
 .process-description-sm {
-    font-size: 12.5px !important;
+    font-size: calc(10px + 0.22vw) !important;
     color: white;
     text-align: center !important;
     padding: 0px 20px;
 }
 .process-description-m {
-    font-size: 16px;
+    font-size: calc(12px + 0.25vw);
     color: white;
     text-align: center !important;
     padding: 0px 20px;
@@ -203,9 +203,10 @@
     cursor: pointer;
 }
 .final-design-description{
-    font-size: 15px;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-left: 4vw;
+    margin-bottom: 2rem;
 }
 .key-features-div{
     text-align: left;
@@ -214,11 +215,11 @@
     padding-left: 2vw;
 }
 .key-features{
-    font-size: 17px;
+    font-size: calc(14px + 0.25vw) !important;
 }
 .key-features-sub{
-    font-size: 15px;
+    font-size: calc(12px + 0.25vw);
 }
 .key-features-li{
-    font-size: 14px;
+    font-size: calc(12px + 0.25vw);
 }

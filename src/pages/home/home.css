@@ -11,12 +11,7 @@
   margin-bottom: 2rem;
 
 }
-hr {
-  width: 10%;
-  height: 3px;
-  background: black;
-  border: none;
-}
+
 
 /*ABOUT DIV STYLING*/
 .about-div {
@@ -34,14 +29,13 @@ hr {
 .about-box-area {
   display: flex;
   align-items: flex-start;
-  padding-bottom: 1rem; 
+  padding-bottom: 0rem; 
   height: 820px;
-  padding-left: 4vw;
+  padding-left: 8vw;
 }
 .about-box {
-  position: sticky;
-  top: 9.5rem;
-  bottom: 1.5rem;
+  position: relative;
+  top: 5vw;
   text-align: left;
   margin-top: 20px;
   margin-left: 30px;
@@ -57,19 +51,20 @@ hr {
   font-size: 18px;
 }
 .about-div2{
-  padding-bottom: 2rem;
-  padding-left: 4rem;
+  margin-bottom: 4vw;
+  margin-top: 2vw;
+  /*padding-left: 4rem;
   padding-right: 4rem;
   margin-right: 4vw;
-  margin-left: 38rem;
+  margin-left: 4rem; */
 }
 .section-subheader {
-  font-size: 20px;
+  font-size: calc(16px + 0.3vw);
   text-align: center;
 }
 .about-div2 p{
   text-align: center;
-  font-size: 15px;
+  font-size: calc(12px + 0.25vw);
 }
 /* .about-div2 li {
   font-size: 15px;

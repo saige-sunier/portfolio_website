@@ -36,33 +36,27 @@
 .general-format h3{
     text-align: left;
 }
-.ventilator-div hr {
-    width: 20%;
-    height: 3px;
-    background: black;
-    border: none;
-  }
 
 /* HEADER DIV */
-.header-block-div{
+.warmer-header-block-div{
     position: relative;
-    height: 40vw;
+    height: 40vw !important;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
     justify-content: center;
 }
-.warmer_DP-div .header-block-div:before{
+.warmer-header-block-div:before{
     content: "";
     background-image: url(../../images/goyalmara.png);
     background-size: cover;
     position: absolute;
     background-repeat: none;
-    background-size: 100%;
+    background-position: 50% 50%;
     background-attachment: fixed;
-    opacity: 0.7;
-    background-color:darkgrey;
-    top: -600px;
+    opacity: 0.9;
+    top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -95,7 +89,7 @@
     padding-top: 1rem;
 }
 .DTM-intro-text{
-    font-size: 15px;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
@@ -119,7 +113,7 @@
 
 /* THE NEED */
 .DTM-need-text{
-    font-size: 15px ;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-bottom: 0rem;
     padding-left: 4vw;
@@ -135,14 +129,14 @@
     padding-left: 4vw;
     padding-right: 4vw;
     text-align: center !important;
-    font-size: 16px;
+    font-size: calc(12px + 0.25vw);
     margin-left: 4rem;
     margin-right: 4rem;
 }
 .DTM-need-text3{
     background-color: rgba(255, 202, 28, 0.726);
     text-align: center !important;
-    font-size: 18px;
+    font-size: calc(12px + 0.45vw);
     padding: 5px;
     margin-left: 30vw;
     margin-right: 30vw;
@@ -173,6 +167,7 @@
     margin-top: 1.15rem;
     padding-left: 6vw;
     width: 70vw;
+    font-size: calc(12px + 0.25vw);
 }
 .DTM-need-text a{
     color: blue;
@@ -196,7 +191,7 @@
 /* WARMING SOLUTIONS  */
 .DTM-need-img-div{
     display: grid;
-    gap: 4rem;
+    gap: 0vw;
     grid-auto-flow: column; 
     margin: 0 0 0.2rem 0;
     padding-top: 1rem;
@@ -211,11 +206,9 @@
 }
 .DTM-need-left .need-img-text{
     text-align: left;
-    font-size: 13px;
-    /* padding-left: 4vw; */
-    padding-right: 1rem;
-    margin-left: 2rem;
-    /* color: white; */
+    font-size: calc(10px + 0.2vw);
+    padding-right: 0vw;
+    margin-left: 2vw;
     z-index: 20;
 }
 .DTM-need-img{
@@ -224,6 +217,8 @@
     width: auto;
     margin-bottom: 2rem;
     padding: 0px;
+    margin-left: auto;
+    margin-right: 0;
     z-index: 10;
 }
 .DTM-need-right{
@@ -233,8 +228,8 @@
 .DTM-need-right .need-img-text{
     position: absolute;
     text-align: left;
-    font-size: 13px;
-    padding-left: 2rem;
+    font-size: calc(10px + 0.2vw);
+    margin-left: 2vw;
     padding-right: 1rem;
     /* color: white; */
 }

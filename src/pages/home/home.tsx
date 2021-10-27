@@ -15,6 +15,7 @@ export const Home = withRouter((props) =>{
     const goyalmaranewborn='./images/newborn-bubbleWrap.png';
     const faceshield='./images/faceshield-solo.png';
     const EEGcircuit='./images/EEG-circuitBoard.png';
+    const justforfun='./images/catan-square.png';
     const aboutMe='./images/aboutMe-img-temporary.png';
 
     const handleProjectSelect = (projectRoute:Routes) =>{
@@ -45,14 +46,10 @@ export const Home = withRouter((props) =>{
                 </div>    
                 <h2 className="section-subheader">Experience</h2>
                 <div className="aboutSection">
-                    <p>Human Centered Design: Systems and Product Design to Design and Implement Newborn Warmer</p>
-                    <p>Non-Profit Management: International Partnership Development; Internal Planning, Strategy, Networking, and Growth</p>
-                    <p>Field Work: Two Months Repairing Medical Equipment in Tanzania</p>
-                    <p>R&D: Signal Processing and Clinical Trial Development at a Start Up</p>
-                    {/* <li>Software Languages: Python, React, HTML, CSS, MATLAB, Arduino (Java/C)</li>
-                    <li>Design Software: Fusion360 CAD, Altium PCB Designer, Mural, Meshmixer, Luban</li>
-                    <li>Operating Systems: Mac OS X, Windows, Adobe Creative Suite </li>
-                    <li>Languages: French (proficient), Swahili (basic)</li> */}
+                    <p>Human Centered Design - Systems and Product Design for a LRS Specific Newborn Warmer</p>
+                    <p>Non-Profit Management - International Partnership Development; Internal Strategy, Networking, and Growth</p>
+                    <p>Field Work - Two Months Repairing Medical Equipment in Tanzania</p>
+                    <p>R&D - Signal Processing and Clinical Trial Development at a Start Up</p>
                 </div>
             </div>
            
@@ -87,9 +84,9 @@ export const Home = withRouter((props) =>{
                         <p className="project-image-title">Kicks in Orbit</p>
                         <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
                     </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
-                        <p className="project-image-title">Kicks in Orbit</p>
-                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
+                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.justforfun)}>
+                        <p className="project-image-title">Just for Fun</p>
+                        <img className="project-image" id="kicks-in-orbit" src={justforfun} alt="kicksinorbit"/>
                     </div>
                     
                 </div>
@@ -101,6 +98,8 @@ export const Home = withRouter((props) =>{
                     <p className="research-text">I currently work at Design that Matters, a non-profit that specializes in applying human-centered design methodologies to design products and systems for low-resource settings. We are currently focused on reducing incidences of neonatal hypothermia in low-resource settings. </p>
                     <p className="research-text">For the past year and a half, I have extensively studied neonatal hypothermia, the effectivness of warming solutions, and the medical device industry in regards to low resource settings. The following documents encapsulate my years worth of research into these topics.</p>
                 </div>
+                
+
             </div>
             
             <div className="aboutMe-div" id="about">

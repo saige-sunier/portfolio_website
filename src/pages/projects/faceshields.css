@@ -17,7 +17,7 @@
     margin-right: 4vw;
 }
 .FSimg_description{
-    font-size: 12px;
+    font-size: 0.7vw;
     text-align: center;
     color:slategrey;
     margin-top: 10px;
@@ -82,7 +82,7 @@
     padding-top: 1rem;
 }
 .intro-text{
-    font-size: 15px !important;
+    font-size: 0.85vw !important;
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
@@ -94,11 +94,14 @@
     flex-direction: row;
     justify-content: center; 
     align-items: center;
+    max-height: 20vw;
+    margin-top: 4vw;
+    margin-bottom: 1vw;
 }
 .intro-img{
     display: flex;
-    max-width: 40%;
-    height: auto;
+    max-height: 20vw;
+    width: auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -139,9 +142,9 @@
     left: 50%;
     /* top: 10%; */
     padding-top: 0px;
-    transform: translate(-45%, -15%);
+    transform: translate(-45%, -10%);
     color: black;
-    font-size: 16px !important;
+    font-size: calc(14px + 0.3vw);
     width: 100%;
     text-align: center !important;
 }
@@ -149,20 +152,8 @@
     position: relative !important;
     text-align: left;
     color: black;
-    font-size: 14px !important;
+    font-size: calc(12px + 0.2vw);
     /* background-color:rgb(192, 188, 188); */
-}
-.process-description-sm {
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    padding: 0px 20px;
-}
-.process-description-m {
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    padding: 0px 20px;
 }
 
 .process-sketches-img{
@@ -181,10 +172,10 @@
     margin-top: 4rem;
 }
 .links-div p{
-    font-size: 16px;
+    font-size: 0.85vw;
     margin-bottom: -10px;
 }
 .links-div a{
-    font-size: 14px;
+    font-size: 0.8vw;
     color: blue;
 }
