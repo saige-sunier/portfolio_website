@@ -94,9 +94,11 @@
     padding-right: 4vw;
 }
 .CADintro-img{
+    position: relative;
     max-width: 100%;
     height: auto;
     transform: translate(0%, 5%);
+    padding-top: 2vw;
     padding-bottom: 1vw;
     
 }
@@ -159,7 +161,7 @@
     font-size: calc(14px + 0.25vw);
 }
 .key-features-li{
-    font-size: calc(12px + 0.25vw);
+    font-size: calc(8px + 0.5vw);
     margin-left: 1vw;
 }
 .video-div{

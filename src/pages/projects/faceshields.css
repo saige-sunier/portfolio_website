@@ -5,19 +5,19 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 .subheader{
-    font-size: 2vw;
+    font-size: calc(20px + 0.5vw);
     text-align: left;
     margin-left: 4vw;
     margin-right: 4vw;
 }
 .subheader2{
-    font-size: 1.5vw;
+    font-size: calc(18px + 0.25vw);
     text-align: left;
     margin-left: 4vw;
     margin-right: 4vw;
 }
 .FSimg_description{
-    font-size: 0.7vw;
+    font-size: calc(9px + 0.2vw);
     text-align: center;
     color:slategrey;
     margin-top: 10px;
@@ -76,20 +76,68 @@
 
 /* BACKGROUND SECTION */
 .intro-div{
-    /* display: flex;
+    display: flex;
     justify-content: left;
-    flex-direction: row; */
+    flex-direction: row;
     padding-top: 1rem;
 }
 .intro-text{
-    font-size: 0.85vw !important;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
     padding-left: 4vw;
+    padding-right: 2vw;
+}
+
+.intro-img-div{
+    display: grid;
+    width: 220vw;
+    grid-auto-flow: row;
     padding-right: 4vw;
 }
-.intro-img-div{
+
+.intro-img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-top: 6vw;
+}
+
+/* NEEDS DIV */
+.needs-content-div{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.need-circle-div{
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.need-circle{
+    padding-left: 6vw;
+    margin-right: 0.5rem;
+}
+
+.need-textA{
+    position: relative;
+    margin-top: 0.5rem;
+    font-size: calc(12px + 0.2vw);
+}
+
+.needs-map{
+    position: relative;
+    max-width: 32vw;
+    height: 100%;
+    padding-right: 4vw;
+    margin-top: -1.5rem;
+    padding-left: -2rem;
+}
+
+/* PLACEMENT RESULTS DIV */
+.results-img-div{
     display: flex;
     flex-direction: row;
     justify-content: center; 
@@ -98,13 +146,28 @@
     margin-top: 4vw;
     margin-bottom: 1vw;
 }
-.intro-img{
+.results-img{
     display: flex;
     max-height: 20vw;
     width: auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.results-text{
+    font-size: calc(12px + 0.25vw);
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+
+/* NIOSH HEADS */
+
+
+
 
 /* DESIGN PROCESS SECTION */
 
@@ -145,6 +208,7 @@
     transform: translate(-45%, -10%);
     color: black;
     font-size: calc(14px + 0.3vw);
+    font-weight: bold !important;
     width: 100%;
     text-align: center !important;
 }
@@ -163,7 +227,7 @@
 
 }
 .FS-final-design-img{
-    width: 75%;
+    width: 85%;
 
 }
 .links-div{
@@ -172,10 +236,10 @@
     margin-top: 4rem;
 }
 .links-div p{
-    font-size: 0.85vw;
+    font-size: calc(12px + 0.25vw);
     margin-bottom: -10px;
 }
 .links-div a{
-    font-size: 0.8vw;
+    font-size: calc(11px + 0.25vw);
     color: blue;
 }

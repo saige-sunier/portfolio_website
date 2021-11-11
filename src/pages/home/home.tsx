@@ -16,7 +16,7 @@ export const Home = withRouter((props) =>{
     const faceshield='./images/faceshield-solo.png';
     const EEGcircuit='./images/EEG-circuitBoard.png';
     const justforfun='./images/catan-square.png';
-    const aboutMe='./images/aboutMe-img-temporary.png';
+    const aboutMe='./images/aboutMe-img.png';
 
     const handleProjectSelect = (projectRoute:Routes) =>{
         props.history.push(projectRoute);
@@ -55,41 +55,59 @@ export const Home = withRouter((props) =>{
            
             <div className="home-projects-div" id="projects">
                 <h1 className="section-header">Projects</h1>
-                <div className="projects-grid">
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.warmer_DP)}>
-                        <p className="project-image-title">Designing Solutions to Neonatal Hypothermia</p>
-                        <img className="project-image" id="DtM" src={goyalmaranewborn} alt="DtM"/>
-                    </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.tengeru)}>
-                        <p className="project-image-title">Biomed at Tengeru Hospital</p>
-                        <img className="project-image" id="TZbiomed" src={TZbiomed} alt="TZbiomed"/>
-                    </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.faceshields)}>
-                        <p className="project-image-title">Covid-19 Faceshields</p>
-                        <img className="project-image" id="kicks-in-orbit" src={faceshield} alt="kicksinorbit"/>
-                    </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.ventilator)}>
-                        <p className="project-image-title">Emergency Ventilator</p>
-                        <img className="project-image" id="ventilator" src={ventilator} alt="ventilator"/>
-                    </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
-                        <p className="project-image-title">Cystoscope Redesign</p>
-                        <img className="project-image" id="cystoscope" src={cystoscope} alt="cystoscope"/>
-                    </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.EEGcircuit)}>
-                        <p className="project-image-title">EEG Signal Processor</p>
-                        <img className="project-image" id="EEG-circuit" src={EEGcircuit} alt="EEG-circuit"/>
-                    </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.cystoscope)}>
-                        <p className="project-image-title">Kicks in Orbit</p>
-                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
-                    </div>
-                    <div className="project-image-area" onClick={() => handleProjectSelect(Routes.justforfun)}>
-                        <p className="project-image-title">Just for Fun</p>
-                        <img className="project-image" id="kicks-in-orbit" src={justforfun} alt="kicksinorbit"/>
-                    </div>
-                    
-                </div>
+                {/* <div className="projects-grid"> */}
+                <ul id="hexGrid">
+                    <li className="hex">
+                        <div className="hexIn" onClick={() => handleProjectSelect(Routes.warmer_DP)}>
+                            <img className="project-image" id="DtM" src={goyalmaranewborn} alt="DtM"/>
+                            <h1>Designing Solutions to Neonatal Hypothermia</h1>
+                            <p>Aug 2020 - Present</p>
+                        </div>
+                    </li>
+                    <li className="hex">
+                        <div className="hexIn" onClick={() => handleProjectSelect(Routes.tengeru)}>
+                            <img className="project-image" id="TZbiomed" src={TZbiomed} alt="TZbiomed"/>
+                            <h1>Biomed at Tengeru Hospital</h1>
+                            <p>Some description here</p>
+                        </div>
+                    </li>
+                    <li className="hex">
+                        <div className="hexIn" onClick={() => handleProjectSelect(Routes.faceshields)}>
+                            <img className="project-image" id="faceshield" src={faceshield} alt="kicksinorbit"/>
+                            <h1>Covid-19 Faceshields</h1>   
+                            <p>Some description here</p> 
+                        </div>
+                    </li>
+                    <li className="hex">
+                        <div className="hexIn" onClick={() => handleProjectSelect(Routes.ventilator)}>
+                            <img className="project-image" id="ventilator" src={ventilator} alt="ventilator"/>
+                            <h1>Emergency Ventilator</h1>
+                            <p>Some description here</p>
+                        </div>
+                    </li>
+                    <li className="hex">
+                        <div className="hexIn" onClick={() => handleProjectSelect(Routes.cystoscope)}>
+                            <img className="project-image" id="cystoscope" src={cystoscope} alt="cystoscope"/>
+                            <h1>Cystoscope Redesign</h1>
+                            <p>Some description here</p>
+                        </div>
+                    </li>
+                    <li className="hex">
+                        <div className="hexIn" onClick={() => handleProjectSelect(Routes.EEGcircuit)}>
+                            <img className="project-image" id="EEG-circuit" src={EEGcircuit} alt="EEG-circuit"/>
+                            <h1>EEG Signal Processor</h1>
+                            <p>Some desciption here</p>
+                        </div>
+                    </li>
+                    <li className="hex">
+                        <div className="hexIn" onClick={() => handleProjectSelect(Routes.justforfun)}>
+                            <img className="project-image" id="kicks-in-orbit" src={justforfun} alt="kicksinorbit"/>
+                            <h1>Just for Fun</h1>
+                            <p>Some description here</p>
+                        </div>
+                    </li>
+                </ul>
+                {/* </div> */}
             </div>
            
             <div className="research-div" id="research">
@@ -98,7 +116,7 @@ export const Home = withRouter((props) =>{
                     <p className="research-text">I currently work at Design that Matters, a non-profit that specializes in applying human-centered design methodologies to design products and systems for low-resource settings. We are currently focused on reducing incidences of neonatal hypothermia in low-resource settings. </p>
                     <p className="research-text">For the past year and a half, I have extensively studied neonatal hypothermia, the effectivness of warming solutions, and the medical device industry in regards to low resource settings. The following documents encapsulate my years worth of research into these topics.</p>
                 </div>
-                
+
 
             </div>
             

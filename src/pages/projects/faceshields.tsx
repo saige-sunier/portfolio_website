@@ -19,7 +19,10 @@ export const Faceshields = withRouter((props) =>{
     const nioshBase='./images/niosh-base-design.png';
     const nioshPrototype='./images/niosh-prototype.png';
     const nioshProcess='./images/niosh-ProcessIMG.png';
-    const nioshFinal='./images/niosh-finalDesign1.jpeg';
+    const nioshFinal='./images/niosh-final-designs.png';
+    const gallupNM='./images/gallup-NM.jpg';
+    const USmap='./images/USmap-IHS.png';
+    
 
     const Accordion = withStyles({
         root: {
@@ -72,27 +75,62 @@ export const Faceshields = withRouter((props) =>{
                 </div>
             </div>
             <div className="general-format">
-                <div className="intro-div">
-                    <div>
-                        <h3 className="subheader">Background</h3>
-                        <p className="intro-text">When Covid-19 hit the United States in March 2020, the country faced extreme personal protective equipment (PPE) shortages. Design that Matters responded by rapidly designing and fabricating face shields for local hospitals. <b>By partnering with local Seattle-based volunteers, Harborview Medical, and Global Tech Plastics we were able to produce over 300,000 injection molded face shields</b> to be delivered to WA hospitals.</p>
-                        <p className="intro-text">In the Fall of 2020 we started hearing of additional PPE shortages due to the fall surge. This led to a reboot of packaging and we sent a few hundred more face shields to Harborview Medical and Gallup Indian Health Service (IHS) hospital (NM). We started to wonder if other IHS hospitals were experiencing the same PPE shortages and, if so, if the demand was high enough to coordinate another production run of GTP face shields.</p>
-                        <p className="intro-text"><b>I successfully identified 15 hospitals experiencing PPE shortages,</b> the majority were IHS hospitals in rural areas who often operate outside of standard supply chains. I established distribution connections to deliver the face shields directly to each hospital's supply center. <b>In total, we packaged and delivered over 1,000 faceshields to these small rural hospitals.</b> </p>
+                    <div className="intro-div">
+                        <div>
+                            <h3 className="subheader">Background</h3>
+                            <p className="intro-text">When Covid-19 hit the United States in March 2020, the country faced extreme personal protective equipment (PPE) shortages. Design that Matters responded by rapidly designing and fabricating face shields for local hospitals. <b>By partnering with local Seattle-based volunteers, Harborview Medical, and Global Tech Plastics we were able to produce over 300,000 injection molded face shields</b> to be delivered to WA hospitals.</p>
+                            <p className="intro-text">In the Fall of 2020 we started hearing of additional PPE shortages due to the fall surge. This led to a reboot of packaging and we sent a few hundred more face shields to Harborview Medical and Gallup Indian Health Service (IHS) hospital (NM). <b>IHS hospitals are often underfunded and do not receive the same quantity of equipment as public and private institutions in urban areas.</b> We started to wonder if other IHS hospitals were experiencing the same PPE shortages we saw in Gallup, NM. If so, how might we be able to get face shields to health care workers in need. </p>
+                        </div>
+                        <div className="intro-img-div">
+                            <img className="intro-img" src={gallupNM}></img>
+                            <p className="FSimg_description">Navajo woman being treated for Covid-19 in Gallup, NM</p>
+                        </div>
                     </div> 
-                    <div className="intro-img-div">
-                        <img className="intro-img" src={faceshieldShipping}></img>
-                        <img className="intro-img" src={faceshieldPackaging}></img>
+                <div className="needs-div">
+                        <h3 className="subheader">Delivering Face Shields to IHS Health Care Workers</h3>
+                        <p className="intro-text">I lead this entire project. I was responsible for identifying hospitals, performing interviews, and ensuring all face shields were successfully delivered and implemented in small, rural IHS hospitals. </p>
+                        <h4 className="subheader2">Needs Identification and Supply Process</h4>
+                        <div className="needs-content-div">
+                            <div className="need-circle-div">
+                                <div className="need-circle">
+                                    <p className="need-textA"><b>Research:</b> Understand the operational structure and supply chains of IHS hospitals; Identify IHS hospitals and clinics throughout the West and Southwest</p>
+                                </div>
+                                <div className="need-circle">
+                                    <p className="need-textA"><b>Interview: </b>Cold call hospitals and clinics to interview physicians and nurses about their PPE needs</p>
+                                </div>
+                                <div className="need-circle">
+                                    <p className="need-textA"> <b>Supply: </b> Connect to hospital and clinic supply centers; send packages of face shields</p>
+                                </div>
+                                <div className="need-circle">
+                                    <p className="need-textA"> <b>Follow-Up: </b> Re-connect with health care workers and supply chain management after receiving face shield parcels to assess need for additional supplies</p>
+                                </div>
+                            </div>
+                        <div>
+                             <img className="needs-map" src={USmap}></img>
+                            <p className="FSimg_description">IHS Hospitals that expressed face shield PPE shortages</p>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div className="IHSresults-div">
+                    <h3 className="subheader2">Results</h3>
+                        <p className="results-text"><b>I successfully identified 11 hospitals experiencing PPE shortages,</b> the majority were IHS hospitals in rural areas who often operate outside of standard supply chains. I established distribution connections to deliver the face shields directly to each hospital's supply center. <b>In total, we packaged and delivered over 1,500 faceshields to these small rural hospitals.</b> </p>
+                    <div className="results-img-div">
+                        <img className="results-img" src={faceshieldShipping}></img>
+                        <img className="results-img" src={faceshieldPackaging}></img>
                     </div>
                     <div>
                         <p className="FSimg_description">Packaging face sheilds to ship to Indian Health Service Hospitals.</p>        
                     </div>
-                    <div>
-                        <p className="intro-text">These face shields were designed to have as universal a fit as possible. NASA biometrics for head circumferences were used in the design process to achieve this design specification. The biometrics range from a 5% female head to a 95% male head. <b> We considered expanding to international markets and in order to demonstrate universal fit, I designed and rapidly prototyped life-sized heads.</b> These heads are currently used to create a visual for the universal fit capability of the Covid-19 face shield. </p>
-                    </div>
+                </div>
+                
+                <div className="NIOSH-heads-div">
+                    <h2 className="subheader">Demonstrating Universal Fit</h2>
+                    <p className="results-text">The face shields were designed to have as universal a fit as possible. NASA biometrics for head circumferences were used in the design process to achieve this design specification. The biometrics range from a 5% female head to a 95% male head. <b> We considered expanding to international markets and in order to demonstrate universal fit, I designed and rapidly prototyped life-sized heads.</b> These heads are currently used to create a visual for the universal fit capability of the Covid-19 face shield. </p>
                 </div>
                 
                 <div className="process-div">
-                    <h3 className="subheader">Design Process</h3>
+                    <h3 className="subheader2">Design Process</h3>
                     <div className="FSprocess-grid">
                         <div className="FSprocess-area">
                             <img className="FSprocess-img" src={nioshLogo}></img>
@@ -174,6 +212,9 @@ export const Faceshields = withRouter((props) =>{
                             </dt>
                             <dt>
                                 <a href="https://www.designthatmatters.org/covid-19">Design that Matters: Covid-19 Faceshield Design Sprint</a>
+                            </dt>
+                            <dt>
+                                <a href="https://www.youtube.com/watch?v=q7tOjcmQu9M&ab_channel=DesignthatMatters">Youtube: How to Combine STL Files Using Meshmixer</a>
                             </dt>
                             <dt>
                                 <a href=" https://www.instructables.com/Fabricating-Life-Sized-Heads/">Instructables: Fabricating Lifesized Heads</a>

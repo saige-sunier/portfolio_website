@@ -13,6 +13,8 @@ export const JustForFun = withRouter((props) =>{
     }
 
     return (
-        <div></div>
+        <div className="general-format">
+            <h3 className="temp">COMING SOON</h3>
+        </div>
     )
 })

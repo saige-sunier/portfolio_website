@@ -82,10 +82,10 @@ export const Ventilator = withRouter((props) =>{
                 <div className="CADintro-div">
                     <div className="CADintro-content">
                         <h3 className="CADsubheader">Background</h3>
-                            <p className="CADintro-text">When Covid-19 hit, it was my senior year. Instead of following the original syllabus, my professors asked us to consider the current equipment shortages that hospitals were experiencing and to design a product that could be used in place of common equipment.</p>
-                            <p className="CADintro-text">Hospitals were experiencing an extreme shortage in ventilators. A typical hospital-grade ventilator cost between $25,000 and $50,000 and can take months to  manufacture and deliver. A cost effective, easy to assemble ventilator could function in place of the typical ventilator. </p>
-                            <p className="CADintro-text">My goal was to design a product that cost only the fraction of the price of a hospital-grade ventilator, and could be used as a substitute when a ventilator was not available.</p>
-                        </div>
+                        <p className="CADintro-text">When Covid-19 hit, it was my senior year. Instead of following the original syllabus, my professors asked us to consider the current equipment shortages that hospitals were experiencing and to design a product that could be used in place of common equipment.</p>
+                        <p className="CADintro-text">Hospitals were experiencing an extreme shortage in ventilators. A typical hospital-grade ventilator cost between $25,000 and $50,000 and can take months to  manufacture and deliver. A cost effective, easy to assemble ventilator could function in place of the typical ventilator. </p>
+                        <p className="CADintro-text">My goal was to design a product that cost only the fraction of the price of a hospital-grade ventilator, and could be used as a substitute when a ventilator was not available.</p>
+                    </div>
                     <div className="CADintro-img-div">
                         <img className="CADintro-img" src={ventilatorRef}></img>
                         <p className="CADimg_description">Typical hospital-grade ventilators.</p>
@@ -182,7 +182,7 @@ export const Ventilator = withRouter((props) =>{
                     <h3 className="CADsubheader">Final Design</h3>
                     <div className="final-design">
                         <div className="video-div">
-                            <video id="design-video" width="750vw" controls>
+                            <video id="design-video" width="650vw" controls>
                                 <source src={ventFullVideo} type="video/mp4"></source>
                             </video>
                         </div>
