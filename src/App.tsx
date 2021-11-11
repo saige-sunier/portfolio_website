@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom';
 import './App.css';
 import { Home } from './pages/home/home';
 import { Projects } from './pages/projects/projects';
-import { Header } from './partials/header';
+import { Header } from './partials/header2';
 import { Footer } from './partials/footer';
 import { Cystoscope } from './pages/projects/cystoscope';
 import { Ventilator } from './pages/projects/ventilator'

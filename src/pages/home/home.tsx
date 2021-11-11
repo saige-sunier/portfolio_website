@@ -17,6 +17,7 @@ export const Home = withRouter((props) =>{
     const EEGcircuit='./images/EEG-circuitBoard.png';
     const justforfun='./images/catan-square.png';
     const aboutMe='./images/aboutMe-img.png';
+    const headshot='./images/headshot.jpeg';
 
     const handleProjectSelect = (projectRoute:Routes) =>{
         props.history.push(projectRoute);
@@ -31,14 +32,20 @@ export const Home = withRouter((props) =>{
     return(
         <div className="home-page-div">
             <div className="about-div">
-                <div className="about-box-area">
+                {/* <div className="about-box-area">
                     <div className="about-box">
                         <h3>Hi! I'm Saige</h3>
                         <p> {aboutMessage} </p>
                     </div>
+                </div> */}
+                <img className="headshot" src={headshot}></img>
+                <div className="home-intro-text-div">
+                    <h2 className="home-intro-ses">Hi! I'm Saige</h2>
+                    <p className="home-intro-text"> {aboutMessage}</p>
                 </div>
+                
             </div>
-            <div className="about-div2">
+            {/* <div className="about-div2">
                 <h2 className="section-subheader">Duke University || Class of 2020</h2>
                 <div className="aboutSection">
                     <p>BSE - Biomedical Engineering</p>
@@ -51,7 +58,7 @@ export const Home = withRouter((props) =>{
                     <p>Field Work - Two Months Repairing Medical Equipment in Tanzania</p>
                     <p>R&D - Signal Processing and Clinical Trial Development at a Start Up</p>
                 </div>
-            </div>
+            </div> */}
            
             <div className="home-projects-div" id="projects">
                 <h1 className="section-header">Projects</h1>
@@ -125,7 +132,7 @@ export const Home = withRouter((props) =>{
                 <div className="aboutMe-content">
                     <img className="aboutMe-img" src={aboutMe}></img>
                     <div className="aboutMe-text-div">
-                        <p className="aboutMe-text">Hi I’m Saige. I grew up in a small town just outside of New York City. Since then I have lived in North Carolina, Tanzania, France, and now Seattle, WA. </p>
+                        <p className="aboutMe-text">I grew up in a small town just outside of New York City. Since then I have lived in North Carolina, Tanzania, France, and now Seattle, WA. </p>
                         <p className="aobutMe-text">I spend almost every weekend hiking, skiing, or running. Logging miles on my sneakers or carving the slopes has always been my way to escape to my thoughts. It is a time where I feel re-centered, challenged, and inspired. </p>
                         <p className="aboutMe-text">Despite my habit of long runs in solitude, I am a very extroverted person. I thrive in environments where I can collaborate with people to brainstorm new ideas and share various perspectives. I bring passion and energy to every project that I am on and I have always prioritized listening and learning from others.  </p>
                         <p className="aboutMe-text">I discovered the concept of designing medical devices for developing countries when I was 16 years old and since then have only grown more passionate about the intersection of global health and innovation. I want to do more than design. I want to ensure that the solutions I am a part of are developed and implemented. I am determined to solve some of the world’s most challenging problems and I hope to do so surrounded by peers and mentors with their own inspiring motivations and experiences. </p>
