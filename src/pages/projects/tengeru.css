@@ -8,6 +8,7 @@
     font-size: 2vw;
     text-align: left;
     margin-left: 4vw;
+    margin-top: -1rem;
 }
 .TZsubheader2{
     font-size: 1.5vw;
@@ -53,8 +54,8 @@
     color: black;
     font-size: 3vw;
     text-align: left;
-    margin-left: 12vw ;
-    margin-right: 40vw;
+    margin-left: 15vw ;
+    margin-right: 30vw;
     margin-top: 10px;
 }
 .TZ-project-title-sm{
@@ -62,7 +63,7 @@
     color: black;
     font-size: 1.8vw;
     text-align: left;
-    margin-left: 12vw;
+    margin-left: 15vw;
     margin-right: 50vw;
     margin-bottom: 10px;
 }
@@ -87,40 +88,67 @@
     height: 40%;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 3vw;
+    padding-top: 1rem;
     padding-left: 2vw;
     padding-right: 4vw;
 }
 /* WORK SECTION */
-.TZwork-div{
+.TZ-work-div{
+    height: 35rem;
+}
+.work-circles{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-direction: row;
-}
-.TZwork-text{
-    font-size: calc(12px + 0.25vw);
-    text-align: left;
-    padding-bottom: 2px;
-    padding-left: 4vw;
-    padding-right: 2vw;
-}
-.TZwork-text-ul{
-    font-size: calc(12px + 0.22vw);
-    text-align: left;
-    padding-left: 6vw;
-}
-.TZwork-text-ul li{
-    padding-bottom: 2px;
-}
-.TZwork-img{
-    position: relative;
-    width: 45%;
-    height: 45%;
-    transform: translate(0%, 20%);
+    flex-wrap: wrap;
+    max-width: 50vw;
+    margin-left: 4vw;
     margin-top: 4vw;
-    padding-left: 2vw;
-    padding-right: 4vw;
 }
+.repair-circle{
+    position: relative;
+}
+.circle1 {
+    position: absolute;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;  
+    box-shadow: 0px 0px 8px 0px #000000;
+}
+.circle1-area {
+    width: 18vw;
+    height: 18vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, 0.534);
+}
+.TZcircle1-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 8vw;
+    margin-left: 5vw;
+}
+.TZcircle2-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 8vw;
+    margin-left: 5.5vw;
+}
+.TZcircle3-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 8vw;
+    margin-left: 4.5vw;
+}
+.work-text-bullets{
+    position: absolute;
+    width: 16vw;
+    margin-top: 17vw;
+}
+
 
 /* PARTITIONS SECTION */
 .TZpartitions-div{
@@ -133,26 +161,30 @@
     padding-right: 4vw;
 }
 .TZpartitions-grid{
-    display: grid;
-    gap: 2rem;
-    grid-auto-flow: column; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-auto-flow: row; 
+    justify-content: space-between;
     margin: 0 0 0.2rem 0;
     padding-bottom: 1rem;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
-.accordion-div{
+
+.TZaccordion-div{
     position: absolute;
     max-width: 20vw;
     top: -16%;
-    background-color: rgb(182, 202, 223, 0.5) !important;
+    /* background-color: rgb(182, 202, 223, 0.5) !important; */
+    background-color:rgba(100, 100, 100, 0.295) !important;
 }
 .TZprocess-area{
     position: relative;
     max-width: 20vw;
-    width: 100%;
     height: 100%;
+    box-shadow: 0px 0px 8px 0px #000000;
 }
 .TZprocess-title{
     position: relative;
@@ -160,16 +192,16 @@
     /* top: 10%; */
     padding-top: 0px;
     transform: translate(-45%, -10%);
-    color: black;
-    font-size: calc(14px + 0.3vw);
+    color: white;
+    font-weight: bold;
+    font-size: calc(14px + 0.4vw);
     width: 100%;
     text-align: center !important;
 }
 .TZprocess-img{
     display: block;
     width: 100%;
-    margin: auto;
-    padding-top: 10px;
+    margin: 0px;
 }
 .TZprocess-text{
     position: relative !important;
@@ -182,7 +214,7 @@
 /* RESULTS DIV */
 
 .TZpartitions-img{
-    width: 70vw;
+    width: 68vw;
     height: auto;
     padding-top: 1vw;
     padding-left: 2vw;
@@ -207,12 +239,12 @@
     grid-auto-flow: row;
 }
 .TZlessons-img{
-    width: 35vw;
+    width: 31vw;
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 4vw;
-    padding-left: 2vw;
+    padding-top: 3rem;
+    padding-left: 2rem;
     padding-right: 4vw;
 }
 

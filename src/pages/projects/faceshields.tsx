@@ -22,6 +22,10 @@ export const Faceshields = withRouter((props) =>{
     const nioshFinal='./images/niosh-final-designs.png';
     const gallupNM='./images/gallup-NM.jpg';
     const USmap='./images/USmap-IHS.png';
+    const research='./images/research-icon.png';
+    const phone='./images/phone-icon.png';
+    const box='./images/shipping-icon.png';
+    const faceshield='./images/faceshield-icon.png';
     
 
     const Accordion = withStyles({
@@ -44,12 +48,15 @@ export const Faceshields = withRouter((props) =>{
       
       const AccordionSummary = withStyles({
         root: {
-          backgroundColor: 'rgb(182, 202, 223, 0.5)',
-          borderTop: '3px solid rgba(7, 53, 102)',
-          marginBottom: -1,
+          //   backgroundColor: 'rgb(182, 202, 223, 0.5)',
+        backgroundColor: 'rgba(100, 100, 100, 0.8)',
+         //   borderTop: '3px solid rgba(7, 53, 102)',
+        borderTop: '3px solid rgba(7, 53, 102)',
+        marginBottom: -1,
+        marginTop: -59,
+        minHeight: 56,
+        '&$expanded': {
           minHeight: 56,
-          '&$expanded': {
-            minHeight: 56,
           },
         },
         content: {
@@ -78,31 +85,44 @@ export const Faceshields = withRouter((props) =>{
                     <div className="intro-div">
                         <div>
                             <h3 className="subheader">Background</h3>
-                            <p className="intro-text">When Covid-19 hit the United States in March 2020, the country faced extreme personal protective equipment (PPE) shortages. Design that Matters responded by rapidly designing and fabricating face shields for local hospitals. <b>By partnering with local Seattle-based volunteers, Harborview Medical, and Global Tech Plastics we were able to produce over 300,000 injection molded face shields</b> to be delivered to WA hospitals.</p>
-                            <p className="intro-text">In the Fall of 2020 we started hearing of additional PPE shortages due to the fall surge. This led to a reboot of packaging and we sent a few hundred more face shields to Harborview Medical and Gallup Indian Health Service (IHS) hospital (NM). <b>IHS hospitals are often underfunded and do not receive the same quantity of equipment as public and private institutions in urban areas.</b> We started to wonder if other IHS hospitals were experiencing the same PPE shortages we saw in Gallup, NM. If so, how might we be able to get face shields to health care workers in need. </p>
+                            <p className="intro-text">When Covid-19 hit the United States in March 2020, the country faced extreme personal protective equipment (PPE) shortages. Design that Matters responded by rapidly designing and fabricating face shields for local hospitals. By partnering with local Seattle-based volunteers, Harborview Medical, and Global Tech Plastics <b>we were able to produce over 300,000 injection molded face shields for pubilc and private WA hospitals.</b></p>
+                            <p className="intro-text">In the Fall of 2020, we started hearing of additional PPE shortages in major hospitals. <b>I had read about how hard the Native American population was being hit by Covid-19 and I wondered if there was anything we could do to help.</b> I quickly learned IHS hospitals are underfunded and they too were experiencing extreme PPE shortages.</p>
                         </div>
                         <div className="intro-img-div">
                             <img className="intro-img" src={gallupNM}></img>
                             <p className="FSimg_description">Navajo woman being treated for Covid-19 in Gallup, NM</p>
                         </div>
                     </div> 
+                    <hr className="hr-divider-pages"></hr>
                 <div className="needs-div">
-                        <h3 className="subheader">Delivering Face Shields to IHS Health Care Workers</h3>
-                        <p className="intro-text">I lead this entire project. I was responsible for identifying hospitals, performing interviews, and ensuring all face shields were successfully delivered and implemented in small, rural IHS hospitals. </p>
-                        <h4 className="subheader2">Needs Identification and Supply Process</h4>
+                        <h3 className="subheader">Responding to PPE Shortages at IHS Hospitals</h3>
+                        <p className="intro-text">I lead this entire project. I was responsible for identifying hospitals experiencing PPE shortages, conducting interviews, and ensuring all face shields were successfully delivered to small, rural IHS hospitals. </p>
+                        <h4 className="subheader2">Needs Identification</h4>
                         <div className="needs-content-div">
                             <div className="need-circle-div">
                                 <div className="need-circle">
-                                    <p className="need-textA"><b>Research:</b> Understand the operational structure and supply chains of IHS hospitals; Identify IHS hospitals and clinics throughout the West and Southwest</p>
+                                    <div className="need-bullets">
+                                        <img src={research}></img>
+                                        <p className="need-textA"><b>Research:</b> Understand the operational structure and supply chains of IHS hospitals; Identify IHS hospitals and clinics throughout the West and Southwest</p>
+                                    </div>
                                 </div>
                                 <div className="need-circle">
-                                    <p className="need-textA"><b>Interview: </b>Cold call hospitals and clinics to interview physicians and nurses about their PPE needs</p>
+                                    <div className="need-bullets">
+                                        <img src={phone}></img>
+                                        <p className="need-textA"><b>Interview: </b>Cold call hospitals and clinics to interview physicians and nurses about their PPE needs</p>
+                                    </div>
                                 </div>
                                 <div className="need-circle">
-                                    <p className="need-textA"> <b>Supply: </b> Connect to hospital and clinic supply centers; send packages of face shields</p>
+                                    <div className="need-bullets">
+                                        <img src={box}></img>
+                                        <p className="need-textA"> <b>Supply: </b> Connect to hospital and clinic supply centers; send packages of face shields</p>
+                                    </div>
                                 </div>
                                 <div className="need-circle">
-                                    <p className="need-textA"> <b>Follow-Up: </b> Re-connect with health care workers and supply chain management after receiving face shield parcels to assess need for additional supplies</p>
+                                    <div className="need-bullets">
+                                        <img src={faceshield}></img>
+                                        <p className="need-textA"> <b>Follow-Up: </b> Re-connect with health care workers and supply chain management after receiving face shield parcels to assess need for additional supplies</p>
+                                    </div>
                                 </div>
                             </div>
                         <div>
@@ -114,7 +134,7 @@ export const Faceshields = withRouter((props) =>{
                 
                 <div className="IHSresults-div">
                     <h3 className="subheader2">Results</h3>
-                        <p className="results-text"><b>I successfully identified 11 hospitals experiencing PPE shortages,</b> the majority were IHS hospitals in rural areas who often operate outside of standard supply chains. I established distribution connections to deliver the face shields directly to each hospital's supply center. <b>In total, we packaged and delivered over 1,500 faceshields to these small rural hospitals.</b> </p>
+                        <p className="results-text"><b>I successfully identified 11 hospitals experiencing PPE shortages,</b> the majority were IHS hospitals in rural areas that operate outside of standard supply chains. I established distribution connections to deliver the face shields directly to each hospital's supply center. <b>In total, we packaged and delivered over 1,500 faceshields to these small rural hospitals.</b> </p>
                     <div className="results-img-div">
                         <img className="results-img" src={faceshieldShipping}></img>
                         <img className="results-img" src={faceshieldPackaging}></img>
@@ -123,7 +143,7 @@ export const Faceshields = withRouter((props) =>{
                         <p className="FSimg_description">Packaging face sheilds to ship to Indian Health Service Hospitals.</p>        
                     </div>
                 </div>
-                
+                <hr className="hr-divider-pages"></hr>
                 <div className="NIOSH-heads-div">
                     <h2 className="subheader">Demonstrating Universal Fit</h2>
                     <p className="results-text">The face shields were designed to have as universal a fit as possible. NASA biometrics for head circumferences were used in the design process to achieve this design specification. The biometrics range from a 5% female head to a 95% male head. <b> We considered expanding to international markets and in order to demonstrate universal fit, I designed and rapidly prototyped life-sized heads.</b> These heads are currently used to create a visual for the universal fit capability of the Covid-19 face shield. </p>
@@ -202,7 +222,7 @@ export const Faceshields = withRouter((props) =>{
                 </div>
 
                 <div className="final-design-div">
-                    <h3 className="subheader">Final Design</h3>
+                    <h3 className="subheader2">Final Design</h3>
                     <img className="FS-final-design-img" src={nioshFinal}></img>
                     <div className="links-div">
                         <p>Bonus Information</p>

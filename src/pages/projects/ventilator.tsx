@@ -47,10 +47,13 @@ export const Ventilator = withRouter((props) =>{
       
       const AccordionSummary = withStyles({
         root: {
-          backgroundColor: 'rgb(182, 202, 223, 0.5)',
-          borderTop: '3px solid rgba(7, 53, 102)',
-          marginBottom: -1,
-          minHeight: 56,
+            //   backgroundColor: 'rgb(182, 202, 223, 0.5)',
+        backgroundColor: 'rgba(100, 100, 100, 0.8)',
+        //   borderTop: '3px solid rgba(7, 53, 102)',
+       borderTop: '3px solid rgba(7, 53, 102)',
+       marginBottom: -1,
+       marginTop: -59,
+       minHeight: 56,
           '&$expanded': {
             minHeight: 56,
           },
@@ -79,21 +82,23 @@ export const Ventilator = withRouter((props) =>{
                 </div>
             </div>
             <div className="general-format">
-                <div className="CADintro-div">
+                <div className="vent-intro-div">
                     <div className="CADintro-content">
                         <h3 className="CADsubheader">Background</h3>
-                        <p className="CADintro-text">When Covid-19 hit, it was my senior year. Instead of following the original syllabus, my professors asked us to consider the current equipment shortages that hospitals were experiencing and to design a product that could be used in place of common equipment.</p>
-                        <p className="CADintro-text">Hospitals were experiencing an extreme shortage in ventilators. A typical hospital-grade ventilator cost between $25,000 and $50,000 and can take months to  manufacture and deliver. A cost effective, easy to assemble ventilator could function in place of the typical ventilator. </p>
-                        <p className="CADintro-text">My goal was to design a product that cost only the fraction of the price of a hospital-grade ventilator, and could be used as a substitute when a ventilator was not available.</p>
+                        <p className="CADintro-text">It was my senior year at Duke when Covid-19 hit. Instead of following the original syllabus, my professors asked us to design a product that could be used in place of common hospital equipment in order to address the equipment shortages being faced throughout the world. I chose to focus my project on ventilators as they were in extremely high demand throughout the pandemic. </p>
+                        <p className="CADintro-text">A typical hospital-grade ventilator costs between $25,000 and $50,000 and can take months to manufacture and deliver. <b>My goal was to design a product that cost a fraction of the price of a hospital-grade ventilator and could be used as a substitute when a ventilator was not readily available.</b></p>
                     </div>
                     <div className="CADintro-img-div">
                         <img className="CADintro-img" src={ventilatorRef}></img>
-                        <p className="CADimg_description">Typical hospital-grade ventilators.</p>
+                        <p className="CADimg_description">Drawings of typical hospital-grade ventilators.</p>
                     </div>
                 </div>
-                <div className="process-div">
+
+                <hr className="hr-divider-pages"></hr>
+
+                <div className="CADprocess-div">
                     <h3 className="CADsubheader">Design Process</h3>
-                    <p className="CADintro-text">Healthcare personnel perform manual ventilation using bag-valve masks when not using ventilators. If the manual ventilation process is automated, the healthcare staff would be able to care for more patients. </p>
+                    <p className="vent-process-text">Healthcare personnel commonly perform manual ventilation using bag-valve masks in substitution of a ventilator. If this manual ventilation process were automated, the lack of hospital-grade ventilators would not place as much strain on hospitals as the equipment shortage does today. </p>
                     <div className="partitions-grid">
                         <div className="process-area">
                             <img className="process-img" src={covidCartoon}></img>
@@ -107,8 +112,8 @@ export const Ventilator = withRouter((props) =>{
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="process-text">
-                                    <p>Hospitals that are experiencing ventilator shortages need a way to supply oxygen to patients who need assistance breathing.</p>
-                                    <p>The product does not need to provide all of the support that a hospital-grade ventilator can. It needs to be a fast solution that can fill the need gap while manufacturers and supply chains catch up with demand.</p>
+                                    <p><b>Hospitals that are experiencing ventilator shortages need a way to supply oxygen to patients who require assistance breathing.</b></p>
+                                    <p>The solution does not need to provide all of the features that a hospital-grade ventilator does. Instead, it needs to be a solution that can quickly fill the need gap while manufacturers and supply chains catch up with demand for hospital-grade ventilators.</p>
                                 </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -129,16 +134,13 @@ export const Ventilator = withRouter((props) =>{
                                 <Typography className="process-text">
                                     <ul className="process-description-list">
                                         <li className="TZ-process-description-list">
-                                            Can be constructed with materials that are easy to access
+                                            Can be constructed with easily obtainable materials
                                         </li>
                                         <li className="TZ-process-description-list">
-                                            Provides regulated breathing support  
+                                            Provides accurate and consistant ventilation 
                                         </li>
                                         <li className="TZ-process-description-list">
-                                            Compatible with equipment already in hospitals 
-                                        </li>
-                                        <li className="TZ-process-description-list">
-                                            Compresses resuscitation bag evenly as bag deforms
+                                            Compresses resuscitation bag evenly as the bag deforms
                                         </li>
                                     </ul>
                                 </Typography>
@@ -158,8 +160,7 @@ export const Ventilator = withRouter((props) =>{
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="process-text">
-                                    <p>I decided to use 3D printing as the main method for producing specialized parts. 3D printing is incredibly useful for rapid prototyping and a viable substitute when mass manufacturing is not an option.</p>
-                                    <p>Bag-valve masks are used for manual ventilation. Manual ventilation can assist patients in breathing when ventilators are not available.</p>
+                                    <p>I 3D printed the specialized parts needed to fabricate my ABVM (automated bag valve mask). The other materials are had to be easily obtainable or already available in hospitals. See more detail in the Key Features section below.</p>
                                 </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -178,6 +179,9 @@ export const Ventilator = withRouter((props) =>{
                         </div>
                     </div>
                 </div>
+
+                <hr className="hr-divider-pages"></hr>
+
                 <div className="final-design-div">
                     <h3 className="CADsubheader">Final Design</h3>
                     <div className="final-design">
@@ -189,12 +193,12 @@ export const Ventilator = withRouter((props) =>{
                         <div className="key-features-div">
                             <p className="key-features"><b>Key Features</b></p>
                                 <ul className="key-features-li">
-                                    <li>Two 3D printable compressors with blunt tips for even compression of the resuscitator bag even as the bag deforms.</li>
-                                    <li>Arduino positioned in control box and connected to motor. Arduino can be coded to control motor.</li>
+                                    <li>Two 3D printed compressor heads with blunt tips for even compression of the resuscitator bag even as the bag deforms.</li>
+                                    <li>Arduino and positioned in control box and connected to the motor. Arduino is coded to control motor and movement of the compressors.</li>
                                     <li>3D printed Arduino casing with gap for LCD screen. LCD will display respiratory rate and tidal volume.</li>
-                                    <li>2000 Series Dual Mode Servo with various speeds and rpm adjusted by Arduino.</li>
+                                    <li>2000 Series Dual Mode Servo motor with rpm controlled by Arduino.</li>
                                     <li>Gear shaft moves down a T-slotted aluminum rod.</li>
-                                    <li>Components secure to wood block, an easy to procure resource.</li>
+                                    <li>Components secured to a wood block.</li>
                                 </ul>
                         </div>
                     </div>

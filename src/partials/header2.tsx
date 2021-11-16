@@ -30,9 +30,9 @@ export const Header = withRouter((props) => {
         padding-bottom: 5rem;
         background: none;
         border: none;
-        font-family: "Bradley Hand" !important;
+        font-family: "Noteworthy";
         color: black;
-        font-size: 18px !important;
+        font-size: 20px !important;
         transition: 0.3s;
         border: none !important;
         outline: none !important;
@@ -53,10 +53,10 @@ export const Header = withRouter((props) => {
                     <div className="dropdown2">
                         <button className="dropbtn2"><img src="../../images/menu-icon.png" className="menu-icon"></img></button>
                         <div className="dropdown-content2">
-                            <button className="header2-nav-button-home"><StyledLink to="about" offset={-100} smooth={true}>about</StyledLink></button>
                             <button className="header2-nav-button-home"> <StyledLink to="projects" offset={-100} smooth={true}>projects</StyledLink></button>
                             <button className="header2-nav-button-home"><StyledLink to="research" offset={-100} smooth={true}>research</StyledLink></button>
-                            <button className="header2-nav-button-home"> <StyledLink to="contact" offset={-100} smooth={true}>contact</StyledLink></button>
+                            <button className="header2-nav-button-home"><StyledLink to="about" smooth={true}>about/contact</StyledLink></button>
+                            {/* <button className="header2-nav-button-home"> <StyledLink to="contact" offset={-100} smooth={true}>contact</StyledLink></button> */}
                         </div>
                     </div>
                 </>
@@ -65,10 +65,10 @@ export const Header = withRouter((props) => {
                      <div className="dropdown2">
                         <button className="dropbtn2"><img src="../../images/menu-icon.png" className="menu-icon"></img></button>
                         <div className="dropdown-content2">
-                            <button className="header2-nav-button" onClick={()=>handleHeaderNav('about')}>about</button>
                             <button className="header2-nav-button" onClick={()=>handleHeaderNav('projects')}>projects</button>
                             <button className="header2-nav-button" onClick={()=>handleHeaderNav('research')}>research</button>
-                            <button className="header2-nav-button" onClick={()=>handleHeaderNav('contact')}>contact</button>
+                            <button className="header2-nav-button" onClick={()=>handleHeaderNav('about')}>about/contact</button>
+                            {/* <button className="header2-nav-button" onClick={()=>handleHeaderNav('contact')}>contact</button> */}
                         </div>
                     </div>
                 </>

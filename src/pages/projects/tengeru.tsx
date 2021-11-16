@@ -27,6 +27,9 @@ export const Tengeru = withRouter((props) =>{
     const TZpartitions='./images/TZ-partitionsGroup.png';
     const TZmeruSummit='./images/TZ-meruSummit.JPG';
     const TZSG="./images/TZ-grace_saige.png";
+    const heaterRepair='./images/TZ-heater-square.png';
+    const teaching='./images/TZ-teaching.png';
+    const workshop='./images/TZ-workshop.png';
  
     const handleSideNavClick = (projectRoute:Routes) =>{
         props.history.push(projectRoute);
@@ -55,9 +58,12 @@ const Accordion = withStyles({
   
   const AccordionSummary = withStyles({
     root: {
-      backgroundColor: 'rgb(182, 202, 223, 0.5)',
-      borderTop: '3px solid rgba(7, 53, 102)',
+    //   backgroundColor: 'rgb(182, 202, 223, 0.5)',
+      backgroundColor: 'rgba(100, 100, 100, 0.8)',
+    //   borderTop: '3px solid rgba(7, 53, 102)',
+    borderTop: '3px solid rgba(7, 53, 102)',
       marginBottom: -1,
+      marginTop: -59,
       minHeight: 56,
       '&$expanded': {
         minHeight: 56,
@@ -89,11 +95,46 @@ const Accordion = withStyles({
                 <div className="TZbackground-div">
                     <div className="TZbackground-content">
                         <h3 className="TZsubheader">Background</h3>
-                        <p className="TZbackground-text">I spent the summer of 2018 in Tanzania repairing medical equipment in public hospitals as a biomedical technician with Engineering World Health. I spent the first month training with a group of 14 engineers from around the world. We lived with local families and studied in a small town outside of Arusha, TZ. Through this training, I learned how to repair medical devices and equipment that are commonly seen in hospitals across the country. After the first month of technical training and Swahili lessons, I moved to a small home in Machumba where I spent the next month and a half working with a fellow student at Tengeru Hospital as a biomedical technician.</p>
+                        <p className="TZbackground-text"><b>I spent the summer of 2018 in Tanzania repairing medical equipment in public hospitals as a biomedical technician with Engineering World Health. </b> I spent the first month training with a group of 14 engineers from around the world. We lived with local families and studied in a small town outside of Arusha, TZ. Through this training, I learned how to repair medical devices and equipment that are commonly seen in hospitals across the country. After the first month of technical training and Swahili lessons, <b>I moved to a small home in Machumba where I spent the next month and a half working with a fellow student at Tengeru Hospital as a biomedical technician.</b></p>
                     </div>
                     <img className="TZbackground-img" src={TZO2repair}></img>
                 </div>
-                <div className="TZwork-div">
+                <hr className="hr-divider-pages"></hr>
+
+                <div className="TZ-work-div">
+                    <h3 className="TZsubheader">Work</h3>
+                    <div className="work-circles">
+                        <div className="repair-circle">
+                            <img className="circle1" src={heaterRepair}></img>
+                            <div className="circle1-area"> </div>
+                            <h4 className="TZcircle1-text">REPAIR</h4>
+                            <div className="work-text-bullets">
+                                <p>Repaired over 40 pieces of equipment</p>
+                                <p>Expanded the electrical capacity of the neonatal ward </p>
+                            </div>
+                        </div>
+                        <div className="repair-circle">
+                            <img className="circle1" src={teaching}></img>
+                            <div className="circle1-area"> </div>
+                            <h4 className="TZcircle2-text">TEACH</h4>
+                            <div className="work-text-bullets">
+                                <p>Led training sessions on how to repair and maintain equipment</p>
+                                <p>Trained Theresia, a local biomed student, on common equipment failures and repairs</p>
+                            </div>
+                        </div>
+                        <div className="repair-circle">
+                            <img className="circle1" src={workshop}></img>
+                            <div className="circle1-area"> </div>
+                            <h4 className="TZcircle3-text">SUSTAIN</h4>
+                            <div className="work-text-bullets">
+                                <p>Developed maintenance manuals in Swahili and English for over 10 devices</p>
+                                <p>Installed and implemented a digital library that allows staff to access 1000+ maintenance manuals via WiFi </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div className="TZwork-div">
                     <div className="TZwork-content">
                         <h3 className="TZsubheader">Work</h3>
                         <p className="TZwork-text">Tengeru Hospital is a public, primary hospital located between Arusha and Moshi, the two major cities in the area. During our time there we:</p>
@@ -106,13 +147,14 @@ const Accordion = withStyles({
                         </ul>
                     </div>
                     <img className="TZwork-img" src={TZworkCollage}></img>
-                </div> 
-                
+                </div>  */}
+
+                <hr className="hr-divider-pages"></hr>
                 <div className="TZpartitions-div">
                     <div className="TZpartitions-intro">
                         <h3 className="TZsubheader">Project Highlight - Partitions for the Minor Theatre</h3>
                         <h3 className="TZsubheader3">Background</h3>
-                        <p className="TZpartitions-text">In addition to repairing equipment and working with the hospital staff, my partner and I wanted to make a lasting improvement to the hospital. We conducted interviews and observed staff from various wards. It was important that the project be focused on a specifically expressed need and that we avoided imposing any external assumptions that we may have had about the hospital. We asked our co-workers to describe their issues and what solutions they would like to see. Many needs were expressed but with our limited time and resources, we needed to balance impact and feasibility. After careful consideration, we decided to improve the Minor Theatre. </p>
+                        <p className="TZpartitions-text">My partner and I wanted to make a lasting improvement to the hospital. <b>We conducted interviews and observed staff from various wards. We wanted our co-workers to be involved in the solution process, this meant finding a project that responded to a specifically expressed need.</b> Many needs were expressed but with our limited time and resources, we needed to balance impact and feasibility. After careful consideration, we decided to improve the Minor Theatre. </p>
                         <h3 className="TZsubheader3">Design Process</h3>
                     </div>
 
@@ -120,20 +162,20 @@ const Accordion = withStyles({
                         <div className="TZprocess-area">
                             <div>
                             <img className="TZprocess-img" src={TZMTbefore}></img>
-                            <Accordion className="accordion-div">
+                                <Accordion className="TZaccordion-div">
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel1a-content"
                                     id="panel1a-header">
-                                    <Typography className="TZprocess-title">The Need</Typography>
+                                    <Typography className="process-title">The Need</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="TZprocess-text">
-                                    <p>The Minor Theatre accepts patients with severe open wounds that can be treated without major surgery. Physicians will use this ward to treat cuts, burns, lacerations, etc. </p>
-                                    <p>The ward had no dividers between the patient beds. While interviewing staff, Freddie, the head of the ward, discussed patient discomfort from being in the same room as other patients while their wounds were cared for. He also expressed concern about the spread of HIV as blood splatter was common in this ward and the lack of dividers allowed for blood to occasionally reach neighboring beds.</p>
+                                    <p>The Minor Theatre accepts patients with severe open wounds that can be treated without major surgery. </p>
+                                    <p><b>The ward had no dividers between the patient beds.</b> While interviewing staff, Freddie, the head of the ward, expressed concern over the spread of HIV. <b>Blood splatter was common in this ward and without separation between patients there was a high risk of HIV transmission.</b></p>
                                 </Typography>
                                 </AccordionDetails>
-                            </Accordion>
+                                </Accordion>
                              </div>
                         </div>
                        
@@ -141,27 +183,24 @@ const Accordion = withStyles({
                             <img className="TZprocess-img" src={TZdrillingWall}></img>
                             <div>
                             
-                            <Accordion className="accordion-div">
+                            <Accordion className="TZaccordion-div">
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel1a-content"
                                     id="panel1a-header">
-                                    <Typography className="TZprocess-title">Design Qualities</Typography>
+                                    <Typography className="process-title">Design Features</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="TZprocess-text">
                                     <ul className="TZprocess-description-list">
                                         <li className="TZ-process-description-list">
-                                            Creates separation between three patient beds
+                                            Creates separation between patient beds
                                         </li>
                                         <li className="TZ-process-description-list">
                                             Can move curtains to the side when needed  
                                         </li>
                                         <li className="TZ-process-description-list">
                                             Blood can easily be cleaned from the separators with bleach and a cloth
-                                        </li>
-                                        <li className="TZ-process-description-list">
-                                            Staff can easily move from patient to patient
                                         </li>
                                         <li className="TZ-process-description-list">
                                             Materials for curtains and frame can be sourced locally
@@ -175,21 +214,19 @@ const Accordion = withStyles({
                         <div className="TZprocess-area">
                             <img className="TZprocess-img" src={TZworkshop2}></img> 
                             <div>
-                            <Accordion className="accordion-div">
+                            <Accordion className="TZaccordion-div">
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel1a-content"
                                     id="panel1a-header">
-                                    <Typography className="TZprocess-title">Materials & Resources</Typography>
+                                    <Typography className="process-title">Materials & Resources</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="TZprocess-text">
                                     <p>Curtains:</p>
-                                    <p>The material for the curtains needed to be waterproof. We asked the Head Matron for advice on where we could source the fabric needed. After hunting through the fabric markets in Arusha, we decided to order the material from Nairobi.</p>
+                                    <p>The material for the curtains needed to be waterproof. We worked with the Head Matron to identify what materials we would be ideal. After searching the fabric markets in Arusha, we decided to order the material from Nairobi.</p>
                                     <p>Metal Frame:</p>
-                                    <p>Tengeru Hospital is right across the street from a market where there are several welders. With our design sketches and basic Swahili, we successfully communicated what we needed and the pieces for the metal frame were ready a few days later.</p>
-                                    <p>Construction:</p>
-                                    <p>A few friends working at the hospital down the road had a drill that we were able to borrow to instal the metal rails and curtains.</p> 
+                                    <p>Across the street from Tengeru Hospital was a market where several welders worked. With design sketches and basic Swahili, we explained our needs and the welders built our frames in a few days time.</p>
                                 </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -198,23 +235,25 @@ const Accordion = withStyles({
                         </div>
 
                     </div>
+                    
                     <div className="TZresults-div">
                         <h3 className="TZsubheader3">Results</h3>
                         <img className="TZpartitions-img" src={TZpartitions}></img>
 
                     </div>
 
+                    <hr className="hr-divider-pages"></hr>
                     <div className="TZlessons-div">
                         <div>
-                            <h3 className="TZsubheader">Lessons Learned</h3>
+                            <h3 className="TZsubheader">Reflections</h3>
                             <p className="TZlessons-text">
-                                Tanzania was an incredibly formative experience for me. I have always been interested in global health, but during that summer <b>I fell in love with the challenge of solving problems for low-resource settings.</b> I had the rare opportunity to fully immerse myself in the culture, learn a new language, and work alongside locals everyday to help improve their hospital.</p>
+                                Tanzania was an incredibly formative experience for me. I have always been interested in global health, but during that summer <b>I fell in love with the challenge of solving problems for low-resource settings.</b> I had the rare opportunity to fully immerse myself in a new culture, learn a new language, and work alongside locals to help improve their hospital.</p>
                             <p className="TZlessons-text">
-                                When we first got to Tengeru Hospital, we quickly learned the <b>importance of developing relationships and connections. </b>The staff at Tengeru was incredibly welcoming and kind, but they did not yet feel comfortable giving us equipment to repair. We worked hard to build the staff’s confidence in us through minor repairs and friendly conversations. By our final weeks, we had made incredible friends and had established a sense of trust. People would come find us in our workshop to give us equipment to fix and invite us to come enjoy some chai.</p>
+                                At Tengeru, I embraced the <b>importance of developing relationships and connections. </b> The staff at Tengeru was incredible but we had to work hard to build their confidence in us. We developed trust through minor repairs and by slowing down to enjoy chai and stories.</p>
                             <p className="TZlessons-text">
                                 On the weekends, I explored Tanzanian cities and towns and even summited Mt. Meru, the second tallest mountain in Tanzania. I gained a new sense of independence and confidence and  learned that <b>I thrive outside of my comfort zone because it is where I feel the most inspired and invigorated.</b> </p>
                             <p className="TZlessons-text">
-                                I left Tanzania wanting to return and do more. There is an incredible space and need for design within low-resource settings. The environment poses its own set of challenges and needs that designers and manufacturers in high-resource settings often overlook. <b> I see the intersection of design and global health as an incredibly exciting and innovative space full of opportunity to improve the world we live in. </b></p>
+                                I left Tanzania wanting to return and do more. There is immense opportunity for design within low-resource settings. The environment poses its own set of challenges and needs that designers and manufacturers in high-resource settings often overlook. <b> I see the intersection of design and global health as an incredibly exciting and innovative space full of opportunity to improve the world we live in. </b></p>
                         </div>
                         <div className="TZlessons-img-div">
                              <img className="TZlessons-img" src={TZmeruSummit}></img>

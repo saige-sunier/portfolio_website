@@ -22,13 +22,13 @@
     color:slategrey;
 }
 .general-format{
-    padding-left: 2rem;
+    /* padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 4vw;
     padding-left: 8vw;
-    padding-right: 8vw;
-    margin-left: 4vw;
-    margin-right: 4vw;
+    padding-right: 8vw; */
+    margin-left: 7vw !important;
+    margin-right: 8vw !important;
 }
 .general-format p{
     text-align: left;
@@ -36,6 +36,13 @@
 .general-format h3{
     text-align: left;
 }
+
+.hr-divider-pages{
+    border: 2px solid black;
+    width: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 
 /* HEADER DIV */
 .warmer-header-block-div{
@@ -49,7 +56,7 @@
 }
 .warmer-header-block-div:before{
     content: "";
-    background-image: url(../../images/goyalmara.png);
+    background-image: url(../../images/newborn-basket.jpeg);
     background-size: cover;
     position: absolute;
     background-repeat: none;
@@ -67,7 +74,7 @@
     color: black;
     font-size: 3vw;
     text-align: left;
-    margin-left: 11vw ;
+    margin-left: 15vw;
     margin-right: 40vw;
     margin-top: 0px;
 }
@@ -76,7 +83,7 @@
     color: black;
     font-size: 1.8vw;
     text-align: left;
-    margin-left: 11vw;
+    margin-left: 15vw;
     margin-right: 50vw;
     margin-bottom: 10px;
 }
@@ -100,32 +107,261 @@
     display: grid;
     width: 50rem;
     grid-auto-flow: row;
-    padding-right: 18vw;
+    padding-right: 4vw;
 }
 .DTM-intro-img{
-    max-width: 200%;
+    width: 28rem;
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 4vw;
-    padding-right: 12vw;
 }
 
 /* THE NEED */
+.need-div-intro{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-right: 4vw;
+}
+.NH-need-img-div{
+    display: flex;
+    flex-direction: column;
+}
+.NH-need-img-div div{
+    display: flex;
+    flex-direction: row;
+}
+.NH-img_description{
+    font-size: 12px;
+    text-align: center;
+    color:slategrey;
+    margin-top: 2rem;
+    margin-left: 5vw;
+}
+.NH-need-img{
+    position: relative;
+    width: 20vw;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
 .DTM-need-text{
+    position: relative;
     font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-bottom: 0rem;
     padding-left: 4vw;
-    padding-right: 4vw;
+    margin-right: 3vw;
 }
+
+.otter-prototype{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+.otter-img{
+    width: 22rem;
+    margin-left: 4vw;
+    margin-right: 2rem;
+    margin-left: 15vw;
+}
+.otter-text{
+    position: relative;
+    font-size: calc(12px + 0.25vw);
+    margin-right: 4vw;
+    margin-top: 4rem;
+    width: 25vw;
+}
+.subheader2-1{
+    font-size: 1.3vw;
+    text-align: center !important;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.design-phases-img{
+    width: 48vw;
+}
+
+/* MSF SECTION */
+/* cause and effect */
+.CandE-div{
+    margin-bottom: 3rem;
+}
+.CandE-img{
+    position: relative;
+    width: 65vw;
+    height: 100%;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 1rem;
+}
+
+/* needs identification */
+.work-circles{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 4vw;
+    margin-bottom: 35vw;
+}
+.repair-circle{
+    position: relative;
+}
+.circle1 {
+    position: absolute;
+    width: 18vw !important;
+    height: 18vw !important;
+    border-radius: 50%;  
+    box-shadow: 0px 0px 8px 0px #000000;  
+}
+.DTMcircle1-area {
+    width: 18vw !important;
+    height: 18vw !important;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, 0.534);
+}
+.DTMcircle1-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 8vw;
+    margin-left: 2vw;
+    width: 14vw;
+}
+.DTMcircle2-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 6vw;
+    margin-left: 4vw;
+}
+.work-text-bullets{
+    position: absolute;
+    width: 18vw !important;
+    margin-top: 19vw !important;
+}
+.work-text-bullets p{
+    text-align: center !important;
+    font-size: 1rem;
+}
+
 .DTM-need-statement{
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 3rem;
+    border: 6px solid rgba(255, 202, 28, 0.726);
+}
+.DTM-need-text2{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center !important;
+    font-size: calc(12px + 0.25vw);
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.DTM-need-text3{
+    background-color: rgba(255, 202, 28, 0.726);
+    text-align: center !important;
+    font-size: calc(12px + 0.45vw);
+    padding: 5px;
+    margin-left: 24vw;
+    margin-right: 24vw;
+    margin-bottom: 1rem;
+}
+
+/* product requirements */
+.product-reqs-div{
+    margin-bottom: 4rem;
+}
+.reqs-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 2rem;
+}
+.req-img{
+    position: relative;
+    height: 20vw;
+    border: 1px solid black;
+    transition: transform 0.25s ease;
+    z-index: 2;
+}
+.req-img:hover {
+    cursor: pointer;
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+.arrow-img{
+    max-width: 4vw;
+    height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+/* market survey */
+.market-survey-div{
+    margin-bottom: 2rem;
+}
+.FM-overall-div{
+    border: 0.01px solid white;
+    margin-left: 4vw;
+    margin-right: 3vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* box-shadow: 0px 0px 8px 0px #000000; */
+}
+.failure-modes-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;;
+    margin-bottom: 2rem;
+}
+.failure-mode{
+    width: 12vw;
+}
+.failure-img{
+    width: 11vw;
+}
+.failure-text{
+    font-size: 13px;
+    text-align: center !important;
+}
+
+
+
+
+
+
+
+
+/* OLD STUFF */
+
+/* .DTM-need-statement{
     margin-left: 8vw;
     margin-right: 8vw;
     margin-bottom: 2rem;
     border: 3px solid rgba(255, 202, 28, 0.726);
-}
-.DTM-need-text2{
+} */
+/* .DTM-need-text2{
     padding-left: 4vw;
     padding-right: 4vw;
     text-align: center !important;
@@ -141,7 +377,7 @@
     margin-left: 30vw;
     margin-right: 30vw;
     margin-bottom: 1rem;
-}
+} */
 
 /* DEVELOPING DESIGN PRINCIPLES */
 .process-circle-div{
@@ -175,6 +411,7 @@
     padding-top: 0rem;
     margin-top: 0px;
 }
+
 
 /* PATIENT JOURNEY */
 .patient-journey{
@@ -243,6 +480,8 @@
     margin-bottom: 4rem;
     margin-top: 0.75rem; */
 }
+
+
 
 /* DESIGN PRINCIPLES DIV */
 .DP-containterA-div{

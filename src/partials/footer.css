@@ -40,7 +40,15 @@ a{
   max-width: 60px;
   height: auto;
 }
-a:hover {
+/* a:hover{
+  cursor: pointer;
+  opacity: 0.2;
+} */
+.contact-buttons:hover .contact-logo{
+  cursor: pointer;
+  opacity: 0.2;
+}
+.contact-buttons:hover .link{
   cursor: pointer;
   opacity: 0.2;
 }
