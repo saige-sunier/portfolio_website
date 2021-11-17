@@ -1,5 +1,6 @@
 {
-  "name": "skionskiart",
+  "homepage": "“http://saigesunier.github.io/portfolio_website",
+  "name": "saigesunier",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -51,6 +52,6 @@
     "@types/react-image-magnifiers": "^1.3.0",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-scroll": "^1.8.2",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.2.3"
   }
 }
