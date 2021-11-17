@@ -1,17 +1,29 @@
 /* GENERAL */
 .cystoscope-div{
     position: relative;
-    top: -2.5rem;
-    font-family: 'Courier New', monospace;
-    z-index: 5;
+    /* top: -2.5rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
-.subheader{
-    font-size: 30px;
+.CADsubheader{
+    font-size: 2vw;
     text-align: left;
+    margin-left: 4vw;
+    margin-top: -1rem;
+}
+.CADsubheader2{
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.CADimg_description{
+    font-size: calc(10px + 0.2vw);
+    text-align: center;
+    color:slategrey;
 }
 .general-format{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 .cystoscope-div hr {
     width: 20%;
@@ -22,81 +34,96 @@
 /* HEADER IMAGE SECTION */
 .header-block-div{
     position: relative;
-    height: 55vh;
+    height: 40vw !important;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
     justify-content: center;
 }
 .header-block-div:before{
     content: "";
-    background-image: url(../../images/cystoscope-cover.png);
+    /* background-image: url(../../images/cystoscope-cover2.png); */
+    background-image: url(../../images/cystoscope-background.png);
     background-size: cover;
     position: absolute;
-    background-repeat: repeat;
-    background-position: 50% 10%;
-    background-size: 50%;
+    background-repeat: none;
+    background-position: 50% 50%;
     background-attachment: fixed;
-    opacity: 0.7;
-    background-color:darkgrey;
+    opacity: 0.9;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
     opacity: 0.5;
 }
-.project-title{
+.CADproject-title{
     position: relative;
     color: black;
-    font-size: 10vh;
-    text-align: center;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 10vw !important;
+    margin-right: 30vw !important;
+    margin-top: 0px;
+}
+.CADproject-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw;
+    text-align: left;
+    margin-left: 10vw;
+    /* margin-right: 40vw; */
+    margin-bottom: 10px;
+}
+
+/* BACKGROUND SECTION */
+.CADintro-div{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
     padding-top: 1rem;
 }
-/* SIDE NAVBAR */
-.project-nav-image {
-    width: 20vh;
-    box-shadow: 0px 0px 10px 1px #535353;
-    margin: 1rem;
-    transition: 0.25s;
-  }
-.project-nav-image:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-.project-page-sideNav {
-    display: flex;
-    float: left;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
-.project-nav-title{
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-/* STORY SECTION */
-.intro-div p{
-    font-size: 18px;
+.CADintro-text{
+    font-size: calc(12px + 0.25vw);
     text-align: left;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 2vw;
 }
+.CADintro-img-div{
+    display: grid;
+    /* height: 14rem; */
+    grid-auto-flow: row;
+    padding-right: 4vw;
+    margin-top: 2vw;
+}
+.CYSintro-img{
+    display: inline;
+    max-width: 24vw;
+    margin-top: -1rem;
+}
+
 /* DESIGN PROCESS SECTION */
+.process-div{
+    padding-top: 1rem;
+}
 .process-grid{
     display: grid;
     gap: 1rem;
     grid-auto-flow: column; 
     margin: 0 0 1rem 0;
-    height: 16rem;
+    height: 14rem;
     padding-bottom: 1rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 .process-block-area {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.flip-block-inner{
+.flip-block-inner-CAD{
     position: relative;
     width: 100%;
     height: 100%;
@@ -104,17 +131,17 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-.process-block-area:hover .flip-block-inner{
+.process-block-area:hover .flip-block-inner-CAD{
     transform: rotateX(180deg);
 }
-.flip-block-front, .flip-block-back{
+.flip-block-front-CAD, .flip-block-back-CAD{
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.flip-block-front{
+.flip-block-front-CAD{
     background-color:none;
     align-items: center;
 }
@@ -124,34 +151,75 @@
     width: auto;
     margin: auto;
 }
-.flip-block-back{
+.flip-block-back-CAD{
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     opacity: 0.7;
     transform: rotateX(180deg);
 }
-.process-title {
+.CADprocess-title {
     color: black;
-    font-size: 25px;
+    font-size: 1.5vw;
+    text-align: center !important;
   }
 .process-description-sm {
-    font-size: 14px;
+    font-size: calc(10px + 0.22vw) !important;
     color: white;
-    text-align: center;
+    text-align: center !important;
     padding: 0px 20px;
 }
 .process-description-m {
-    font-size: 18px;
+    font-size: calc(12px + 0.25vw);
     color: white;
-    text-align: center;
+    text-align: center !important;
     padding: 0px 20px;
 }
+.process-sketches-img{
+    display: relative;
+    max-height: 20vw;
+    width: auto;
+    padding-top: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.sketches-descriptions{
+    display: grid;
+    grid-auto-flow: column; 
+    margin: 0 0 0rem 0;
+    padding-bottom: 1rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
 
-/* DESIGN DESCRIPTION SECTION */
+/* FINAL DESIGN SECTION */
 .final-design{
     display: flex;
     flex-direction: row;
 }
 .video-div{
     padding-left: 4rem;
+}
+.video-div:hover{
+    cursor: pointer;
+}
+.final-design-description{
+    font-size: calc(12px + 0.25vw);
+    text-align: left;
+    padding-left: 4vw;
+    margin-bottom: 2rem;
+}
+.key-features-div{
+    text-align: left;
+    padding-top: 2vw;
+    padding-right: 4vw;
+    padding-left: 2vw;
+}
+.key-features{
+    font-size: calc(14px + 0.25vw) !important;
+}
+.key-features-sub{
+    font-size: calc(12px + 0.25vw);
+}
+.key-features-li{
+    font-size: calc(12px + 0.25vw);
 }

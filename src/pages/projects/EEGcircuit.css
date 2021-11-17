@@ -1,0 +1,126 @@
+/* GENERAL */
+.EEG-div{
+    position: relative;
+    /* top: -2.5rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.EEGsubheader{
+    font-size: 2vw;
+    text-align: left !important;
+    margin-left: 4vw;
+    margin-top: -1rem;
+}
+.EEGsubheader2{
+    font-size: 1.5vw;
+    text-align: left !important;
+    margin-left: 4vw;
+}
+.EEGimg_description{
+    font-size: calc(10px + 0.2vw);
+    text-align: center !important;
+    color:slategrey;
+    margin-top: -1rem;
+}
+.general-format{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+/* HEADER IMAGE SECTION */
+.EEGheader-block-div{
+    position: relative;
+    height: 40vw !important;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.EEGheader-block-div:before{
+    content: "";
+    background-image: url(../../images/EEG-headerImg.png);
+    background-size: cover;
+    position: absolute;
+    background-repeat: repeat;
+    background-position: 160% 30%;
+    background-size: 100%;
+    background-attachment: fixed;
+    opacity: 0.7;
+    /* background-color: rgb(211, 211, 211); */
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
+.EEGproject-title{
+    position: relative;
+    color: black;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 5vw;
+    margin-right: 40vw;
+    margin-top: 0px;
+}
+.EEGproject-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw;
+    text-align: left;
+    margin-left: 5vw;
+    /* margin-right: 40vw; */
+    margin-bottom: 10px;
+}
+
+/* BACKGROUND SECTION */
+.EEGintro-div{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+.EEGintro-img{
+    max-width: 28vw;
+    transform: translate(0%, -20%);
+}
+.EEGintro-text{
+    font-size: calc(12px + 0.25vw);
+    text-align: left;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+/* DESIGN REQS */
+.EEG-designReqs-list{
+    text-align: left !important;
+    font-size: calc(12px + 0.25vw);
+    margin-left: 4vw;
+}
+.EEGschematic-img{
+    position: relative;
+    max-width: 60vw; 
+}
+.CBheader-img{
+    position: relative;
+    transform: translate(5%, 0%);
+    max-width: 60vw;
+}
+
+/* FINAL DESIGN DIV */
+.EEGtestImg-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.EEGtestImg{
+    display: flex;
+    max-width: 30vw;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.table-div{
+    transform: translate(20%, 0%);
+}

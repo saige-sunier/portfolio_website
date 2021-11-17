@@ -1,70 +1,80 @@
 .header-div {
     display: flex;
-    height: 5.5rem;
+    height: 5rem;
     top: 0;
     position: sticky;
-    background-color:rgb(182, 202, 223);
+    /* background-color:rgb(182, 202, 223); */
+    background-color: rgb(182, 202, 223);
     z-index: 10;
     overflow: visible;
+    box-shadow: 0px 0px 8px 0px #000000;
   }
 
-/* .header-div h4,
-.header-div .header-nav-menu,
-.header-div p {
-    z-index: 2;
-  } */
 
-.header-title {
-    font-size: 2.3vw !important;
-    font-family: "Verdana" !important;
-    margin-bottom: 0;
-    margin-top: 1.5rem;
-    margin-left: 6.5rem;
-    margin-right: 40vw;
-    text-align: left;
-    z-index: 10;
+.header-topLeft{
+    display: grid;
+    grid-auto-flow: column;
+    padding-left: 8rem !important;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
 }
-
-.header-title:hover {
+.header-topLeft:hover{
     cursor: pointer;
     opacity: 0.5;
     transition: 0.25;
 }
+.header-title {
+    position: relative;
+    font-size: 35px !important;
+    font-family: "Bradley Hand" !important;
+    color: black;
+    padding-left: 1rem;
+    margin-top: 0.8rem;
+}
+
 
 .home-logo {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-  }
-
-.home-logo:hover {
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.25s;
+    position: relative;
+    padding-top: 0.25rem;
+    width: 60px;
+    height: 60px;
   }
 
 .header-nav-menu {
-    position: sticky;
-    right: 10px;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 10;
+    margin-left: auto;
+    margin-right: 8vw;
+    margin-bottom: 1rem;
 }
 
 .header-nav-button {
-    /* margin-left: 1vw; */
     margin-top: 2rem;
-    font-size: 1.4vw !important;
+    padding-right: 1rem;
+    padding-left: 1rem;
     background: none;
     border: none;
-    font-family: "Verdana" !important;
+    font-family: "Bradley Hand" !important;
+    color: black;
+    font-size: 18px !important;
     transition: 0.3s;
     border: none !important;
     outline: none !important;
     text-align:justify;
 }
+.header-nav-button-home{
+    margin-top: 1.6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background: none;
+    border: none;
+    font-family: "Bradley Hand" !important;
+    color: black;
+    font-size: 18px !important;
+    transition: 0.3s;
+    border: none !important;
+    outline: none !important;
+    text-align:justify;
+}
+
 .header-nav-button:hover {
     cursor: pointer;
     opacity: 0.2;
@@ -76,7 +86,7 @@
 
 @media screen and (max-width: 1200px) {
 .header-title{
-    margin-right: 35vw;
+    margin-right: 28vw;
 }
 }
 
@@ -86,7 +96,7 @@
     overflow: hidden;
 }
 .header-title{
-    margin-right: 60vw;
+    margin-top: 0.5rem;
 }
 .dropbtn {
     display: block;

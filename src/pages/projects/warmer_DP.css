@@ -1,0 +1,608 @@
+/* GENERAL */
+.warmer_DP-div{
+    position: relative;
+    /* top: -3rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.subheader{
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.subheader2{
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.img_description{
+    font-size: 12px;
+    text-align: center;
+    color:slategrey;
+}
+.general-format{
+    /* padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw; */
+    margin-left: 7vw !important;
+    margin-right: 8vw !important;
+}
+.general-format p{
+    text-align: left;
+}
+.general-format h3{
+    text-align: left;
+}
+
+.hr-divider-pages{
+    border: 2px solid black;
+    width: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+/* HEADER DIV */
+.warmer-header-block-div{
+    position: relative;
+    height: 40vw !important;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.warmer-header-block-div:before{
+    content: "";
+    background-image: url(../../images/newborn-basket.jpeg);
+    background-size: cover;
+    position: absolute;
+    background-repeat: none;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    opacity: 0.9;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
+.DTMproject-title{
+    position: relative;
+    color: black;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 15vw;
+    margin-right: 40vw;
+    margin-top: 0px;
+}
+.DTMproject-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw;
+    text-align: left;
+    margin-left: 15vw;
+    margin-right: 50vw;
+    margin-bottom: 10px;
+}
+
+/* BACKGROUND SECTION */
+.DTM-intro-div{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: -2rem;
+}
+.DTM-intro-text{
+    font-size: calc(12px + 0.25vw);
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    padding-right: 2vw;
+}
+.DTM-intro-img-div{
+    display: grid;
+    width: 50rem;
+    grid-auto-flow: row;
+    padding-right: 4vw;
+}
+.DTM-intro-img{
+    width: 28rem;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 4vw;
+}
+
+/* THE NEED */
+.need-div-intro{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-right: 4vw;
+}
+.NH-need-img-div{
+    display: flex;
+    flex-direction: column;
+}
+.NH-need-img-div div{
+    display: flex;
+    flex-direction: row;
+}
+.NH-img_description{
+    font-size: 12px;
+    text-align: center;
+    color:slategrey;
+    margin-left: 5vw;
+}
+.NH-need-img{
+    position: relative;
+    width: 20vw;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 1rem;
+}
+.DTM-need-text{
+    position: relative;
+    font-size: calc(12px + 0.25vw);
+    text-align: left;
+    padding-bottom: 0rem;
+    padding-left: 4vw;
+    margin-right: 3vw;
+}
+
+.otter-prototype{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+.otter-img{
+    width: 22rem;
+    margin-left: 4vw;
+    margin-right: 2rem;
+    margin-left: 15vw;
+}
+.otter-text{
+    position: relative;
+    font-size: calc(12px + 0.25vw);
+    margin-right: 4vw;
+    margin-top: 4rem;
+    width: 25vw;
+}
+.subheader2-1{
+    font-size: 1.3vw;
+    text-align: center !important;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.design-phases-img{
+    width: 48vw;
+}
+
+/* MSF SECTION */
+/* cause and effect */
+.CandE-div{
+    margin-bottom: 3rem;
+}
+.CandE-diagram-div{
+    border: 1px solid white;
+    /* box-shadow: 0px 0px 8px 0px #000000; */
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.CandE-img{
+    position: relative;
+    width: 65vw;
+    height: 100%;
+    /* margin-left: 4vw; */
+    /* margin-right: 4vw; */
+    margin-bottom: 1rem;
+    transition: transform 0.25s ease;
+    z-index: 2;
+}
+.CandE-img:hover{
+    cursor: pointer;
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+/* needs identification */
+.work-circles{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 4vw;
+    margin-bottom: 34rem;
+}
+.repair-circle{
+    position: relative;
+}
+.circle1 {
+    position: absolute;
+    width: 18vw !important;
+    height: 18vw !important;
+    border-radius: 50%;  
+    box-shadow: 0px 0px 8px 0px #000000;  
+}
+.DTMcircle1-area {
+    width: 18vw !important;
+    height: 18vw !important;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, 0.534);
+}
+.DTMcircle1-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 8vw;
+    margin-left: 2vw;
+    width: 14vw;
+}
+.DTMcircle2-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 7vw;
+    margin-left: 5vw;
+}
+.work-text-bullets{
+    position: absolute;
+    width: 18vw !important;
+    margin-top: 19vw !important;
+}
+.work-text-bullets p{
+    /* text-align: center !important; */
+    font-size: 1rem;
+}
+/* need statement */
+.DTM-need-statement{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 3rem;
+    border: 1px solid white;
+    /* box-shadow: 0px 0px 10px 0px rgb(255, 138, 28); */
+    /* background-color: rgba(255, 202, 28, 0.08); */
+    box-shadow: 0px 0px 8px 0px #00000079;
+}
+.DTM-need-text2{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center !important;
+    font-size: calc(12px + 0.25vw);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.DTM-need-text3{
+    background-color: rgba(255, 202, 28, 0.726);
+    border-radius: 10px;
+    text-align: center !important;
+    font-size: calc(12px + 0.45vw);
+    padding: 5px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 1rem;
+}
+
+/* product requirements */
+.product-reqs-div{
+    margin-bottom: 4rem;
+}
+.reqs-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 2rem;
+}
+.req-img{
+    position: relative;
+    height: 20vw;
+    border: 1px solid black;
+    transition: transform 0.25s ease;
+    z-index: 2;
+}
+.req-img:hover {
+    cursor: pointer;
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+.arrow-img{
+    max-width: 4vw;
+    height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+/* market survey */
+.market-survey-div{
+    margin-bottom: 2rem;
+}
+.FM-overall-div{
+    border: 0.01px solid white;
+    margin-left: 4vw;
+    margin-right: 3vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* background-color: rgb(250, 248, 239);  */
+    /* box-shadow: 0px 0px 8px 0px #000000; */
+}
+.failure-modes-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;;
+    margin-bottom: 2rem;
+    
+}
+.failure-mode{
+    width: 12vw;
+}
+.failure-img{
+    width: 11vw;
+}
+.failure-text{
+    font-size: 13px;
+    text-align: center !important;
+}
+
+/* product development */
+.product-dev-img{
+    width: 40vw;
+}
+
+
+
+
+
+
+
+/* OLD STUFF */
+
+/* .DTM-need-statement{
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 2rem;
+    border: 3px solid rgba(255, 202, 28, 0.726);
+} */
+/* .DTM-need-text2{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center !important;
+    font-size: calc(12px + 0.25vw);
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.DTM-need-text3{
+    background-color: rgba(255, 202, 28, 0.726);
+    text-align: center !important;
+    font-size: calc(12px + 0.45vw);
+    padding: 5px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-bottom: 1rem;
+} */
+
+/* DEVELOPING DESIGN PRINCIPLES */
+.process-circle-div{
+    display: grid;
+    grid-auto-flow: row;
+}
+.process-circle{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0rem;
+}
+.number-circle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-left: 10rem;
+    margin-right: 2rem;
+}
+.number-text{
+    position: relative;
+    text-align: left;
+    transform: translateX(-100px);
+    margin-top: 1.15rem;
+    padding-left: 6vw;
+    width: 70vw;
+    font-size: calc(12px + 0.25vw);
+}
+.DTM-need-text a{
+    color: blue;
+    padding: 0px;
+    padding-top: 0rem;
+    margin-top: 0px;
+}
+
+
+/* PATIENT JOURNEY */
+.patient-journey{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 70vw;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+.DP-img{
+    /* padding-top: 1rem; */
+    max-width: 70vw;
+}
+
+/* WARMING SOLUTIONS  */
+.DTM-need-img-div{
+    display: grid;
+    gap: 0vw;
+    grid-auto-flow: column; 
+    margin: 0 0 0.2rem 0;
+    padding-top: 1rem;
+    padding-right: 4vw;
+}
+.DTM-need-area{
+    display: grid;
+    grid-auto-flow: column;
+}
+.DTM-need-left{
+    transform: translateX(80px);
+}
+.DTM-need-left .need-img-text{
+    text-align: left;
+    font-size: calc(10px + 0.2vw);
+    padding-right: 0vw;
+    margin-left: 2vw;
+    z-index: 20;
+}
+.DTM-need-img{
+    position: relative;
+    max-height: 150px;
+    width: auto;
+    margin-bottom: 2rem;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 10;
+}
+.DTM-need-right{
+    transform: translateY(105px);
+    padding-left: 5rem;
+}
+.DTM-need-right .need-img-text{
+    position: absolute;
+    text-align: left;
+    font-size: calc(10px + 0.2vw);
+    margin-left: 2vw;
+    padding-right: 1rem;
+    /* color: white; */
+}
+.need-img-text-area{
+    position: relative;
+    /* background: rgb(128, 128, 128, 0.8); */
+    height: 125px;
+    width: 320px;
+    margin-top: 0.75rem;
+    /* margin-left: -6rem;
+    margin-bottom: 4rem;
+    margin-top: 0.75rem; */
+}
+
+
+
+/* DESIGN PRINCIPLES DIV */
+.DP-containterA-div{
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
+}
+.DP-title{
+    background-color:rgba(255, 183, 28, 0.726);
+    /* margin-left: 2vw; */
+    /* margin-right: 2vw; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 16px;
+}
+.DP-div{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.DP-category-div{
+    width: 36vw;
+}
+
+/* Is Effective */
+
+.DP-row{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column; 
+    margin: 0 0 1rem 0;
+    height: 6rem;
+    padding-bottom: 0rem;
+}
+.DP-block-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.flip-block-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.DP-block-area:hover .flip-block-inner{
+    transform: rotateX(180deg);
+}
+.flip-block-front, .flip-block-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 240, 106);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-block-front{
+    background-color:none;
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+}
+.DP-image{
+    display: block;
+    /* max-height: 4.25rem; */
+    /* width: auto; */
+    max-width: 4rem;
+    height: auto;
+    margin: auto;
+    padding-left: 0.25rem;
+}
+.flip-block-back{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    opacity: 0.7;
+    transform: rotateX(180deg);
+}
+.DP-front-text {
+    color: black;
+    font-size: 11px !important;
+    text-align: center !important;
+    padding-right: 0.25rem;
+  }
+.DP-back-text{
+    color: black;
+    font-size: 10px;
+    text-align: left;
+    margin: 0;
+    padding: 15px;
+    list-style-position: inside;
+    text-align: center !important;
+}
+.DP-back-text-sm{
+    color: black;
+    font-size: 8.5px;
+    text-align: left;
+    margin: 0;
+    padding: 15px;
+    list-style-position: inside;
+    text-align: center !important;
+}
