@@ -7,5 +7,6 @@ export enum Routes {
     homepage='/saigesunier',
     warmer_DP='/warmer_DP',
     faceshields='/faceshields',
-    EEGcircuit='/EEGcircuit'
+    EEGcircuit='/EEGcircuit',
+    justforfun='/justforfun'
 }

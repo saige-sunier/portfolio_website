@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom';
 import './App.css';
 import { Home } from './pages/home/home';
 import { Projects } from './pages/projects/projects';
-import { Header } from './partials/header';
+import { Header } from './partials/header2';
 import { Footer } from './partials/footer';
 import { Cystoscope } from './pages/projects/cystoscope';
 import { Ventilator } from './pages/projects/ventilator'
@@ -12,6 +12,7 @@ import { Tengeru } from './pages/projects/tengeru';
 import { Warmer_DP } from './pages/projects/warmer_DP'; 
 import { Faceshields } from './pages/projects/faceshields';
 import { EEGcircuitPage} from './pages/projects/EEGcircuit';
+import { JustForFun } from './pages/projects/justforfun';
 import { Routes } from './routes';
 
 function App() {
@@ -65,6 +66,11 @@ function App() {
             <Header/>
             <EEGcircuitPage/>
             <Footer/>
+        </Route>
+        <Route path={Routes.justforfun}>
+            <Header/>
+            <JustForFun/>
+            {/* <Footer/> */}
         </Route>
       </div>
     </Router>

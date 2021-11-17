@@ -1,0 +1,42 @@
+/* GENERAL */
+.justForFun-div{
+    position: relative;
+    /* top: -3rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.subheader{
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.subheader2{
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.img_description{
+    font-size: 12px;
+    text-align: center;
+    color:slategrey;
+}
+.general-format{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.general-format p{
+    text-align: left;
+}
+.general-format h3{
+    text-align: left;
+}
+
+.temp{
+    text-align: center !important;
+}

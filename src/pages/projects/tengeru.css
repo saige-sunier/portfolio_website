@@ -8,27 +8,23 @@
     font-size: 2vw;
     text-align: left;
     margin-left: 4vw;
+    margin-top: -1rem;
 }
 .TZsubheader2{
-    font-size: 22px;
+    font-size: 1.5vw;
     text-align: left;
     margin-left: 4vw;
 }
 .TZsubheader3{
-    font-size: 20px;
+    font-size: 1.5vw;
     text-align: left;
     margin-left: 4vw;
 }
 .general-format{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
-.tengeru-div hr {
-    width: 20%;
-    height: 3px;
-    background: black;
-    border: none;
-  }
+
 /* HEADER IMAGE SECTION */
 .header-block-div{
     position: relative;
@@ -53,21 +49,21 @@
     right: 0px;
     opacity: 0.5;
 }
-.project-title{
+.TZ-project-title{
     position: relative;
     color: black;
     font-size: 3vw;
     text-align: left;
-    margin-left: 11vw ;
-    margin-right: 40vw;
-    margin-top: 0px;
+    margin-left: 15vw ;
+    margin-right: 30vw;
+    margin-top: 10px;
 }
-.project-title-sm{
+.TZ-project-title-sm{
     position: relative;
     color: black;
     font-size: 1.8vw;
     text-align: left;
-    margin-left: 11vw;
+    margin-left: 15vw;
     margin-right: 50vw;
     margin-bottom: 10px;
 }
@@ -79,7 +75,7 @@
     padding-top: 1rem;
 }
 .TZbackground-text {
-    font-size: 15px !important;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
@@ -87,108 +83,139 @@
     padding-right: 2vw;
 }
 .TZbackground-img{
+    position: relative;
     width: 40%;
     height: 40%;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 2vw;
+    padding-top: 1rem;
     padding-left: 2vw;
     padding-right: 4vw;
 }
 /* WORK SECTION */
-.TZwork-div{
+.TZ-work-div{
+    height: 36vw;
+}
+.work-circles{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 50vw;
+    margin-left: 4vw;
+    margin-top: 4vw;
 }
-.TZwork-text{
-    font-size: 15px !important;
-    text-align: left;
-    padding-bottom: 2px;
-    padding-left: 4vw;
-    padding-right: 2vw;
+.repair-circle{
+    position: relative;
 }
-.TZwork-text-ul{
-    font-size: 14px;
-    text-align: left;
-    padding-left: 6vw;
+.circle1 {
+    position: absolute;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;  
+    box-shadow: 0px 0px 8px 0px #000000;
 }
-.TZwork-text-ul li{
-    padding-bottom: 2px;
+.circle1-area {
+    width: 18vw;
+    height: 18vw;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, 0.534);
 }
-.TZwork-img{
-    width: 45%;
-    height: 45%;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-top: 6.5vw;
-    padding-left: 2vw;
-    padding-right: 4vw;
+.TZcircle1-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 8vw;
+    margin-left: 5.5vw;
 }
+.TZcircle2-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 8vw;
+    margin-left: 6vw;
+}
+.TZcircle3-text{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    margin-top: 8vw;
+    margin-left: 5vw;
+}
+.work-text-bullets{
+    position: absolute;
+    width: 16vw;
+    margin-top: 17vw;
+}
+
 
 /* PARTITIONS SECTION */
 .TZpartitions-div{
     padding-top: 2vw;
 }
 .TZpartitions-text{
-    font-size: 14px;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-left: 4vw;
     padding-right: 4vw;
 }
 .TZpartitions-grid{
-    display: grid;
-    gap: 2rem;
-    grid-auto-flow: column; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-auto-flow: row; 
+    justify-content: space-between;
     margin: 0 0 0.2rem 0;
-    /* height: 20rem; */
     padding-bottom: 1rem;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
-.accordion-div{
+
+.TZaccordion-div{
     position: absolute;
     max-width: 20vw;
     top: -16%;
-    background-color: rgb(182, 202, 223, 0.5) !important;
+    /* background-color: rgb(182, 202, 223, 0.5) !important; */
+    background-color:rgba(131, 130, 130, 0.164) !important;
 }
 .TZprocess-area{
     position: relative;
     max-width: 20vw;
-    width: 100%;
     height: 100%;
+    box-shadow: 0px 0px 8px 0px #000000;
 }
 .TZprocess-title{
     position: relative;
     left: 50%;
     /* top: 10%; */
     padding-top: 0px;
-    transform: translate(-45%, -15%);
-    color: black;
-    font-size: 18px !important;
+    transform: translate(-45%, -10%);
+    color: white;
+    font-weight: bold;
+    font-size: calc(14px + 0.4vw);
     width: 100%;
     text-align: center !important;
 }
 .TZprocess-img{
     display: block;
     width: 100%;
-    margin: auto;
-    padding-top: 10px;
+    margin: 0px;
 }
 .TZprocess-text{
     position: relative !important;
     text-align: left;
     color: black;
-    font-size: 14px !important;
+    font-size: calc(12px + 0.2vw) !important;
     /* background-color:rgb(192, 188, 188); */
 }
 
 /* RESULTS DIV */
 
 .TZpartitions-img{
-    width: 90%;
-    height: 90%;
+    width: 68vw;
+    height: auto;
     padding-top: 1vw;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -201,7 +228,7 @@
     padding-top: 1rem;
 }
 .TZlessons-text{
-    font-size: 15px !important;
+    font-size: calc(12px + 0.25vw);
     text-align: left;
     padding-bottom: 2px;
     padding-left: 4vw;
@@ -212,38 +239,12 @@
     grid-auto-flow: row;
 }
 .TZlessons-img{
-    width: 80%;
-    height: 80%;
+    width: 31vw;
+    height: auto;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 4vw;
-    padding-left: 2vw;
+    padding-top: 3rem;
+    padding-left: 2rem;
     padding-right: 4vw;
 }
-.TZlessons-img2{
-    width: 80%;
-    height: 80;
-    padding-left: 2vw;
-    padding-right: 4vw;
-}
-/* 
-.TZpartitions-results {
-    padding-left: 20vh;
-    margin-left: 2rem;
-}
-.TZpartitions-grid{
-    display: grid;
-    gap: 0.2rem;
-    grid-auto-flow: column; 
-    margin: 0 0 0.2rem 0;
-    height: 25rem;
-    padding-bottom: 1rem;
-}
-.TZpartitions-img {
-    width: 90%;
-    padding-top: 4vw;
-}
-.TZpartitions-imgT{
-    width: 70%;
-    padding-left: 2.5vw;
-} */
+

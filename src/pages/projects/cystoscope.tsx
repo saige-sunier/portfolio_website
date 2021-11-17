@@ -36,10 +36,13 @@ export const Cystoscope = withRouter((props) =>{
                         <p className="CADintro-text">In my senior year design and manufacturing class, we were challenged to re-design a rigid cystoscope. The goal was to make the product easy-to-use, comfortable, and accurate for physician use. We also were asked to consider the patient and to design a product that was aesthetically calming for the patients. The design had to house all electronic and mechanical components and the product needed to be manufacturable on a large scale through injection molding.  </p>
                     </div>
                     <div className="CADintro-img-div">
-                        <img className="CADintro-img" src={rigidCysto}></img>
+                        <img className="CYSintro-img" src={rigidCysto}></img>
                         <p className="CADimg_description">Rigid cystoscope used to perform endoscopies.</p>
                     </div>
                 </div>
+
+                <hr className="hr-divider-pages"></hr>
+
                 <div className="process-div">
                     <h3 className="CADsubheader">Design Process</h3>
                     <div className="process-grid">
@@ -104,12 +107,15 @@ export const Cystoscope = withRouter((props) =>{
                         </div>
                     </div>
                 </div>
+
+                <hr className="hr-divider-pages"></hr>
+
                 <div className="final-design-div">
                     <h3 className="CADsubheader">Final Design</h3>
-                    <p className="final-design-description">Click play to watch a full dissasembly animation of the design.</p>
+                    <p className="final-design-description">Click to watch a full dissasembly animation of the design.</p>
                     <div className="final-design">
                         <div className="video-div">
-                            <video id="design-video" width="680" controls>
+                            <video id="design-video" width="700vw" controls>
                                 <source src={cystoVideo} type="video/mp4"></source>
                             </video>
                         </div>

@@ -10,12 +10,6 @@
     box-shadow: 0px 0px 8px 0px #000000;
   }
 
-/* .header-div h4,
-.header-div .header-nav-menu,
-.header-div p {
-    z-index: 2;
-  } */
-
 
 .header-topLeft{
     display: grid;
@@ -31,53 +25,28 @@
 }
 .header-title {
     position: relative;
-    font-size: 2.3vw !important;
+    font-size: 35px !important;
     font-family: "Bradley Hand" !important;
     color: black;
     padding-left: 1rem;
-    padding-bottom: 0.5rem;
-    margin-top: 1rem;
-    /* margin-bottom: 0;
-    margin-top: 1.5rem;
-    margin-left: 6.5rem;
-    margin-right: 40vw;
-    text-align: left;
-    z-index: 10; */
+    margin-top: 0.8rem;
 }
 
-/* .header-title:hover {
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.25;
-} */
 
 .home-logo {
     position: relative;
     padding-top: 0.25rem;
     width: 60px;
     height: 60px;
-    /* padding: 0.5rem;
-    margin-left: 0.5rem; */
   }
 
-/* .home-logo:hover {
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.25s;
-  } */
-
 .header-nav-menu {
-    /* position: sticky;
-    right: 10px;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 10; */
-    margin-left: 30rem;
+    margin-left: auto;
+    margin-right: 8vw;
     margin-bottom: 1rem;
 }
 
 .header-nav-button {
-    /* margin-left: 1vw; */
     margin-top: 2rem;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -92,7 +61,6 @@
     text-align:justify;
 }
 .header-nav-button-home{
-    /* margin-left: 1vw; */
     margin-top: 1.6rem;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -118,7 +86,7 @@
 
 @media screen and (max-width: 1200px) {
 .header-title{
-    margin-right: 35vw;
+    margin-right: 28vw;
 }
 }
 
@@ -128,7 +96,7 @@
     overflow: hidden;
 }
 .header-title{
-    margin-right: 60vw;
+    margin-top: 0.5rem;
 }
 .dropbtn {
     display: block;

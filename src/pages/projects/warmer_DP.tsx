@@ -18,54 +18,34 @@ export const Warmer_DP = withRouter((props) =>{
     const kmc='./images/kmc.png';
     const thermometer='./images/thermometer.png';
     const transportWarming='./images/transport-warming.png';
-    const circle1='./images/circle1.png';
-    const circle2='./images/circle2.png';
-    const circle3='./images/circle3.png';
-    const patientJourney='./images/patient-journey-marked.png';
+    const goyalmaraMomBaby='./images/goyalmara-mom_baby.jpeg';
+    const otter = './images/otter.png';
+    const designPhases='./images/design-phases.png';
+    const CandE = './images/cause_and_effect.png';
+    const goyalmara = './images/goyalmara.png';
+    const workshop = './images/workshop-zoom.png';
+    const survey = './images/msf-survey.png';
+    const productReqs='./images/reqsImg.png';
     const designPrinciples='./images/design-principles.png';
-    const testCartoon='./images/lightbulb.png';
-    const DP1='./images/DesignPrinciples/Newborn-thermo-stable.png';
-    const DP2='./images/DesignPrinciples/Newborn-hypothermic.png';
-    const DP3='./images/DesignPrinciples/Transport-hand-carry.png';
-    const DP4='./images/DesignPrinciples/whole-product-iec.png';
-    const DP5='./images/DesignPrinciples/CE-mark.png';
-    const DP6='./images/DesignPrinciples/Switch-On.png';
-    const DP7='./images/DesignPrinciples/Lightbulb-DtM.png';
-    const DP8='./images/DesignPrinciples/fmea-detection-positive.png';
-    const DP9='./images/DesignPrinciples/Box-fancy.png';
-    const DP10='./images/DesignPrinciples/Feels-warm.png';
-    const DP11='./images/DesignPrinciples/iGadget.png';
-    const DP12='./images/DesignPrinciples/Conductive-warmer-confidence.png';
-    const DP13='./images/DesignPrinciples/Clinician-happy.png';
-    const DP14='./images/DesignPrinciples/Guideline.png';
-    const DP15='./images/DesignPrinciples/Hyperthermia.png';
-    const DP16='./images/DesignPrinciples/KMC.png';
-    const DP17='./images/DesignPrinciples/Patient-access.png';
-    const DP18='./images/DesignPrinciples/Patient-visibility.png';
-    const DP19='./images/DesignPrinciples/Newborn-isolation.png';
-    const DP20='./images/DesignPrinciples/Portable.png';
-    const DP21='./images/DesignPrinciples/Device-supervision.png';
-    const DP22='./images/DesignPrinciples/Cleaning.png';
-    const DP23='./images/DesignPrinciples/Jeep-simple.png';
-    const DP24='./images/DesignPrinciples/';
-    const DP25='./images/DesignPrinciples/';
-    const DP26='./images/DesignPrinciples/';
-    const DP27='./images/DesignPrinciples/';
-    const DP28='./images/DesignPrinciples/Power-insecurity.png';
-    const DP29='./images/DesignPrinciples/';
-    const DP30='./images/DesignPrinciples/battery.png';
-    const DP31='./images/DesignPrinciples/Relocate-device.png';
-    const DP32='./images/DesignPrinciples/Limited-space.png';
-    const DP33='./images/DesignPrinciples/Installation.png';
-    const DP34='./images/DesignPrinciples/tco-hospital-infrastructure.png';
-    const DP35='./images/DesignPrinciples/Ammeter.png';
-    const DP36='./images/DesignPrinciples/Doc-Support.png';
+    const arrow='./images/arrow.png';
+    const FM1='./images/FM-brokencord.png';
+    const FM2='./images/FM-cleaning.png';
+    const FM3='./images/FM-temp.png';
+    const FM4='./images/FM-consumables.png';
+    const FM5='./images/FM-devicestate.png';
+    const productDev='./images/product-dev.png';
 
-
+    const openImg = (image: string) => {
+        window.open(`./images/${image}`);
+    }
+    
+    const pdfDownload = (pdf: string) => {
+        window.open(`${pdf}`);
+    }
 
 return (
     <div className="warmer_DP-div" id="warmer_dp">
-        <div className="header-block-div">
+        <div className="warmer-header-block-div">
             <div>
                 <h2 className="DTMproject-title-sm">Design that Matters</h2> 
                 <h2 className="DTMproject-title">Designing Solutions for Neonatal Hypothemia</h2>
@@ -75,53 +55,166 @@ return (
             <div className="DTM-intro-div">
                 <div className="DTM-intro-content">
                     <h3 className="subheader">Background</h3>
-                        <p className="DTM-intro-text">I currently work at Design that Matters, a non-profit that specializes in applying human-centered design methodologies to design products and systems for low-resource settings. We are partnered with MSF’s Japan Innovation Unit (JIU) to reduce incidences of neonatal hypothermia in MSF project sites. Our goal is to design and implement a newborn warmer to be used in low resource settings, specifically MSF projects.</p>
+                        <p className="DTM-intro-text">I work at Design that Matters (DtM), a non-profit that specializes in applying human-centered design methodologies to design products and systems for low-resource settings. We are a tiny company. It is really just me and the founder working our hardest to make an impact in this world. We collaborate with people from all over the world to try and save newborn lives. Despite the past 18-months of being stuck behind our desks and in our homes, we have managed to make significant progress in the development of a conductive newborn warmer.</p>
                     </div>
                 <div className="DTM-intro-img-div">
                     <img className="DTM-intro-img" src={logos}></img>
                 </div>
             </div>
             <div className="need-div">
-                <h3 className="subheader">The Need: Neonatal Hypothermia</h3>
+                <h3 className="subheader2">Neonatal Hypothermia</h3>
                     <div className="need-div-intro">
                         <div className="DTM-need-text">
-                            <p>Every year four million babies die within the first four weeks of life, 99% of these deaths occur in low and middle-income countries. <b>Neonatal hypothermia is a major contributor to the millions of incidences of neonatal morbidity and mortality around the world.</b> It is a comorbidity factor to the main direct causes of neonatal death. </p>
+                            <p><b>Every year an estimated 1.8 million lives could be saved just by keeping newborns warm and clean for the first 48 hours of life.</b> Kangaroo Mother Care is the standard of care for preventing and treating neonatal hypothermia in resource poor settings. But it is is not enough. <b>Even a 30-minute break in warming can result in the onset of neonatal hypothermia.</b> Cultural resistance, birth complication, infrastructure and human resource constraints results in the need for supplemental warming devices. </p>
                         </div>
+                        <div className="NH-need-img-div">
+                            <div>
+                                <img className="NH-need-img" src={goyalmaraMomBaby}></img>
+                                <img className="NH-need-img" src={kmc}></img>
+                            </div>
+                            <p className="NH-img_description">Shots from DtM field visit to MSF Goyalmara Hospital in Cox's Bazar, Bangladesh</p>
+                        </div>
+                        
                 `   </div>
+                {/* <div className="DTM-need-statement">
+                    <p className="DTM-need-text2"><b>MSF project sites</b>, and other low-resource setting hospitals, <b>that provide 24-hour care to newborn patients </b></p>
+                    <p className="DTM-need-text3"> <b>NEED</b></p>
+                    <p className="DTM-need-text2"><b>A durable, easy-to-clean and hand-portable single-infant warmer that is hard to use wrong, requires limited maintenance, has no consumables, and costs significantly less than a radiant warmer.</b></p>  
+                </div> */}
+            </div>
+            <div className="DtM-prior-div">
+                <h3 className="subheader2">DtM’s Previous Progress</h3>
+                <div className="otter-prototype">
+                    <img className="otter-img" src={otter}></img>
+                    <p className="otter-text">Design that Matters had built a prototype for a warmer about three years ago. This product was designed to complement DtM’s Firefly Phototherapy Device. But sometimes design is the easiest part of the journey. I came on to help take this product from prototype to reality. </p>
+                </div>  
+            </div>
+            <div>
+                <h3 className="subheader2-1">So we have a prototype… now what?</h3>
+                <img className="design-phases-img" src={designPhases}></img>
+                <p className="DTM-need-text">The vast majority of products fail to make it to the market. Products designed for low-resource settings face additional barriers. <b>This year was all about re-designing our strategy for bringing a conductive warmer to market.</b> If we were going to convince our manufacturing connection that this would be worth the investment, we needed to build a partnership that ensured the warmer would be purchased and implemented. </p>
+          </div>
+            <hr className="hr-divider-pages"></hr>
+
+            <div className="DTM-MSF-div">
+                <div className="CandE-div">
+                    <h3 className="subheader">Partnering with Médecins Sans Frontières (MSF)</h3>
+                    <p className="DTM-need-text"> MSF provides maternal services all around the world. They build hospitals, purchase medical equipment, and help bring thousands of newborns into the world every year. <b>Our goal is to design a warmer that meets needs expressed specifically by MSF.</b> We have been developing this product under the assumption that MSF project sites represent contexts found in other hospitals in low-resource settings. My partner and I both have experience working in LRS and are confident that this assumption holds true.</p>
+                    <p className="DTM-need-text">Throughout this entire process we have kept and updated a cause and effect diagram. We are taking a holistic approach to product development and are focusing on stages post prototyping to solidify a path forward once we finalize the product's design.</p>
+                    <div className="CandE-diagram-div">
+                        <h3 className="subheader2-1">Product Development Cause and Effect Diagram</h3>
+                        <img className="CandE-img" onClick={()=> openImg('cause_and_effect.png')} src={CandE}></img>
+                    </div>
+                    <p className="DTM-need-text">We built a team of diverse stakeholders from MSF Japan Innovation Unit (JIU) and MSF Operational Centre Barcelona (OCBA). Any other year we would have travelled to Spain and hosted workshops in-person. This year everything was remote and while our jobs would have been easier if we got to meet our collaborators, <b>we pulled together a team of people located in Japan, Spain, Democratic Republic of Congo, Kenya, Yemen, India, Senegal, Vietnam, and Uzbekistan.</b> </p>
+                    <p className="DTM-need-text">Our goal was to understand the warming gaps that occur within MSF project sites and to work with MSF’s logistic personnel, product procurement team, and in-field clinicians to define product requirements for a newborn warmer. </p>
+                </div>
+
+                <div className="needs-identification">
+                    <h3 className="subheader2">Needs Identification</h3>
+                    <p className="DTM-need-text">In February 2020, my co-worker was lucky enough to make it to Bangladesh to conduct a field visit at Goyalmara Hospital. A field visit to an MSF project site in Sub-Saharan Africa is in the planning phases but Covid-19 has made international travel very difficult. We have had to perform needs identification virtually. </p>
+                    <p className="DTM-need-text"><b>I co-facilitated four workshops with our stakeholders as well as conducted several one-on-one and small group interviews. </b></p>
+                    <div className="work-circles">
+                        <div className="repair-circle">
+                            <img className="circle1" src={goyalmara}></img>
+                            <div className="DTMcircle1-area"> </div>
+                            <h4 className="DTMcircle1-text">Field Visit</h4>
+                            <div className="work-text-bullets">
+                                <p>Goyalmara, Hospital in February 2020</p>
+                                <p>Observed and interviewed clinicians and logistic personnel</p>
+                                <p>Identified warming gaps and the barriers to uptake of current warming solutions</p>
+                            </div>
+                        </div>
+                        <div className="repair-circle">
+                            <img className="circle1" src={workshop}></img>
+                            <div className="DTMcircle1-area"> </div>
+                            <h4 className="DTMcircle2-text">Workshops & Interviews</h4>
+                            <div className="work-text-bullets">
+                                <p>Identified warming gaps within MSF project sites</p>
+                                <p>Defined qualitative product requirements</p>
+                                <p>Reviewed MSF product procurement process</p>
+                            </div>
+                        </div>
+                        <div className="repair-circle">
+                            <img className="circle1" src={survey}></img>
+                            <div className="DTMcircle1-area"> </div>
+                            <h4 className="DTMcircle1-text">Surveys</h4>
+                            <div className="work-text-bullets">
+                                <p>Individual responses and feedback on technical product requirements and specifications</p>
+                                <p>Stakeholders were asked to define requirements as "Must Have", "Nice to Have", "Not Important" and "Unknown"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
                 <div className="DTM-need-statement">
                     <p className="DTM-need-text2"><b>MSF project sites</b>, and other low-resource setting hospitals, <b>that provide 24-hour care to newborn patients </b></p>
                     <p className="DTM-need-text3"> <b>NEED</b></p>
                     <p className="DTM-need-text2"><b>A durable, easy-to-clean and hand-portable single-infant warmer that is hard to use wrong, requires limited maintenance, has no consumables, and costs significantly less than a radiant warmer.</b></p>  
                 </div>
-            </div>
-            <div className="DTM-process-div">
-                <h3 className="subheader">Developing Design Principles</h3>
-                <p className="DTM-need-text"> Over the past year and a half I have collaborated with MSF personnel located in Japan, Barcelona, Democratic Republic of Congo, Kenya, Yemen,  India, and Senegal. We have brought together a wide range of stakeholders to develop product requirements and specifications for a newborn warmer. </p>
-                <p className="DTM-need-text">We have hosted four Workshops with our stakeholders, performed several exit interviews with MSF staff, and conducted one-on-one and small group interviews with various stakeholders. </p>
-                <p className="DTM-need-text">Our goals throughout this process were:</p>
-                <div className="process-circle-div">
-                    <div className="process-circle">
-                        <img className="number-circle" src={circle1}></img>
-                        <p className="number-text"><b>Identify warming gaps in the patient’s journey from admittance to discharge </b></p>
+                
+                <div className="product-reqs-div">
+                    <h3 className="subheader2">Product Requirements</h3>
+                    <div className="reqs-img-div">
+                        <img className="req-img" onClick={()=> openImg('design-principles.png')} src={designPrinciples}></img>
+                        <img className="arrow-img" src={arrow}></img>
+                        <img className="req-img" onClick={()=> pdfDownload('../../pdf/210621 Warmer Product Requirements and Specifications.pdf')} src={productReqs}></img>
                     </div>
-                    <div className="process-circle">
-                        <img className="number-circle" src={circle2}></img>
-                        <p className="number-text"><b>Identify current warming solutions and the barriers to their implementation</b></p>
-                    </div>
-                    <div className="process-circle">
-                        <img className="number-circle" src={circle3}></img>
-                        <p className="number-text"> <b>Define qualitative design principles for a newborn warmer</b> </p>
-                    </div>
+                    <p className="DTM-need-text">We defined qualitative design principles with our stakeholders. <b>I led the process of translating these principles into technical product requirements and specifications. I used methods inspired by Ulrich and Eppinger’s “Product Design and Development.”</b> The complete list of product requirements, with associated international standards and consumer standards can be found in my research section. </p>
                 </div>
-                <div className="patient-journey-map-div">
-                    <h4 className="subheader2">Patient Journey Map</h4>
-                    <p className="DTM-need-text">DtM conducted a field visit in February 2020 at Goyalmara Hospital in Bangladesh. I joined the team in the Summer of 2020 and  contributed to the post study analysis. The field study gave us insight on the prevalence of hypothermia as well as the needs for a supplemental warming device. Our findings were presented at MSF’s 2021 Virtual Pediatric Days. I was a co-author on the report <a href='https://www.researchgate.net/publication/351152859_Neonatal_Hypothermia_A_Solution-Focused_Field_Assessment_in_Bangladesh'>Neonatal Hypothermia: A Solution-Focused Field Assessment in Bangladesh. </a> </p>
-                    <p className="DTM-need-text">The patient journey map demonstrates when and where newborns experience gaps in warming. Goyalmara staff expressed that the newborn unit had a significant gap in warming. High patient load, cultural resistance to KMC, and unstable electricity result in a need for supplemental warming resources within the hospital setting. </p>
-                    <img className="patient-journey" src={patientJourney}></img>
-                    <p className="DTM-need-text">Warming gaps occur at various stages within a newborn's journey from admittance to discharge. We recognize that we will not be able to solve all warming gaps with one solution, instead various solutions will need to be developed to combat all warming gaps. </p>
-                    <p className="DTM-need-text">DtM and MSF stakeholders decided that addressing the warming gaps in neonatal units and during transport within hospitals is a feasible and meaningful problem to focus on. </p>
-                </div>   
-                <div className="current-warming-div">
+
+                
+
+                <div className="market-survey-div">
+                    <h3 className="subheader2">Market Survey: Does the product MSF needs already exist?</h3>
+                    <p className="DTM-need-text"><b>I conducted extensive market research to analyze newborn warmers that are currently sold by European, US, and Asian manufacturers. </b>I compared each of these products to the requirements and specifications as defined by our MSF stakeholders.</p>
+                    <p className="DTM-need-text">I eliminated products based on 5 key modes of failure.</p>
+                    <div className="FM-overall-div">
+                    <h3 className="subheader2-1">Failure Modes for Warming Devices in MSF/LRS Contexts</h3>
+                    <div className="failure-modes-div">
+                        <div className="failure-mode">
+                            <img className="failure-img" src={FM1}></img>
+                            <p className="failure-text">Fragile cable between heating source and control unit are prone to damage.</p>
+                        </div>
+                        <div className="failure-mode">
+                            <img className="failure-img" src={FM2}></img>
+                            <p className="failure-text">Difficult and/or extensive process to sterilize and clean product between patients. Is not compatible with common cleaning products. </p>
+                        </div>
+                        <div className="failure-mode">
+                            <img className="failure-img" src={FM3}></img>
+                            <p className="failure-text">Requires room temperature control (AC) for accurate and safe performance.</p>
+                        </div>
+                        <div className="failure-mode">
+                            <img className="failure-img" src={FM4}></img>
+                            <p className="failure-text">High consumable requirement cannot be maintained in all MSF project sites.</p>
+                        </div>
+                        <div className="failure-mode">
+                            <img className="failure-img" src={FM5}></img>
+                            <p className="failure-text">Device state (on, off, broken) is not obvious. Device can break or temperature becomes too high/low without user knowing. </p>
+                        </div>
+                    </div></div>
+                    <p className="DTM-need-text"><b>I concluded that there are no products on the market that meet MSF’s needs.</b> Industry does not design for resource constrained environments. The lack of monetary incentive and understanding of the environment means that MSF cannot wait for industry to develop the product they want. </p>
+                    <p className="DTM-need-text">A complete report of the market study can be found in my research section.</p>
+                </div>
+
+                <div className="next-steps-div">
+                    <h3 className="subheader2">Next Steps</h3>
+                    <p className="DTM-need-text">MSF does not have a history in product innovation and will not be directly involved in the product's development. While we work on the newborn warmer, they will continue to perform research on the prevelance of neonatal hypothermia throughout MSF project sites. In the future, we will collaborate with them to develop protocols and implementation plans once the product development process is complete. </p>
+
+                </div>
+                
+                <hr className="hr-divider-pages"></hr>
+
+                <div className="product-dev-div">
+                    <h3 className="subheader">Product Development</h3>
+                    <p className="DTM-need-text">We have been cultivating a collection of project partners to help us bring this product to a reality. While I cannot disclose our current progress in regards to these partnerships as they are still in development, I can tell you we are working towards a field visit and design sprint!</p>
+                    <img className="product-dev-img" src={productDev}></img>
+                    {/* <h3 className="subheader2">Coming Soon</h3> */}
+                </div>
+
+
+  
+                {/* <div className="current-warming-div">
                     <h4 className="subheader2">Current Warming Solutions</h4>
                     <p className="DTM-need-text">Interviews with MSF staff, the field visit to Goyalmara Hospital in Bangladesh, and workshops with various MSF stakeholders have concluded that: </p>
                     <div className="DTM-need-img-div">
@@ -161,481 +254,8 @@ return (
                             </div>
                         </div>
 
-                </div>
-                <div className="design-principles-div">
-                    <h4 className="subheader2">Design Principles</h4>
-                    <p className="DTM-need-text">Product requirements for medical devices made in high resource settings overlook many of the complexities that arise in the context of developing countries. The medical device industry strives to meet IEC standards and technical specifications. While all of this is important, qualitative requirements are vital for a product to be successful in a LRS. Our stakeholders helped us to identify what characteristics are necessary for a conductive warmer to be impactful in MSF project sites. </p>
-                    <p className="DTM-need-text">Hover over any of the design principles to read more about the inputs that resulted in the requirement.  </p>
-                    <div className="DP-div">
-                        <div className="DP-containterA-div">
-                            
-
-                            {/* IS EFFECTIVE  */}
-                            <div className="DP-category-div">
-                                <h5 className="DP-title">Is Effective</h5>
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" id="DP1" src={DP1} alt="DP1"/>
-                                                <p className="DP-front-text">Prevents Hypothermia</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">Newborns can become hypothermic with even a 30 minute break in warming.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP2}/>
-                                                <p className="DP-front-text">Treats Mild Hypothermia</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                    <p className="DP-back-text">The majority of outborn patients are hypothermic when admitted.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP3}/>
-                                                <p className="DP-front-text">Provides Warming During In-Hospital Transport</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">Outdoor hallways between wards create risk for hypothermia.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP4}/>
-                                                <p className="DP-front-text">Meets IEC Specifications</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">IEC Standards document rigorous testing requirements to ensure product safety and quality.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP5} />
-                                                <p className="DP-front-text">Has CE Mark Certification</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">Products are required to have CE certification to be added to MSF's product catalog.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP6}/>
-                                                <p className="DP-front-text">Fast Warm-Up from Cold/Off State</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">Project sites experience unexpected births and newborn admissions requiring immediate warming.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        {/* APPEARS EFFECTIVE */}
-                            <div className="DP-category-div">
-                                <h5 className="DP-title">Appears Effective</h5>
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP7}/>
-                                                <p className="DP-front-text">Device State is Obvious</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">In hospitals with high patient to staff ratios it is important clinicians can easily determine if a device is on, off, or broken.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image"  src={DP8}/>
-                                                <p className="DP-front-text">Appears Intuitive</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text-sm">MSF field staff report gaps in training. Not all national staff are extensively trained and can benefit from devices that are intuitive.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP9}/>
-                                                <p className="DP-front-text">Appears Clean (resists stains)</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">To discourage mistrust of the device, the warmer should resist stains from bodily fluids.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP10}/>
-                                                <p className="DP-front-text">Feels Warm</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">MSF Goyamlara staff did not trust their current warming mattress to treat newborns because it did not feel warm.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP11}/>
-                                                <p className="DP-front-text">Looks modern and high tech</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">Products that look low quality and old are less trusted by staff.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP12}/>
-                                                <p className="DP-front-text">Looks familiar (matches medical device expectation)</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">MSF stakeholders expressed national staff mistrusting products that did not meet medical device expectations.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                            
-                    <div className="DP-containterA-div">
-
-                            {/* USER FRIENDLY */}
-                            <div className="DP-category-div">
-                                <h5 className="DP-title">User Friendly</h5>
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" id="DP1" src={DP13} alt="DP1"/>
-                                                <p className="DP-front-text">Hard to Use Wrong</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">Reducing the complexity of a device decreases training time and risk of error.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP14}/>
-                                                <p className="DP-front-text">Requires minimal user training</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text-sm">MSF field staff report gaps in training due to high patient to staff ratios and frequent task shifting. Reducing complexity and training time can increase device uptake.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP15}/>
-                                                <p className="DP-front-text">Limited risk of hyperthermia (over-heating)</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">High patient to staff ratio </p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP16}/>
-                                                <p className="DP-front-text">Does not inhibit or discourage KMC</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text-sm">KMC is proven to be incredibly successful at preventing/treating hypothermia, building maternal bonds, and increasing breastfeeding uptake.</p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP17} />
-                                                <p className="DP-front-text">Provides warming during common patient diagnostics</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP18}/>
-                                                <p className="DP-front-text">Fast warm-Up from cold/off state</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p> 
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP19}/>
-                                                <p className="DP-front-text">Discourages bed-sharing (infection control)</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP20} />
-                                                <p className="DP-front-text">Is portable (by small adult)</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP21}/>
-                                                <p className="DP-front-text">Requires minimal supervision</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        {/* CONTEXT APPROPRIATE */}
-
-                            <div className="DP-category-div">
-                                <h5 className="DP-title">Context Appropriate</h5>
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP22}/>
-                                                <p className="DP-front-text">Easy to clean between patients with bleach</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image"  src={DP23}/>
-                                                <p className="DP-front-text">Durable and rugged</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP24}/>
-                                                <p className="DP-front-text">Low purchase price</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP25}/>
-                                                <p className="DP-front-text">Stable in long term storage and shipping</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP26}/>
-                                                <p className="DP-front-text">Does not require sterile, temp controlled environment for operation</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP27}/>
-                                                <p className="DP-front-text">Limited consumables, maintenance</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text"></p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP28}/>
-                                                <p className="DP-front-text">Compatible with unstable electricity (power surges, brownouts, blackouts)</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP29}/>
-                                                <p className="DP-front-text">Compatible of wide range of ambient temperatures</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP30}/>
-                                                <p className="DP-front-text">Internal battery backup</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP31}/>
-                                                <p className="DP-front-text">Easy to relocate and reinstall device</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP32}/>
-                                                <p className="DP-front-text">Limited space requirements (small/crowded wards)</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP33}/>
-                                                <p className="DP-front-text">Easy to deliver and reinstall</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="DP-row">
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP34}/>
-                                                <p className="DP-front-text">Limited infrastructure requirements</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP35}/>
-                                                <p className="DP-front-text">Low wattage device (under 40W)</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div className="DP-block-area">
-                                        <div className="flip-block-inner">
-                                            <div className="flip-block-front">
-                                                <img className="DP-image" src={DP36}/>
-                                                <p className="DP-front-text">Easy to maintain by HCN biomed with limited tools, training</p>
-                                            </div>
-                                            <div className="flip-block-back">
-                                                <p className="DP-back-text">After playing around with typical CAD features, I realized to get the shape I wanted I had to use Fusion’s freeform tool. </p> 
-                                                <p className="DP-back-text">I wanted it to be compatible with injection molding methods. I designed the device to separate along a slanted split line. I focused on draft angles and reducing slide pin requirements.</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                </div> */}
                 
-                    </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>

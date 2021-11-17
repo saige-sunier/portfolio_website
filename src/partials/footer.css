@@ -5,13 +5,12 @@
   background-color:white;
   color: white;
   padding-top: 1rem;
-  box-shadow: 0px 0px 8px 0px #000000;
+  box-shadow: 0px 0px 8px 0px #0000004d;
   margin-top: 2rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
 .contact-info {
   text-align: left;
   display: flex;
@@ -19,7 +18,7 @@
   flex-direction: row;
 }
 .contact-buttons{
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   margin-right: 0rem;
   background: none;
   border: none;
@@ -30,17 +29,30 @@
 }
 a{
   font-size: 15px;
-  line-height: 35px;
+  line-height: 45px;
   color: black;
-  padding: 1rem;
+  padding-left: 10px;
 }
 .contact-logo {
   float: left;
   display: block;
-  max-width: 40px;
+  max-width: 60px;
   height: auto;
 }
-a:hover {
+/* a:hover{
   cursor: pointer;
   opacity: 0.2;
+} */
+.contact-buttons:hover .contact-logo{
+  cursor: pointer;
+  opacity: 0.2;
+}
+.contact-buttons:hover .link{
+  cursor: pointer;
+  opacity: 0.2;
+}
+.footer-line{
+  border: 1px solid black;
+  width: 20rem;
+  margin-bottom: 2rem;
 }
