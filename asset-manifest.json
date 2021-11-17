@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/css/main.ece5262f.chunk.css",
+    "main.js": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/main.521961de.chunk.js",
+    "main.js.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/main.521961de.chunk.js.map",
+    "runtime-main.js": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/runtime-main.1165168d.js",
+    "runtime-main.js.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/runtime-main.1165168d.js.map",
+    "static/js/2.c2d833a9.chunk.js": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/2.c2d833a9.chunk.js",
+    "static/js/2.c2d833a9.chunk.js.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/2.c2d833a9.chunk.js.map",
+    "static/js/3.fbf6fe7e.chunk.js": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/3.fbf6fe7e.chunk.js",
+    "static/js/3.fbf6fe7e.chunk.js.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/3.fbf6fe7e.chunk.js.map",
+    "index.html": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/index.html",
+    "static/css/main.ece5262f.chunk.css.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/css/main.ece5262f.chunk.css.map",
+    "static/js/2.c2d833a9.chunk.js.LICENSE.txt": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/2.c2d833a9.chunk.js.LICENSE.txt",
+    "static/media/tengeru.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/media/TZ-kili_sunrise.4d0ff201.JPG",
+    "static/media/home.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/media/mobileHeaderImg.ee9a6e50.jpg",
+    "static/media/cystoscope.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/media/cystoscope-cover.d32d05d7.png",
+    "static/media/ventilator.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/media/ventilator-cover.86c832ea.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1165168d.js",
+    "static/js/2.c2d833a9.chunk.js",
+    "static/css/main.ece5262f.chunk.css",
+    "static/js/main.521961de.chunk.js"
+  ]
+}
