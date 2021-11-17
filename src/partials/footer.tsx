@@ -12,6 +12,7 @@ export const Footer = ()=>{
     
     return(
         <div className="footer-div">
+            {/* <hr className='footer-line'></hr> */}
             <div className="contact-info">
                 <button className="contact-buttons">
                     <img onClick={()=> sendEmail()} src="../../images/email-logo.png" className="contact-logo"></img>

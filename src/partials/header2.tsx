@@ -32,7 +32,7 @@ export const Header = withRouter((props) => {
         border: none;
         font-family: "Noteworthy";
         color: black;
-        font-size: 20px !important;
+        font-size: 25px !important;
         transition: 0.3s;
         border: none !important;
         outline: none !important;

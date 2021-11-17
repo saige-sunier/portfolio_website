@@ -94,7 +94,7 @@
 }
 /* WORK SECTION */
 .TZ-work-div{
-    height: 35rem;
+    height: 36vw;
 }
 .work-circles{
     display: flex;
@@ -127,21 +127,21 @@
     font-size: 25px;
     color: white;
     margin-top: 8vw;
-    margin-left: 5vw;
+    margin-left: 5.5vw;
 }
 .TZcircle2-text{
     position: absolute;
     font-size: 25px;
     color: white;
     margin-top: 8vw;
-    margin-left: 5.5vw;
+    margin-left: 6vw;
 }
 .TZcircle3-text{
     position: absolute;
     font-size: 25px;
     color: white;
     margin-top: 8vw;
-    margin-left: 4.5vw;
+    margin-left: 5vw;
 }
 .work-text-bullets{
     position: absolute;
@@ -178,7 +178,7 @@
     max-width: 20vw;
     top: -16%;
     /* background-color: rgb(182, 202, 223, 0.5) !important; */
-    background-color:rgba(100, 100, 100, 0.295) !important;
+    background-color:rgba(131, 130, 130, 0.164) !important;
 }
 .TZprocess-area{
     position: relative;

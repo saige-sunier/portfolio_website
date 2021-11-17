@@ -33,6 +33,7 @@ export const Warmer_DP = withRouter((props) =>{
     const FM3='./images/FM-temp.png';
     const FM4='./images/FM-consumables.png';
     const FM5='./images/FM-devicestate.png';
+    const productDev='./images/product-dev.png';
 
     const openImg = (image: string) => {
         window.open(`./images/${image}`);
@@ -100,8 +101,10 @@ return (
                     <h3 className="subheader">Partnering with Médecins Sans Frontières (MSF)</h3>
                     <p className="DTM-need-text"> MSF provides maternal services all around the world. They build hospitals, purchase medical equipment, and help bring thousands of newborns into the world every year. <b>Our goal is to design a warmer that meets needs expressed specifically by MSF.</b> We have been developing this product under the assumption that MSF project sites represent contexts found in other hospitals in low-resource settings. My partner and I both have experience working in LRS and are confident that this assumption holds true.</p>
                     <p className="DTM-need-text">Throughout this entire process we have kept and updated a cause and effect diagram. We are taking a holistic approach to product development and are focusing on stages post prototyping to solidify a path forward once we finalize the product's design.</p>
-                    <h3 className="subheader2-1">Product Development Cause and Effect Diagram</h3>
-                    <img className="CandE-img" src={CandE}></img>
+                    <div className="CandE-diagram-div">
+                        <h3 className="subheader2-1">Product Development Cause and Effect Diagram</h3>
+                        <img className="CandE-img" onClick={()=> openImg('cause_and_effect.png')} src={CandE}></img>
+                    </div>
                     <p className="DTM-need-text">We built a team of diverse stakeholders from MSF Japan Innovation Unit (JIU) and MSF Operational Centre Barcelona (OCBA). Any other year we would have travelled to Spain and hosted workshops in-person. This year everything was remote and while our jobs would have been easier if we got to meet our collaborators, <b>we pulled together a team of people located in Japan, Spain, Democratic Republic of Congo, Kenya, Yemen, India, Senegal, Vietnam, and Uzbekistan.</b> </p>
                     <p className="DTM-need-text">Our goal was to understand the warming gaps that occur within MSF project sites and to work with MSF’s logistic personnel, product procurement team, and in-field clinicians to define product requirements for a newborn warmer. </p>
                 </div>
@@ -154,8 +157,8 @@ return (
                     <h3 className="subheader2">Product Requirements</h3>
                     <div className="reqs-img-div">
                         <img className="req-img" onClick={()=> openImg('design-principles.png')} src={designPrinciples}></img>
-                        <img className="arrow-img" onClick={()=> pdfDownload('../../pdf/210621 Warmer Product Requirements and Specifications.pdf')} src={arrow}></img>
-                        <img className="req-img" src={productReqs}></img>
+                        <img className="arrow-img" src={arrow}></img>
+                        <img className="req-img" onClick={()=> pdfDownload('../../pdf/210621 Warmer Product Requirements and Specifications.pdf')} src={productReqs}></img>
                     </div>
                     <p className="DTM-need-text">We defined qualitative design principles with our stakeholders. <b>I led the process of translating these principles into technical product requirements and specifications. I used methods inspired by Ulrich and Eppinger’s “Product Design and Development.”</b> The complete list of product requirements, with associated international standards and consumer standards can be found in my research section. </p>
                 </div>
@@ -205,7 +208,8 @@ return (
                 <div className="product-dev-div">
                     <h3 className="subheader">Product Development</h3>
                     <p className="DTM-need-text">We have been cultivating a collection of project partners to help us bring this product to a reality. While I cannot disclose our current progress in regards to these partnerships as they are still in development, I can tell you we are working towards a field visit and design sprint!</p>
-                    <h3 className="subheader2">Coming Soon</h3>
+                    <img className="product-dev-img" src={productDev}></img>
+                    {/* <h3 className="subheader2">Coming Soon</h3> */}
                 </div>
 
 

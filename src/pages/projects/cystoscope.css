@@ -8,6 +8,7 @@
     font-size: 2vw;
     text-align: left;
     margin-left: 4vw;
+    margin-top: -1rem;
 }
 .CADsubheader2{
     font-size: 1.5vw;
@@ -99,9 +100,8 @@
 }
 .CYSintro-img{
     display: inline;
-    max-width: 28vw;
-    height: 100%;
-    margin-top: auto;
+    max-width: 24vw;
+    margin-top: -1rem;
 }
 
 /* DESIGN PROCESS SECTION */

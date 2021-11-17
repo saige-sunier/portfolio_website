@@ -210,23 +210,24 @@ export const EEGcircuitPage = withRouter((props) =>{
         <div className="EEG-div" id="EEG">
             <div className="EEGheader-block-div">
                 <div>
-                    <h2 className="CADproject-title-sm">Bio-Amplifiers & Implant Devices:</h2> 
-                    <h2 className="CADproject-title">EEG Signal Processor</h2>
+                    <h2 className="EEGproject-title-sm">Bio-Amplifiers & Implant Devices:</h2> 
+                    <h2 className="EEGproject-title">EEG Signal Processor</h2>
                 </div>
             </div>
             <div className="general-format">
                 <h3 className="EEGsubheader">Background</h3>
-                <div className="CADintro-div">
+                <div className="EEGintro-div">
                     <div className="CADintro-content">
-                        
-                        <p className="CADintro-text">This project explores the design and assembly of a functional 2-channel scalp EEG signal processing system. <b>I collaborated with a fellow student to design a circuit that successfully filtered and amplified neural signals gathered from a 2-channel scalp EEG system. </b> The EEG system is designed to be used with P300 speller, a brain computer interface (BCI) that allows people to “type” with their thoughts. P300 Spellers are commonly used to help patients with Amyotrophic Lateral Sclerosis (ALS) communicate. </p>
-                        <p className="CADintro-text">The final circuit was designed and tested on Altium PCB designer. After optimizing for manufacturing cost, we assembled and tested the system on a 2-layer printed circuit board. <b>Our final product was one of two within the class to successfully detect neurological signals. </b></p>
+                        <p className="EEGintro-text">This project explores the design and assembly of a functional 2-channel scalp EEG signal processing system. <b>I collaborated with a fellow student to design a circuit that successfully filtered and amplified neural signals gathered from a 2-channel scalp EEG system. </b> The EEG system is designed to be used with P300 speller, a brain computer interface (BCI) that allows people to “type” with their thoughts. P300 Spellers are commonly used to help patients with Amyotrophic Lateral Sclerosis (ALS) communicate. </p>
+                        <p className="EEGintro-text">The final circuit was designed and tested on Altium PCB designer. After optimizing for manufacturing cost, we assembled and tested the system on a 2-layer printed circuit board. <b>Our final product was one of two within the class to successfully detect neurological signals. </b></p>
                     </div>
                     <div className="CADintro-img-div">
                         <img className="EEGintro-img" src={p300}></img>
-                        <p className="CADimg_description">P300 Speller interface. EEG signals are processed to help patients with ALS communicate. </p>
+                        <p className="EEGimg_description">P300 Speller interface. EEG signals are processed to help patients with ALS communicate. </p>
                     </div>
                 </div>
+
+                <hr className="hr-divider-pages"></hr>
                 <div className="EEG-designReqs">
                     <h3 className="EEGsubheader">Design Process</h3>
                     
@@ -250,8 +251,8 @@ export const EEGcircuitPage = withRouter((props) =>{
                             <h4 className="EEGsubheader2">Circuit Design</h4>
                             <p className="CADintro-text">I used Altium PCB designer to design a 2 EEGs channels (VSIN2, VSIN2) that had a shared reference channel (Vref) and a right leg drive (VRLD).</p>
                             <img className="EEGschematic-img" src={EEGschematic}></img>
-                            <p className="CADimg_description">Final circuit design constructed and simulated on Altium PCB Designer. </p>
-                            <p className="CADintro-text">Biological signals are often small and buried and noise. Processing them requires careful filtering and amplification. A high gain is needed in order to derive anything from the minute signal but you run into the risk of saturation due to the high levels of noise. I chose to use a high pass filter to eliminate low frequency and the DC offset before applying a large gain with a differential amplifier. I applied a preliminary gain before filtering to reduce the noise and saturation that could develop from applying a large gain all in one step and to ensure a high input impedance is preserved for the differential amplification stage. I included one active low pass filter at the output of the differential amplifier to ensure only the desired biological signals are passed on to the P300 Speller. The output of each line is connected to a unity gain buffer amplifier in order to have low output impedance. This helps the circuit connect to other components. </p>
+                            <p className="CADimg_description">Final circuit design - constructed and simulated on Altium PCB Designer. </p>
+                            <p className="CADintro-text">Biological signals are small and buried in noise. Processing them requires careful filtering and amplification. A high gain is needed in order to derive anything from the minute signal but the noise creates the risk of saturation. I chose to use a high pass filter to eliminate low frequency and the DC offset before applying a large gain with a differential amplifier. I applied a preliminary gain before filtering to reduce the noise and saturation that could develop from applying a large gain all in one step and to ensure a high input impedance is preserved for the differential amplification stage. I included one active low pass filter at the output of the differential amplifier to ensure only the desired biological signals are passed on to the P300 Speller. The output of each line is connected to a unity gain buffer amplifier in order to have low output impedance. This helps the circuit connect to other components. </p>
                         </div>
                         <div className="CircuitBuild-div">
                             <h4 className="EEGsubheader2">Assembling and Testing a Prototype</h4>
@@ -259,6 +260,7 @@ export const EEGcircuitPage = withRouter((props) =>{
                             <p className="CADintro-text"></p>
                         </div>
                     </div>
+                    <hr className="hr-divider-pages"></hr>
                     <div className="FinalDesign-div">
                         <h3 className="EEGsubheader">Results</h3>
                         <div className="EEGtestImg-div">

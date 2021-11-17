@@ -49,7 +49,7 @@ export const Faceshields = withRouter((props) =>{
       const AccordionSummary = withStyles({
         root: {
           //   backgroundColor: 'rgb(182, 202, 223, 0.5)',
-        backgroundColor: 'rgba(100, 100, 100, 0.8)',
+        backgroundColor: 'rgba(100, 100, 100, 0.5)',
          //   borderTop: '3px solid rgba(7, 53, 102)',
         borderTop: '3px solid rgba(7, 53, 102)',
         marginBottom: -1,

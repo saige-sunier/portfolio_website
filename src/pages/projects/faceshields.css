@@ -78,7 +78,7 @@
     display: flex;
     justify-content: left;
     flex-direction: row;
-    padding-top: 1rem;
+    margin-top: -2rem;
     padding-right: 4vw;
 }
 .intro-text{
@@ -203,7 +203,7 @@
     position: absolute;
     bottom:0;
     /* top: -16%; */
-    background-color: rgba(100, 100, 100, 0.295) !important;
+    background-color: rgba(131, 130, 130, 0.164) !important;
 }
 .process-title{
     position: relative;

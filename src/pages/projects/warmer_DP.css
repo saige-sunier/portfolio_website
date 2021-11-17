@@ -93,7 +93,7 @@
     display: flex;
     justify-content: left;
     flex-direction: row;
-    padding-top: 1rem;
+    margin-top: -2rem;
 }
 .DTM-intro-text{
     font-size: calc(12px + 0.25vw);
@@ -188,13 +188,26 @@
 .CandE-div{
     margin-bottom: 3rem;
 }
+.CandE-diagram-div{
+    border: 1px solid white;
+    /* box-shadow: 0px 0px 8px 0px #000000; */
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
 .CandE-img{
     position: relative;
     width: 65vw;
     height: 100%;
-    margin-left: 4vw;
-    margin-right: 4vw;
+    /* margin-left: 4vw; */
+    /* margin-right: 4vw; */
     margin-bottom: 1rem;
+    transition: transform 0.25s ease;
+    z-index: 2;
+}
+.CandE-img:hover{
+    cursor: pointer;
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
 }
 
 /* needs identification */
@@ -238,8 +251,8 @@
     position: absolute;
     font-size: 25px;
     color: white;
-    margin-top: 6vw;
-    margin-left: 4vw;
+    margin-top: 7vw;
+    margin-left: 5vw;
 }
 .work-text-bullets{
     position: absolute;
@@ -247,7 +260,7 @@
     margin-top: 19vw !important;
 }
 .work-text-bullets p{
-    text-align: center !important;
+    /* text-align: center !important; */
     font-size: 1rem;
 }
 /* need statement */
@@ -255,12 +268,10 @@
     margin-left: 15vw;
     margin-right: 15vw;
     margin-bottom: 3rem;
-    border: 10px solid rgba(255, 202, 28, 0.726);
-    border-radius: 30px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     /* box-shadow: 0px 0px 10px 0px rgb(255, 138, 28); */
-    background-color: rgba(255, 202, 28, 0.08);
-    box-shadow: 0px 0px 8px 0px #000000
+    /* background-color: rgba(255, 202, 28, 0.08); */
+    box-shadow: 0px 0px 8px 0px #00000079;
 }
 .DTM-need-text2{
     padding-left: 4vw;
@@ -326,6 +337,7 @@
     margin-right: 3vw;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    /* background-color: rgb(250, 248, 239);  */
     /* box-shadow: 0px 0px 8px 0px #000000; */
 }
 .failure-modes-div{
@@ -337,6 +349,7 @@
     margin-left: 2rem;
     margin-right: 2rem;;
     margin-bottom: 2rem;
+    
 }
 .failure-mode{
     width: 12vw;
@@ -349,6 +362,10 @@
     text-align: center !important;
 }
 
+/* product development */
+.product-dev-img{
+    width: 40vw;
+}
 
 
 
