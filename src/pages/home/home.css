@@ -202,14 +202,15 @@
   flex-wrap: wrap;  
   /* justify-content: space-between; */
   justify-content: center;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 .research-text{
   margin-left: 4vw;
   margin-right: 4vw;
   margin-bottom: 3rem;
   text-align: left;
+  font-size: 1.05vw;;
 }
 .paperBox{
   width: 16vw;
@@ -225,38 +226,31 @@
 }
 .paper-title{
   position: relative;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 1.05vw;
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: left;
   text-decoration: underline;
   padding-bottom: 0rem;
-  height: 4rem;
+  height: 4vw;
 }
 .paper-title2{
   position: relative;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 1vw;
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: left;
   text-decoration: underline;
   padding-bottom: 0rem;
-  height: 5rem;
+  height: 4vw;
 }
 .paper-description{
   position: relative;
-  font-size: 12px;
+  font-size: 0.9vw;
   text-align: left;
-  height: 7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0rem;
-}
-.paper-description2{
-  position: relative;
-  font-size: 12px;
-  text-align: left;
-  height: 6rem;
+  height: 8.5vw;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0rem;
@@ -520,7 +514,8 @@ a:hover {
 
 .hex h1 {
   bottom: 110%;
-  font-size: 22px !important;
+  /* font-size: 22px !important; */
+  font-size: 1.5vw !important;
   font-weight: normal;
   font-size: 1.5em;
   padding-top: 100%;
@@ -549,7 +544,8 @@ a:hover {
   padding-top: 50%;
   top: 110%;
   padding-bottom: 50%;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 0.95vw;
 }
 
 .hex:hover{

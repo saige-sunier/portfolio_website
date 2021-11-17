@@ -42,15 +42,14 @@
 }
 .header-block-div:before{
     content: "";
-    background-image: url(../../images/cystoscope-cover2.png);
+    /* background-image: url(../../images/cystoscope-cover2.png); */
+    background-image: url(../../images/cystoscope-background.png);
     background-size: cover;
     position: absolute;
-    background-repeat: repeat;
-    background-position: 160% -90%;
-    background-size: 120%;
+    background-repeat: none;
+    background-position: 50% 50%;
     background-attachment: fixed;
-    opacity: 0.7;
-    /* background-color:darkgrey; */
+    opacity: 0.9;
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -60,20 +59,20 @@
 .CADproject-title{
     position: relative;
     color: black;
-    font-size: 3vw !important;
+    font-size: 3vw;
     text-align: left;
-    /* margin-left: 4vw !important; */
-    margin-right: 50vw;
-    margin-top: 0px !important;
+    margin-left: 10vw !important;
+    margin-right: 30vw !important;
+    margin-top: 0px;
 }
 .CADproject-title-sm{
     position: relative;
     color: black;
-    font-size: 1.8vw !important;
+    font-size: 1.8vw;
     text-align: left;
-    margin-left: 4vw !important;
-    margin-right: 50vw;
-    margin-bottom: 10px !important;
+    margin-left: 10vw;
+    /* margin-right: 40vw; */
+    margin-bottom: 10px;
 }
 
 /* BACKGROUND SECTION */
@@ -93,14 +92,15 @@
 }
 .CADintro-img-div{
     display: grid;
-    height: 14rem;
+    /* height: 14rem; */
     grid-auto-flow: row;
     padding-right: 4vw;
+    margin-top: 2vw;
 }
-.CADintro-img{
+.CYSintro-img{
     display: inline;
-    max-width: 100%;
-    height: 50%;
+    max-width: 28vw;
+    height: 100%;
     margin-top: auto;
 }
 

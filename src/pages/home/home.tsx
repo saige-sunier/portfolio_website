@@ -151,8 +151,8 @@ export const Home = withRouter((props) =>{
                         <p className="paper-date">June 21, 2021</p>
                     </div>
                     <div className="paperBox" onClick={()=> pdfDownload('../../pdf/210415 A Solution Focused Field Assessment in Bangladesh.pdf')}>
-                        <h4 className="paper-title">Neonatal Hypothermia: A Solution-Focused Field Assessment in Bangladesh</h4>
-                        <p className="paper-description">Summary of our findings from a field visit to a MSF hospital dedicated to treating refugees in Cox's Bazar, Bangaldesh. Our goal was to better understand challenges in neonatal hypothermia management that MSF staff face.</p>
+                        <h4 className="paper-title2">Neonatal Hypothermia: A Solution-Focused Field Assessment in Bangladesh</h4>
+                        <p className="paper-description">Summary of our findings from a field visit to a MSF hospital in Cox's Bazar, Bangaldesh. Our goal was to better understand challenges in neonatal hypothermia management that MSF staff face.</p>
                         <p className="paper-date">April 15, 2021</p>
                     </div>
 
@@ -169,7 +169,7 @@ export const Home = withRouter((props) =>{
                         <div className="text-subdiv">
                             <p className="aboutMe-text">I grew up in a small town just outside of New York City in a hectic household with three older siblings and six pets. I am no stranger to chaos and thrive in environments where I am surrounded by new people and new perspectives.</p>
                             <p className="aboutMe-text">I studied Biomedical Engineering at Duke University with a concentration in Global Development Engineering. As a student, I pursued opportunities to challenge myself through experiences. I spent a summer working in Tanzania repairing medical equipment then flew off to Europe to study and live in Metz, France. After graduating I followed my passions out to Seattle to work at a small non-profit.</p>
-                            <p className="aboutMe-text">My goal in life is to improve health outcomes in low-resource settings. I want to do more than design. I want to ensure that the solutions I am a part of are developed and implemented. I am determined to solve some of the world’s most challenging problems and I hope to do so surrounded by peers and mentors with their own inspiring motivations and experiences. </p> 
+                            <p className="aboutMe-text">My goal in life is to improve health outcomes in low-resource settings. I want to do more than design. I want to ensure the solutions I am a part of are developed and implemented. I am determined to solve some of the world’s most challenging problems and I hope to do so surrounded by peers and mentors with their own inspiring motivations and experiences. </p> 
                         </div>
                     </div>
                 </div>

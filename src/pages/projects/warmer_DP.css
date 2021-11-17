@@ -136,7 +136,6 @@
     font-size: 12px;
     text-align: center;
     color:slategrey;
-    margin-top: 2rem;
     margin-left: 5vw;
 }
 .NH-need-img{
@@ -145,9 +144,7 @@
     height: 100%;
     object-fit: cover;
     margin-left: 1rem;
-    margin-top: 1rem;
 }
-
 .DTM-need-text{
     position: relative;
     font-size: calc(12px + 0.25vw);
@@ -210,7 +207,7 @@
     margin-left: 4vw;
     margin-right: 4vw;
     margin-top: 4vw;
-    margin-bottom: 35vw;
+    margin-bottom: 34rem;
 }
 .repair-circle{
     position: relative;
@@ -253,28 +250,34 @@
     text-align: center !important;
     font-size: 1rem;
 }
-
+/* need statement */
 .DTM-need-statement{
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 3rem;
-    border: 6px solid rgba(255, 202, 28, 0.726);
+    border: 10px solid rgba(255, 202, 28, 0.726);
+    border-radius: 30px;
+    /* border: 1px solid white; */
+    /* box-shadow: 0px 0px 10px 0px rgb(255, 138, 28); */
+    background-color: rgba(255, 202, 28, 0.08);
+    box-shadow: 0px 0px 8px 0px #000000
 }
 .DTM-need-text2{
     padding-left: 4vw;
     padding-right: 4vw;
     text-align: center !important;
     font-size: calc(12px + 0.25vw);
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .DTM-need-text3{
     background-color: rgba(255, 202, 28, 0.726);
+    border-radius: 10px;
     text-align: center !important;
     font-size: calc(12px + 0.45vw);
     padding: 5px;
-    margin-left: 24vw;
-    margin-right: 24vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
     margin-bottom: 1rem;
 }
 

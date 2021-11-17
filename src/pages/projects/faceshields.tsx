@@ -86,7 +86,7 @@ export const Faceshields = withRouter((props) =>{
                         <div>
                             <h3 className="subheader">Background</h3>
                             <p className="intro-text">When Covid-19 hit the United States in March 2020, the country faced extreme personal protective equipment (PPE) shortages. Design that Matters responded by rapidly designing and fabricating face shields for local hospitals. By partnering with local Seattle-based volunteers, Harborview Medical, and Global Tech Plastics <b>we were able to produce over 300,000 injection molded face shields for pubilc and private WA hospitals.</b></p>
-                            <p className="intro-text">In the Fall of 2020, we started hearing of additional PPE shortages in major hospitals. <b>I had read about how hard the Native American population was being hit by Covid-19 and I wondered if there was anything we could do to help.</b> I quickly learned IHS hospitals are underfunded and they too were experiencing extreme PPE shortages.</p>
+                            <p className="intro-text">In the Fall of 2020, we started hearing of additional PPE shortages in major hospitals. <b>I had read about how hard the Native American population was being hit by Covid-19 and I wondered if there was anything we could do to help.</b> I quickly learned that many IHS hospitals are underfunded and experiencing extreme PPE shortages.</p>
                         </div>
                         <div className="intro-img-div">
                             <img className="intro-img" src={gallupNM}></img>
@@ -146,7 +146,7 @@ export const Faceshields = withRouter((props) =>{
                 <hr className="hr-divider-pages"></hr>
                 <div className="NIOSH-heads-div">
                     <h2 className="subheader">Demonstrating Universal Fit</h2>
-                    <p className="results-text">The face shields were designed to have as universal a fit as possible. NASA biometrics for head circumferences were used in the design process to achieve this design specification. The biometrics range from a 5% female head to a 95% male head. <b> We considered expanding to international markets and in order to demonstrate universal fit, I designed and rapidly prototyped life-sized heads.</b> These heads are currently used to create a visual for the universal fit capability of the Covid-19 face shield. </p>
+                    <p className="results-text">The Design that Matters face shields were designed to have a universal fit. <b>As a side project, I made life sized heads that would test and demonstrate the universal fit capability. I designed and fabricated 5 life-sized heads that matched NASA biometrics for head circumference from a 5% female to a 95% male. </b>The heads are now in our office museum displaying the face shields! Plus, I may have brought a few home and they definitely never fail to get comments… </p>
                 </div>
                 
                 <div className="process-div">
@@ -164,8 +164,8 @@ export const Faceshields = withRouter((props) =>{
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="process-text">
-                                    <p>The National Institute for Occupational Safety and Health (NIOSH) released digital headforms that represent the 5 most common face shapes and sizes: small, medium, large, short/wide, and long/narrow. These digital headforms were released on the NIOSH website. </p>
-                                    <p>I downloaded the digital headforms and decided to make adjustments before fabricating them. I wanted to demonstrate the range of head circumferences the face shields are designed to fit so I scaled the heads uniformly to give us a 5% female, a 50% female, a 50% male, and a 95% male. These 5 biometrics provide a good range to demonstrate the product’s capabilities.</p>
+                                    <p>The National Institute for Occupational Safety and Health (NIOSH) released digital head forms that represent the 5 most common face shapes and sizes. I downloaded these stl files and used them as a starting point.</p>
+                                    <p>For prototyping, I took advantage of the full FabLab we have in the office. I used a laser cutter, 3D printers, and lots of glue to bring these models to life. </p>
                                 </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -184,7 +184,10 @@ export const Faceshields = withRouter((props) =>{
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="process-text">
-                                    <p>The original NIOSH heads came with elongated necks. The heads are a visual aid and instead of unnaturally long necks, I wanted to design a base that would be inconspicuous to not distract from the product being displayed. I used mannequins and statues as inspiration. After a few CAD iterations I settled on a design I was happy with. I used meshmixer to combine the head stl files to my base stil file. </p>
+                                    <p>I uniformly scaled the NIOSH heads to match the NASA biometrics so we would could demonstrate a wide range of head shapes and sizes. </p>
+                                    <p>Inspired by mannequin heads and Greek statues, I designed a base that mimicked a natural neck and shoulder line. </p>
+                                    <p>I combined the NIOSH stl files to my base using Fusion360 Meshmixer. The heads were too big to fit on a singular print bed so I used Luban, an open source stl editor, to split them into printable sizes. </p>
+                                    <p>P.S. Check out my YouTube Video (linked in bonus information) for a tutorial on using Meshmixer!</p>
                                 </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -202,7 +205,8 @@ export const Faceshields = withRouter((props) =>{
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="process-text">
-                                    <p>Before 3D printing the life sized heads I wanted to rapidly prototype the design. I used Fusion360 Slicer to generate dxf files for laser cutting and assembled a full head using cardboard. After some tinkering I 3D printed the heads. The heads are too large to fit on one printer bed so I used Luban to split the design into 3 components that could be fitted together after printing.</p>
+                                    <p>Before 3D printing the life sized heads, I wanted to rapidly prototype the design. I used Fusion360 Slicer to generate dxf files for laser cutting and assembled a full head using cardboard and glue.</p>
+                                    <p>After some tinkering I set up the printers for some long overnight jobs. Soon enough we had a collection of life sized heads!</p>
                                 </Typography>
                                 </AccordionDetails>
                             </Accordion>

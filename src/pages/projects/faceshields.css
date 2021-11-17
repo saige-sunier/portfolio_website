@@ -106,10 +106,11 @@
     display: flex;
     justify-content: left;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
 }
 .need-circle-div{
     grid-auto-flow: row;
+    margin-top: 0.5vw;
 }
 .need-circle{
     padding-left: 6vw;
