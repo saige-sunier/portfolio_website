@@ -130,27 +130,27 @@ export const Home = withRouter((props) =>{
                 <p className="research-text">For the past year and a half, I have extensively studied neonatal hypothermia. The following documents explore the harm caused by neonatal hypothermia as well as builds a case for the positioning of a new conductive warmer in the global health markets. I am the main author on the first four documents. The final document was written in collaboration with stakeholders from Design that Matters and Médecins Sans Frontières (MSF). This paper and was presented and published as part of MSF's 2021 Paediatric Days Symposium. </p>
 
                 <div className="research-grid">
-                    <div className="paperBox" onClick={()=> pdfDownload('../../pdf/201109 Prevalence and Risks of Neonatal Hypothermia.pdf')}>
+                    <div className="paperBox" onClick={()=> pdfDownload('./pdf/201109_Prevalence_and_Risks_of_Neonatal_Hypothermia.pdf')}>
                         <h4 className="paper-title">Prevalence and Risks of Neonatal Hypothermia</h4>
                         <p className="paper-description">Literature review analyzing the neonatal mortality and morbidity as a result of hypothermia. Discussion of current warming solutions used in LRS and the need for supplemental warming.</p>
                         <p className="paper-date">Nov 9, 2020</p>
                     </div>
-                    <div className="paperBox" onClick={()=> pdfDownload('../../pdf/210902 Effectiveness of Conductive Warming to Treat Hypothermia.pdf')}>
+                    <div className="paperBox" onClick={()=> pdfDownload('./pdf/210902_Effectiveness_of_Conductive_Warming_to_Treat_Hypothermia.pdf')}>
                         <h4 className="paper-title">Effectiveness of Using Conductive Warming To Treat and Prevent Hypothermia</h4>
                         <p className="paper-description">Literature review of prior studies researching the effectiveness of conductie warming. Concludes it non-inferior to Standard of Care methods: KMC, incubators, radiant warmers.</p>
                         <p className="paper-date">Sept 2, 2021</p>
                     </div>
-                    <div className="paperBox" onClick={()=> pdfDownload('../../pdf/210621 Warmer Product Requirements and Specifications.pdf')}>
+                    <div className="paperBox" onClick={()=> pdfDownload('./pdf/210621_Warmer_Product_Requirements_and_Specifications.pdf')}>
                         <h4 className="paper-title">MSF Newborn Warmer Product Requirements and Specifications</h4>
                         <p className="paper-description">Technical specifications for the design and development of a newborn warmer to be used in MSF project sites and other LRS hospitals.</p>
                         <p className="paper-date">June 21, 2021</p>
                     </div>
-                    <div className="paperBox" onClick={()=> pdfDownload('../../pdf/210621 Newborn Warmer Market Study .pdf')}>
+                    <div className="paperBox" onClick={()=> pdfDownload('./pdf/210621_Newborn_Warmer_Market_Study.pdf')}>
                         <h4 className="paper-title">Market Research: Newborn Warming Devices</h4>
                         <p className="paper-description">Product Placement Research. Study of products on the market and their compatibility with MSF requirements. This study concludes that there is no warmer on the market that meets all of MSF needs.</p>
                         <p className="paper-date">June 21, 2021</p>
                     </div>
-                    <div className="paperBox" onClick={()=> pdfDownload('../../pdf/210415 A Solution Focused Field Assessment in Bangladesh.pdf')}>
+                    <div className="paperBox" onClick={()=> pdfDownload('./pdf/210415_A_Solution_Focused_Field_Assessment_in_Bangladesh.pdf')}>
                         <h4 className="paper-title2">Neonatal Hypothermia: A Solution-Focused Field Assessment in Bangladesh</h4>
                         <p className="paper-description">Summary of our findings from a field visit to a MSF hospital in Cox's Bazar, Bangaldesh. Our goal was to better understand challenges in neonatal hypothermia management that MSF staff face.</p>
                         <p className="paper-date">April 15, 2021</p>

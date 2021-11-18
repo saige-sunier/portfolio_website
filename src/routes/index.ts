@@ -1,12 +1,12 @@
 export enum Routes {
-    home = '/home',
-    projects='/projects',
-    cystoscope='/cystocope',
-    ventilator='/ventilator',
-    tengeru="/tengeru",
-    homepage='/saigesunier',
-    warmer_DP='/warmer_DP',
-    faceshields='/faceshields',
-    EEGcircuit='/EEGcircuit',
-    justforfun='/justforfun'
+    home = '/portfolio_website/',
+    projects='/portfolio_website/projects',
+    cystoscope='/portfolio_website/cystocope',
+    ventilator='/portfolio_website/ventilator',
+    tengeru="/portfolio_website/tengeru",
+    homepage='/portfolio_website/saigesunier',
+    warmer_DP='/portfolio_website/warmer_DP',
+    faceshields='/portfolio_website/faceshields',
+    EEGcircuit='/portfolio_website/EEGcircuit',
+    justforfun='/portfolio_website/justforfun'
 }

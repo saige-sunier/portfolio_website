@@ -158,7 +158,7 @@ return (
                     <div className="reqs-img-div">
                         <img className="req-img" onClick={()=> openImg('design-principles.png')} src={designPrinciples}></img>
                         <img className="arrow-img" src={arrow}></img>
-                        <img className="req-img" onClick={()=> pdfDownload('../../pdf/210621 Warmer Product Requirements and Specifications.pdf')} src={productReqs}></img>
+                        <img className="req-img" onClick={()=> pdfDownload('/portfolio_website/pdf/210621_Warmer_Product_Requirements_and_Specifications.pdf')} src={productReqs}></img>
                     </div>
                     <p className="DTM-need-text">We defined qualitative design principles with our stakeholders. <b>I led the process of translating these principles into technical product requirements and specifications. I used methods inspired by Ulrich and Eppinger’s “Product Design and Development.”</b> The complete list of product requirements, with associated international standards and consumer standards can be found in my research section. </p>
                 </div>
