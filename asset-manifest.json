@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/css/main.ece5262f.chunk.css",
-    "main.js": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/main.521961de.chunk.js",
-    "main.js.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/main.521961de.chunk.js.map",
-    "runtime-main.js": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/runtime-main.1165168d.js",
-    "runtime-main.js.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/runtime-main.1165168d.js.map",
-    "static/js/2.c2d833a9.chunk.js": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/2.c2d833a9.chunk.js",
-    "static/js/2.c2d833a9.chunk.js.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/2.c2d833a9.chunk.js.map",
-    "static/js/3.fbf6fe7e.chunk.js": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/3.fbf6fe7e.chunk.js",
-    "static/js/3.fbf6fe7e.chunk.js.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/3.fbf6fe7e.chunk.js.map",
-    "index.html": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/index.html",
-    "static/css/main.ece5262f.chunk.css.map": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/css/main.ece5262f.chunk.css.map",
-    "static/js/2.c2d833a9.chunk.js.LICENSE.txt": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/js/2.c2d833a9.chunk.js.LICENSE.txt",
-    "static/media/tengeru.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/media/TZ-kili_sunrise.4d0ff201.JPG",
-    "static/media/home.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/media/mobileHeaderImg.ee9a6e50.jpg",
-    "static/media/cystoscope.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/media/cystoscope-cover.d32d05d7.png",
-    "static/media/ventilator.css": "/%E2%80%9Chttp://saigesunier.github.io/portfolio_website/static/media/ventilator-cover.86c832ea.png"
+    "main.css": "/portfolio_website/static/css/main.f5ce9af8.chunk.css",
+    "main.js": "/portfolio_website/static/js/main.2365050c.chunk.js",
+    "main.js.map": "/portfolio_website/static/js/main.2365050c.chunk.js.map",
+    "runtime-main.js": "/portfolio_website/static/js/runtime-main.e87e06f8.js",
+    "runtime-main.js.map": "/portfolio_website/static/js/runtime-main.e87e06f8.js.map",
+    "static/js/2.fcb96391.chunk.js": "/portfolio_website/static/js/2.fcb96391.chunk.js",
+    "static/js/2.fcb96391.chunk.js.map": "/portfolio_website/static/js/2.fcb96391.chunk.js.map",
+    "static/js/3.8d40e31f.chunk.js": "/portfolio_website/static/js/3.8d40e31f.chunk.js",
+    "static/js/3.8d40e31f.chunk.js.map": "/portfolio_website/static/js/3.8d40e31f.chunk.js.map",
+    "index.html": "/portfolio_website/index.html",
+    "static/css/main.f5ce9af8.chunk.css.map": "/portfolio_website/static/css/main.f5ce9af8.chunk.css.map",
+    "static/js/2.fcb96391.chunk.js.LICENSE.txt": "/portfolio_website/static/js/2.fcb96391.chunk.js.LICENSE.txt",
+    "static/media/EEGcircuit.css": "/portfolio_website/static/media/EEG-headerImg.2c4d177e.png",
+    "static/media/tengeru.css": "/portfolio_website/static/media/TZ-kili_sunrise.4d0ff201.JPG",
+    "static/media/ventilator.css": "/portfolio_website/static/media/VentilatorV2-cover.87677467.jpg",
+    "static/media/cystoscope.css": "/portfolio_website/static/media/cystoscope-background.27d545be.png",
+    "static/media/faceshields.css": "/portfolio_website/static/media/faceshield-cover.838db4f4.png",
+    "static/media/home.css": "/portfolio_website/static/media/mobileHeaderImg.ee9a6e50.jpg",
+    "static/media/warmer_DP.css": "/portfolio_website/static/media/newborn-basket.126a1dd5.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1165168d.js",
-    "static/js/2.c2d833a9.chunk.js",
-    "static/css/main.ece5262f.chunk.css",
-    "static/js/main.521961de.chunk.js"
+    "static/js/runtime-main.e87e06f8.js",
+    "static/js/2.fcb96391.chunk.js",
+    "static/css/main.f5ce9af8.chunk.css",
+    "static/js/main.2365050c.chunk.js"
   ]
 }
