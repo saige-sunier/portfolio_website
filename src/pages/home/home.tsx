@@ -11,12 +11,12 @@ export const Home = withRouter((props) =>{
     const kicksinorbit='./images/kicksInOrbit.JPG';
     const ventilator='./images/vent-home-img.png';
     const cystoscope='./images/cystoscope-home.png'
-    const TZbiomed='./images/TZ-pulseOX_repair.png'
+    const TZbiomed='./images/TZ-pulseOx_repair.png'
     const goyalmaranewborn='./images/newborn-bubbleWrap.png';
     const faceshield='./images/faceshield-solo.png';
     const EEGcircuit='./images/EEG-circuitBoard.png';
     const justforfun='./images/catan-square.png';
-    const aboutMe='./images/aboutMe-img.png';
+    const aboutMe='./images/aboutme-img.png';
     const headshot='./images/headshot.jpeg';
 
     const handleProjectSelect = (projectRoute:Routes) =>{

@@ -62,7 +62,7 @@
     color: black;
     font-size: 3vw;
     text-align: left;
-    margin-left: 10vw !important;
+    margin-left: -1vw !important;
     margin-right: 30vw !important;
     margin-top: 0px;
 }
@@ -71,7 +71,7 @@
     color: black;
     font-size: 1.8vw;
     text-align: left;
-    margin-left: 10vw;
+    margin-left: -1vw !important;
     /* margin-right: 40vw; */
     margin-bottom: 10px;
 }
