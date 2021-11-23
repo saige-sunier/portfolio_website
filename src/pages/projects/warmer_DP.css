@@ -123,6 +123,7 @@
     justify-content: left;
     flex-direction: row;
     margin-right: 4vw;
+    align-items: center;
 }
 .NH-need-img-div{
     display: flex;
@@ -244,15 +245,14 @@
     font-size: 25px;
     color: white;
     margin-top: 8vw;
-    margin-left: 2vw;
-    width: 14vw;
+    width: 18vw;
 }
 .DTMcircle2-text{
     position: absolute;
     font-size: 25px;
     color: white;
     margin-top: 7vw;
-    margin-left: 5vw;
+    width: 18vw;
 }
 .work-text-bullets{
     position: absolute;

@@ -127,7 +127,7 @@ export const Home = withRouter((props) =>{
             <hr className="hr-divider"></hr>
             <div className="research-div" id="research">
                 <h1 className="section-header">Research</h1>
-                <p className="research-text">For the past year and a half, I have extensively studied neonatal hypothermia. The following documents explore the harm caused by neonatal hypothermia as well as builds a case for the positioning of a new conductive warmer in the global health markets. I am the main author on the first four documents. The final document was written in collaboration with stakeholders from Design that Matters and Médecins Sans Frontières (MSF). This paper and was presented and published as part of MSF's 2021 Paediatric Days Symposium. </p>
+                <p className="research-text">For the past year and a half, I have extensively studied neonatal hypothermia. The following documents explore the harm caused by neonatal hypothermia as well as builds a case for the positioning of a new conductive warmer in the global health markets. I am the main author on the first four documents. The final document was written in collaboration with stakeholders from Design that Matters and Médecins Sans Frontières (MSF). This paper was presented and published as part of MSF's 2021 Paediatric Days Symposium. </p>
 
                 <div className="research-grid">
                     <div className="paperBox" onClick={()=> pdfDownload('./pdf/201109_Prevalence_and_Risks_of_Neonatal_Hypothermia.pdf')}>
@@ -169,7 +169,7 @@ export const Home = withRouter((props) =>{
                         <div className="text-subdiv">
                             <p className="aboutMe-text">I grew up in a small town just outside of New York City in a hectic household with three older siblings and six pets. I am no stranger to chaos and thrive in environments where I am surrounded by new people and new perspectives.</p>
                             <p className="aboutMe-text">I studied Biomedical Engineering at Duke University with a concentration in Global Development Engineering. As a student, I pursued opportunities to challenge myself through experiences. I spent a summer working in Tanzania repairing medical equipment then flew off to Europe to study and live in Metz, France. After graduating I followed my passions out to Seattle to work at a small non-profit.</p>
-                            <p className="aboutMe-text">My goal in life is to improve health outcomes in low-resource settings. I want to do more than design. I want to ensure the solutions I am a part of are developed and implemented. I am determined to solve some of the world’s most challenging problems and I hope to do so surrounded by peers and mentors with their own inspiring motivations and experiences. </p> 
+                            <p className="aboutMe-text">My goal in life is to improve health outcomes in low-resource settings. I want to do more than design. I want to ensure that the solutions I am a part of are developed and implemented. I am determined to solve some of the world’s most challenging problems and I hope to do so surrounded by peers and mentors with their own inspiring motivations and experiences. </p> 
                         </div>
                     </div>
                 </div>
