@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio_website/static/css/main.b1c98b0d.chunk.css",
-    "main.js": "/portfolio_website/static/js/main.af220712.chunk.js",
-    "main.js.map": "/portfolio_website/static/js/main.af220712.chunk.js.map",
+    "main.css": "/portfolio_website/static/css/main.d7d5a06e.chunk.css",
+    "main.js": "/portfolio_website/static/js/main.529f4afd.chunk.js",
+    "main.js.map": "/portfolio_website/static/js/main.529f4afd.chunk.js.map",
     "runtime-main.js": "/portfolio_website/static/js/runtime-main.e87e06f8.js",
     "runtime-main.js.map": "/portfolio_website/static/js/runtime-main.e87e06f8.js.map",
     "static/js/2.dc5763e9.chunk.js": "/portfolio_website/static/js/2.dc5763e9.chunk.js",
@@ -10,8 +10,9 @@
     "static/js/3.8d40e31f.chunk.js": "/portfolio_website/static/js/3.8d40e31f.chunk.js",
     "static/js/3.8d40e31f.chunk.js.map": "/portfolio_website/static/js/3.8d40e31f.chunk.js.map",
     "index.html": "/portfolio_website/index.html",
-    "static/css/main.b1c98b0d.chunk.css.map": "/portfolio_website/static/css/main.b1c98b0d.chunk.css.map",
+    "static/css/main.d7d5a06e.chunk.css.map": "/portfolio_website/static/css/main.d7d5a06e.chunk.css.map",
     "static/js/2.dc5763e9.chunk.js.LICENSE.txt": "/portfolio_website/static/js/2.dc5763e9.chunk.js.LICENSE.txt",
+    "static/media/justforfun.css": "/portfolio_website/static/media/DSC00901.b277c788.jpeg",
     "static/media/EEGcircuit.css": "/portfolio_website/static/media/EEG-headerImg.2c4d177e.png",
     "static/media/tengeru.css": "/portfolio_website/static/media/TZ-kili_sunrise.4d0ff201.JPG",
     "static/media/ventilator.css": "/portfolio_website/static/media/VentilatorV2-cover.87677467.jpg",
@@ -23,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.e87e06f8.js",
     "static/js/2.dc5763e9.chunk.js",
-    "static/css/main.b1c98b0d.chunk.css",
-    "static/js/main.af220712.chunk.js"
+    "static/css/main.d7d5a06e.chunk.css",
+    "static/js/main.529f4afd.chunk.js"
   ]
 }
