@@ -10,9 +10,9 @@
     margin-left: 4vw;
     margin-right: 4vw;
 }
-.subheader2{
+.subheader3{
     font-size: 1.5vw;
-    text-align: left;
+    text-align: center !important;
     margin-left: 4vw;
     margin-right: 4vw;
 }
@@ -39,4 +39,107 @@
 
 .temp{
     text-align: center !important;
+}
+
+/* HEADER IMAGE SECTION */
+.FUNheader-block-div{
+    position: relative;
+    height: 40vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FUNheader-block-div:before{
+    content: "";
+    background-image: url(../../images/DSC00901.jpeg);
+    background-size: cover;
+    position: absolute;
+    /* transform: scaleX(-1); */
+    background-repeat: none;
+    background-position: 0% 30%;
+    background-size: 100%;
+    background-attachment: fixed;
+    opacity: 0.7;
+    background-color:darkgrey;
+    top: -10px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
+.FUNproject-title{
+    position: relative;
+    color: black;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 8vw;
+    margin-right: 40vw;
+    margin-top: 0px;
+}
+.FUNproject-title-sm{
+    position: relative;
+    color: black;
+    font-size: 1.8vw;
+    text-align: left;
+    margin-left: 8vw;
+    /* margin-right: 40vw; */
+    margin-bottom: 10px;
+}
+
+/* PROJECTS */
+.projects-flex-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.project{
+    max-width: 30vw;
+    margin: 2vw;
+}
+.project-img{
+    object-fit: cover;
+    max-width: 30vw;
+    border: 2px solid black;
+    
+}
+.proj-title{
+    font-size: calc(14px + 0.25vw);
+}
+
+/* PHOTOGRAPHY */
+.images-intro-text{
+    font-size: calc(12px + 0.25vw);
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 2vw;
+    padding-right: 2vw; 
+}
+.images-div {
+    padding-bottom: 3rem;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    overflow: visible;
+}
+.photos-flex-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 21%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.photo{
+    max-width: 20vw;
+    margin: 1rem;
+    transition: transform 0.25s ease;
+}
+.photo:hover{
+    position: relative;
+    cursor: pointer;
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(2);
+    z-index: 999;
 }
