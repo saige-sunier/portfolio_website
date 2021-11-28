@@ -55,7 +55,7 @@ return (
             <div className="DTM-intro-div">
                 <div className="DTM-intro-content">
                     <h3 className="subheader">Background</h3>
-                        <p className="DTM-intro-text">I work at Design that Matters (DtM), a non-profit that specializes in applying human-centered design methodologies to design products and systems for low-resource settings. We are a tiny company. It is really just me and the founder working our hardest to make an impact in this world. We collaborate with people from all over the world to try and save newborn lives. Despite the past 18-months of being stuck behind our desks and in our homes, we have managed to make significant progress in the development of a conductive newborn warmer.</p>
+                        <p className="DTM-intro-text"><b>I work at Design that Matters (DtM), a non-profit that specializes in applying human-centered design methodologies to design products and systems for low-resource settings.</b> We are a tiny company. It is really just me and the founder working our hardest to make an impact in this world. We collaborate with people from all over the world to try and save newborn lives. Despite the past 18-months of being stuck behind our desks and in our homes, we have managed to make significant progress in the development of a conductive newborn warmer.</p>
                     </div>
                 <div className="DTM-intro-img-div">
                     <img className="DTM-intro-img" src={logos}></img>
@@ -65,7 +65,7 @@ return (
                 <h3 className="subheader2">Neonatal Hypothermia</h3>
                     <div className="need-div-intro">
                         <div className="DTM-need-text">
-                            <p><b>Every year an estimated 1.8 million lives could be saved just by keeping newborns warm and clean for the first 48 hours of life.</b> Kangaroo Mother Care is the standard of care for preventing and treating neonatal hypothermia in resource poor settings. But it is is not enough. <b>Even a 30-minute break in warming can result in the onset of neonatal hypothermia.</b> Cultural resistance, birth complication, infrastructure and human resource constraints results in the need for supplemental warming devices. </p>
+                            <p><b>Every year an estimated 1.8 million lives could be saved just by keeping a newborn warm and clean </b>. Kangaroo Mother Care has been the standard of care for preventing and treating neonatal hypothermia in resource poor settings. But it is is not enough. <b>Even a 30-minute break in warming can result in the onset of neonatal hypothermia.</b> Cultural resistance, birth complications, and simply not having the space and resources for KMC results in a need for supplemental warming devices. </p>
                         </div>
                         <div className="NH-need-img-div">
                             <div>
@@ -86,13 +86,16 @@ return (
                 <h3 className="subheader2">DtM’s Previous Progress</h3>
                 <div className="otter-prototype">
                     <img className="otter-img" src={otter}></img>
-                    <p className="otter-text">Design that Matters had built a prototype for a warmer about three years ago. This product was designed to complement DtM’s Firefly Phototherapy Device. But sometimes design is the easiest part of the journey. I came on to help take this product from prototype to reality. </p>
+                    <div className="protoype-img-right">
+                        <p className="otter-text">Design that Matters initially responded to neonatal hypothermia when users of DtM’s Firefly Phototherapy Device expressed concern over warming during phototherapy treatment. DtM conducted a design sprint to build a warmer that complemented DtM’s Firefly Phototherapy Device about three years ago. However, the product has yet to successfully reach the market.  </p>
+                        <img className="design-phases-img" src={designPhases}></img>
+                    </div>
                 </div>  
             </div>
             <div>
                 <h3 className="subheader2-1">So we have a prototype… now what?</h3>
-                <img className="design-phases-img" src={designPhases}></img>
-                <p className="DTM-need-text">The vast majority of products fail to make it to the market. Products designed for low-resource settings face additional barriers. <b>This year was all about re-designing our strategy for bringing a conductive warmer to market.</b> If we were going to convince our manufacturing connection that this would be worth the investment, we needed to build a partnership that ensured the warmer would be purchased and implemented. </p>
+                
+                <p className="DTM-need-text">This year has been centered around re-designing the strategy for bringing a conductive warmer to the market. We decided to go back to the basics and reassess warming needs, this time with project feasibility as one of the guiding factors. It is not enough to make a great product, there has to be someone to purchase and implement it. <b>We decided to focus our efforts on responding directly to needs expressed by an aid organization, specifically Médecins Sans Frontières (MSF), who can help us distribute and implement a conductive warmer. Throughout this project, I have taken on a variety of initiatives such as needs identification, research, market positioning, and partnership management. </b> </p>
           </div>
             <hr className="hr-divider-pages"></hr>
 
@@ -158,7 +161,7 @@ return (
                     <div className="reqs-img-div">
                         <img className="req-img" onClick={()=> openImg('design-principles.png')} src={designPrinciples}></img>
                         <img className="arrow-img" src={arrow}></img>
-                        <img className="req-img" onClick={()=> pdfDownload('/portfolio_website/pdf/210621_Warmer_Product_Requirements_and_Specifications.pdf')} src={productReqs}></img>
+                        <img className="req-img" onClick={()=> pdfDownload('../../pdf/210621 Warmer Product Requirements and Specifications.pdf')} src={productReqs}></img>
                     </div>
                     <p className="DTM-need-text">We defined qualitative design principles with our stakeholders. <b>I led the process of translating these principles into technical product requirements and specifications. I used methods inspired by Ulrich and Eppinger’s “Product Design and Development.”</b> The complete list of product requirements, with associated international standards and consumer standards can be found in my research section. </p>
                 </div>
