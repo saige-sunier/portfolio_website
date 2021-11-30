@@ -21,6 +21,7 @@ const img9='./images/DSC00870.jpeg';
 const img10='./images/DSC00918.jpeg';
 const img11='./images/DSC09573.jpeg';
 const img12='./images/DSC09756.jpeg';
+const drawing='./images/drawing.png';
 
 
 export const JustForFun = withRouter((props) =>{
@@ -55,6 +56,11 @@ export const JustForFun = withRouter((props) =>{
                         <img className="project-img" src={chair}></img>
                         <h4 className="proj-title">Chair Makeover</h4>
                         <p className="proj-text">In the middle of the pandemic I had the crazy idea that I was going to master the art of furniture flipping. I purchased a chair for $5 and refurbished it with the initial plan of selling it. Turns out I liked it too much to sell… maybe furniture “flipping” is not quite for me but I definitely had a lot of fun giving this chair a makeover.</p>
+                    </div>
+                    <div className="project">
+                        <img className="project-img" src={drawing}></img>
+                        <h4 className="proj-title">Charcoal Drawings</h4>
+                        <p className="proj-text">I frequently sketch and I keep a notebook of drawings ranging from scenery and people to new design ideas. While I haven’t spent much time studying art in classroom settings, I do love to explore various mediums. A few years ago, I dabbled in charcoal drawing and, to no surprise to those that know me, I concentrated on drawing trees. </p>
                     </div>
                     
 
