@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio_website/static/css/main.5e9e3450.chunk.css",
-    "main.js": "/portfolio_website/static/js/main.35a915d0.chunk.js",
-    "main.js.map": "/portfolio_website/static/js/main.35a915d0.chunk.js.map",
+    "main.css": "/portfolio_website/static/css/main.d6f3a60b.chunk.css",
+    "main.js": "/portfolio_website/static/js/main.ee4a2111.chunk.js",
+    "main.js.map": "/portfolio_website/static/js/main.ee4a2111.chunk.js.map",
     "runtime-main.js": "/portfolio_website/static/js/runtime-main.e87e06f8.js",
     "runtime-main.js.map": "/portfolio_website/static/js/runtime-main.e87e06f8.js.map",
     "static/js/2.dc5763e9.chunk.js": "/portfolio_website/static/js/2.dc5763e9.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.8d40e31f.chunk.js": "/portfolio_website/static/js/3.8d40e31f.chunk.js",
     "static/js/3.8d40e31f.chunk.js.map": "/portfolio_website/static/js/3.8d40e31f.chunk.js.map",
     "index.html": "/portfolio_website/index.html",
-    "static/css/main.5e9e3450.chunk.css.map": "/portfolio_website/static/css/main.5e9e3450.chunk.css.map",
+    "static/css/main.d6f3a60b.chunk.css.map": "/portfolio_website/static/css/main.d6f3a60b.chunk.css.map",
     "static/js/2.dc5763e9.chunk.js.LICENSE.txt": "/portfolio_website/static/js/2.dc5763e9.chunk.js.LICENSE.txt",
     "static/media/justforfun.css": "/portfolio_website/static/media/DSC00901.b277c788.jpeg",
     "static/media/EEGcircuit.css": "/portfolio_website/static/media/EEG-headerImg.2c4d177e.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.e87e06f8.js",
     "static/js/2.dc5763e9.chunk.js",
-    "static/css/main.5e9e3450.chunk.css",
-    "static/js/main.35a915d0.chunk.js"
+    "static/css/main.d6f3a60b.chunk.css",
+    "static/js/main.ee4a2111.chunk.js"
   ]
 }
