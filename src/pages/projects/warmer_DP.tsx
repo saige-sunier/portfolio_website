@@ -65,7 +65,7 @@ return (
                 <h3 className="subheader2">Neonatal Hypothermia</h3>
                     <div className="need-div-intro">
                         <div className="DTM-need-text">
-                            <p><b>Every year an estimated 1.8 million lives could be saved just by keeping a newborn warm and clean </b>. Kangaroo Mother Care has been the standard of care for preventing and treating neonatal hypothermia in resource poor settings. But it is is not enough. <b>Even a 30-minute break in warming can result in the onset of neonatal hypothermia.</b> Cultural resistance, birth complications, and simply not having the space and resources for KMC results in a need for supplemental warming devices. </p>
+                            <p><b>Every year an estimated 1.8 million lives could be saved just by keeping a newborn warm and clean.</b> Kangaroo Mother Care (KMC) is the standard of care for preventing and treating neonatal hypothermia in resource poor settings. But it is is not enough. <b>Even a 30-minute break in warming can result in the onset of neonatal hypothermia.</b> Cultural resistance, birth complications, and simply not having the space and resources for KMC results in a need for supplemental warming devices. </p>
                         </div>
                         <div className="NH-need-img-div">
                             <div>
@@ -86,10 +86,10 @@ return (
                 <h3 className="subheader2">DtM’s Previous Progress</h3>
                 <div className="otter-prototype">
                     <img className="otter-img" src={otter}></img>
-                    <div className="protoype-img-right">
-                        <p className="otter-text">Design that Matters initially responded to neonatal hypothermia when users of DtM’s Firefly Phototherapy Device expressed concern over warming during phototherapy treatment. DtM conducted a design sprint to build a warmer that complemented DtM’s Firefly Phototherapy Device about three years ago. However, the product has yet to successfully reach the market.  </p>
-                        <img className="design-phases-img" src={designPhases}></img>
-                    </div>
+                        <div className="protoype-img-right">
+                            <p className="otter-text">Design that Matters initially responded to neonatal hypothermia when users of DtM’s Firefly Phototherapy Device expressed concern over warming during phototherapy treatment. DtM conducted a design sprint to build a warmer that complemented DtM’s Firefly Phototherapy Device about three years ago. However, the product has yet to successfully reach the market.  </p>
+                            <img className="design-phases-img" src={designPhases}></img>
+                        </div>
                 </div>  
             </div>
             <div>
@@ -102,25 +102,40 @@ return (
             <div className="DTM-MSF-div">
                 <div className="CandE-div">
                     <h3 className="subheader">Partnering with Médecins Sans Frontières (MSF)</h3>
-                    <p className="DTM-need-text"> MSF provides maternal services all around the world. They build hospitals, purchase medical equipment, and help bring thousands of newborns into the world every year. <b>Our goal is to design a warmer that meets needs expressed specifically by MSF.</b> We have been developing this product under the assumption that MSF project sites represent contexts found in other hospitals in low-resource settings. My partner and I both have experience working in LRS and are confident that this assumption holds true.</p>
-                    <p className="DTM-need-text">Throughout this entire process we have kept and updated a cause and effect diagram. We are taking a holistic approach to product development and are focusing on stages post prototyping to solidify a path forward once we finalize the product's design.</p>
+                    <h4 className="subheader2-1">Why partner with MSF?</h4>
+                    <ul className="why-msf">
+                        <li>Problem: Individual hospitals in LRS rarely purchase medical devices themselves.</li>
+                        <li>Aid organizations (like MSF) are largely responsible for implementing medical devices into these markets.</li>
+                        <li>By developing and designing our warming with MSF’s needs in mind, and with their help/input along the way (seen via the red path in the diagram below), we hope to foster a relationship and develop a product that will lead MSF to confidently support, purchase, and implement our product into their project sites throughout the world. </li>
+                    </ul>
                     <div className="CandE-diagram-div">
-                        <h3 className="subheader2-1">Product Development Cause and Effect Diagram</h3>
+                        <h3 className="CandE-title">Product Development Cause and Effect Diagram</h3>
                         <img className="CandE-img" onClick={()=> openImg('cause_and_effect.png')} src={CandE}></img>
+                        <p className="img_description2">The red path represents collaboration with MSF. The blue path represents DtM internal project phases which will require collaboration with additional partners. </p>
                     </div>
-                    <p className="DTM-need-text">We built a team of diverse stakeholders from MSF Japan Innovation Unit (JIU) and MSF Operational Centre Barcelona (OCBA). Any other year we would have travelled to Spain and hosted workshops in-person. This year everything was remote and while our jobs would have been easier if we got to meet our collaborators, <b>we pulled together a team of people located in Japan, Spain, Democratic Republic of Congo, Kenya, Yemen, India, Senegal, Vietnam, and Uzbekistan.</b> </p>
-                    <p className="DTM-need-text">Our goal was to understand the warming gaps that occur within MSF project sites and to work with MSF’s logistic personnel, product procurement team, and in-field clinicians to define product requirements for a newborn warmer. </p>
+                    <div className="stakeholders">
+                        <h3 className="subheader2-1">Building a Team</h3>
+                        <p className="DTM-need-text">We wanted to collaborate with a range of stakeholders who could provide input into the various stages, from addition to MSF’s product catalog to in-hospital use, of medical devices procurement in MSF contexts. <b>We built a team of stakeholders from MSF Japan Innovation Unit (JIU) and MSF Operational Centre Barcelona (OCBA) who represent MSF’s logistic personnel, biomedical technicians, product procurement team, and in-field clinicians. </b> In any other year we would have travelled to Spain and hosted workshops in-person; however, due to Covid-19, we had to work remote. We pulled together a team of people located in Japan, Spain, Democratic Republic of Congo, Kenya, Yemen, India, Senegal, Vietnam, and Uzbekistan.  </p>
+                        <p className="DTM-need-text">Our goals were to:</p>
+                        <ul className="why-msf">
+                            <li>Identify warming gaps in MSF project sites</li>
+                            <li>Understand MSF’s product selection process for addition to their product catalog</li>
+                            <li>Identify current warming solutions and the barriers to their successful implementation</li>
+                            <li>Define qualitative product requirements for a context-appropriate newborn warmer</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="needs-identification">
                     <h3 className="subheader2">Needs Identification</h3>
-                    <p className="DTM-need-text">In February 2020, my co-worker was lucky enough to make it to Bangladesh to conduct a field visit at Goyalmara Hospital. A field visit to an MSF project site in Sub-Saharan Africa is in the planning phases but Covid-19 has made international travel very difficult. We have had to perform needs identification virtually. </p>
+                    <p className="DTM-need-text">In February 2020, my co-worker was lucky enough to make it to Bangladesh to conduct a field visit at Goyalmara Hospital. A field visit to an MSF project site in Sub-Saharan Africa is in the planning phases but Covid-19 has made international travel very difficult. The remainder of the needs identification process was performed virtually. </p>
                     <p className="DTM-need-text"><b>I co-facilitated four workshops with our stakeholders as well as conducted several one-on-one and small group interviews. </b></p>
                     <div className="work-circles">
                         <div className="repair-circle">
                             <img className="circle1" src={goyalmara}></img>
-                            <div className="DTMcircle1-area"> </div>
-                            <h4 className="DTMcircle1-text">Field Visit</h4>
+                            <div className="DTMcircle1-area"> 
+                                <h4 className="DTMcircle1-text">Field Visit</h4>
+                            </div>
                             <div className="work-text-bullets">
                                 <p>Goyalmara, Hospital in February 2020</p>
                                 <p>Observed and interviewed clinicians and logistic personnel</p>
@@ -129,8 +144,9 @@ return (
                         </div>
                         <div className="repair-circle">
                             <img className="circle1" src={workshop}></img>
-                            <div className="DTMcircle1-area"> </div>
-                            <h4 className="DTMcircle2-text">Workshops & Interviews</h4>
+                            <div className="DTMcircle1-area"> 
+                                <h4 className="DTMcircle2-text">Workshops & Interviews</h4>
+                            </div>
                             <div className="work-text-bullets">
                                 <p>Identified warming gaps within MSF project sites</p>
                                 <p>Defined qualitative product requirements</p>
@@ -139,8 +155,9 @@ return (
                         </div>
                         <div className="repair-circle">
                             <img className="circle1" src={survey}></img>
-                            <div className="DTMcircle1-area"> </div>
-                            <h4 className="DTMcircle1-text">Surveys</h4>
+                            <div className="DTMcircle1-area"> 
+                                <h4 className="DTMcircle1-text">Surveys</h4>
+                            </div>
                             <div className="work-text-bullets">
                                 <p>Individual responses and feedback on technical product requirements and specifications</p>
                                 <p>Stakeholders were asked to define requirements as "Must Have", "Nice to Have", "Not Important" and "Unknown"</p>
@@ -170,10 +187,10 @@ return (
 
                 <div className="market-survey-div">
                     <h3 className="subheader2">Market Survey: Does the product MSF needs already exist?</h3>
-                    <p className="DTM-need-text"><b>I conducted extensive market research to analyze newborn warmers that are currently sold by European, US, and Asian manufacturers. </b>I compared each of these products to the requirements and specifications as defined by our MSF stakeholders.</p>
+                    <p className="DTM-need-text">In an ideal world, the product MSF needs is already on the market and we could transition towards developing implementation plans. <b>I conducted extensive market research to analyze newborn warmers that are currently sold by European, US, and Asian manufacturers. </b>I compared each of these products to the requirements and specifications as defined by our MSF stakeholders.</p>
                     <p className="DTM-need-text">I eliminated products based on 5 key modes of failure.</p>
                     <div className="FM-overall-div">
-                    <h3 className="subheader2-1">Failure Modes for Warming Devices in MSF/LRS Contexts</h3>
+                    <h3 className="CandE-title">Failure Modes for Warming Devices in MSF/LRS Contexts</h3>
                     <div className="failure-modes-div">
                         <div className="failure-mode">
                             <img className="failure-img" src={FM1}></img>

@@ -66,7 +66,7 @@ function App() {
           <Route path={Routes.justforfun}>
               <Header/>
               <JustForFun/>
-              {/* <Footer/> */}
+              <Footer/>
           </Route>
         </Switch>
       </div>

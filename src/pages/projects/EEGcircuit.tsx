@@ -16,6 +16,9 @@ export const EEGcircuitPage = withRouter((props) =>{
     const EEGtests='./images/EEGtests.png';
     const EEGbefore='./images/EEGbefore.png';
     const EEGafter='./images/EEGafter.png';
+    const altium='./images/altium.png';
+    const solder='./images/soldering.png';
+    const troubleshoot='./images/troubleshoot.png';
 
     const handleSideNavClick = (projectRoute:Routes) =>{
         props.history.push(projectRoute);
@@ -257,7 +260,42 @@ export const EEGcircuitPage = withRouter((props) =>{
                         <div className="CircuitBuild-div">
                             <h4 className="EEGsubheader2">Assembling and Testing a Prototype</h4>
                             <img className="CBheader-img" src={EEGprototype}></img>
-                            <p className="CADintro-text"></p>
+
+                        <div className="EEGprocess-grid">
+                        <div className="EEGprocess-block-area">
+                            <div className="EEGflip-block-inner-CAD">
+                                <div className="EEGflip-block-front-CAD">
+                                    <p className="EEGprocess-title">Simulations</p>
+                                    <img className="EEGprocess-image" id="lightbulb" src={altium} alt="lightbulb"/>
+                                </div>
+                                <div className="EEGflip-block-back-CAD">
+                                    <p className="EEGprocess-description-sm">I used Altium’s PCB Simulation Tool to test various specifications. I used this tool to alter design decisions and tweak the circuit until I was happy with the results. The simulation results can be seen in the results section. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="EEGprocess-block-area">
+                            <div className="EEGflip-block-inner-CAD">
+                                <div className="EEGflip-block-front-CAD">
+                                    <p className="EEGprocess-title">PCB Milling and Assembly</p>
+                                    <img className="EEGprocess-image" id="sketching" src={solder} alt="sketching"/>
+                                </div>
+                                <div className="EEGflip-block-back-CAD">
+                                    <p className="EEGprocess-description-sm">I used a PCB milling machine to etch a two-layer copper circuit board. My partner and I hand soldered the components to the board and frequently tested continuity.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="EEGprocess-block-area">
+                            <div className="EEGflip-block-inner-CAD">
+                                <div className="EEGflip-block-front-CAD">
+                                    <p className="EEGprocess-title">Trouble Shooting</p>
+                                    <img className="EEGprocess-image" id="scales" src={troubleshoot} alt="scales"/>
+                                </div>
+                                <div className="EEGflip-block-back-CAD">
+                                    <p className="EEGprocess-description-sm">The physical board required extensive trouble shooting which resulted in minor design changes. The most significant design change was adding a 100kΩ resistor in parallel to the 150kΩ resistor at the input of the second gain step. The 10uF capacitor became unstable with a gain of 1 so I decided to increase the gain to 2.5x. This resulted in a slight change to the cutoff frequency of the HPF but the signal’s stability increased significantly.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         </div>
                     </div>
                     <hr className="hr-divider-pages"></hr>

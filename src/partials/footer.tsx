@@ -6,7 +6,7 @@ export const Footer = ()=>{
     }
 
     const LinkedIn=() =>{
-        window.location.href="https://www.linkedin.com/in/saige-sunier-8a7ba4151/"
+        window.open(`https://www.linkedin.com/in/saige-sunier-8a7ba4151/`)
     }
 
     
